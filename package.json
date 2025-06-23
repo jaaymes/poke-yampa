@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
-    "install:playwright": "npx exec playwright install"
+    "install:playwright": "npx exec playwright install",
+    "analyze": "vite-bundle-analyzer dist/stats.json",
+    "lighthouse": "lighthouse http://localhost:4173 --output json --output-path ./lighthouse-report.json",
+    "perf": "npm run build && npm run preview & npm run lighthouse"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
@@ -31,7 +34,6 @@
     "react-dom": "^19.1.0",
     "react-i18next": "^15.5.3",
     "react-icons": "^5.5.0",
-    "react-intersection-observer": "^9.16.0",
     "react-router": "^7.6.2",
     "sonner": "^2.0.5",
     "tailwind-merge": "^3.3.1",
@@ -52,12 +54,24 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "jsdom": "^26.1.0",
+    "lighthouse": "^12.2.1",
     "playwright": "^1.53.1",
     "tw-animate-css": "^1.3.4",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5",
+    "vite-bundle-analyzer": "^0.18.0",
     "vitest": "^3.2.4",
     "vitest-browser-react": "^0.3.0"
-  }
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
 }

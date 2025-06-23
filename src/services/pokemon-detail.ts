@@ -1,7 +1,7 @@
 import type { PokemonDetail } from "@/interface/pokemon-detail";
-import api from "./api";
+import axios from "axios";
 
-export const getPokemonDetail = async (id: string) => {
-  const response = await api.get<PokemonDetail>(`/pokemon/${id}`);
+export const getPokemonDetail = async (url: string) => {
+  const response = await axios.get<PokemonDetail>(url);
   return response.data;
 };

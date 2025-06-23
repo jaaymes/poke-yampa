@@ -30,7 +30,13 @@ export const ptBR = {
   specialDefenseShort: "Def. Esp.",
   total: "Total",
   expand: "Expandir",
+  collapse: "Recolher",
   viewDetails: "Ver detalhes",
+  pokemonTypes: "Tipos do Pokémon",
+  type: "Tipo",
+  totalStats: "Estatísticas totais",
+  sprite: "sprite",
+  detailedStats: "estatísticas detalhadas",
 
   // Pokemon types
   normal: "Normal",
@@ -56,6 +62,8 @@ export const ptBR = {
   errorLoading: "Erro ao carregar dados",
   pokemonNotFound: "Nenhum Pokémon encontrado",
   tryAgain: "Tentar novamente",
+  error: "Erro",
+  imageLoadError: "Erro ao carregar imagem",
 
   // Footer
   allRightsReserved: "Todos os direitos reservados",

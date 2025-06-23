@@ -1,23 +1,15 @@
 import { useLanguage } from "@/hooks/use-language";
-import type { IPokemon } from "../interface/pokemon";
+import type { PokemonDetail } from "@/interface/pokemon-detail";
 
 interface PokemonStatsExpandedProps {
-  stats: IPokemon["stats"];
-  isExpanded: boolean;
+  stats: PokemonDetail["stats"];
 }
 
-export function PokemonStatsExpanded({
-  stats,
-  isExpanded,
-}: PokemonStatsExpandedProps) {
+export function PokemonStatsExpanded({ stats }: PokemonStatsExpandedProps) {
   const { t } = useLanguage();
 
   return (
-    <div
-      className={`overflow-hidden transition-all duration-300 ease-in-out ${
-        isExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-      }`}
-    >
+    <div className="mb-4 space-y-1">
       <div className="flex flex-col gap-2 pt-4 border-t border-border/50">
         {/* HP */}
         <div className="flex justify-between items-center">
