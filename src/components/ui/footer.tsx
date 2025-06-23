@@ -28,7 +28,7 @@ export function Footer({ windowInfo }: FooterProps) {
         </p>
 
         {isDevelopment && (
-          <p className="text-xs text-muted-foreground mt-1">
+          <p className="text-xs mt-1">
             Debug: Janela [{windowInfo.start}-{windowInfo.end}] | Carregados:{" "}
             {windowInfo.allPokemonsLength} | Tamanho: {windowInfo.windowSize}
           </p>

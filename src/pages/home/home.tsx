@@ -1,7 +1,6 @@
 import { Loading } from "@/components/loading";
-import { useInfiniteScroll } from "@/hooks/use-infinite-scroll";
 import { useLanguage } from "@/hooks/use-language";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { MdSearch, MdSend } from "react-icons/md";
 import { PokemonGrid } from "../../components/pokemon-grid";
 import { Button } from "../../components/ui/button";
@@ -16,78 +15,18 @@ export const Home = () => {
     isLoading,
     isError,
     isFetchingNextPage,
-    loadMore,
-    loadPrevious,
-    canLoadMore,
-    canLoadPrevious,
+    hasNextPage,
     refetch,
-    resetWindow,
+    loadMoreRef,
     windowInfo,
   } = useListPokemons();
   const { t } = useLanguage();
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Configurar infinite scroll com melhorias
-  const { isScrollingUp, getDebugInfo, resetScroll } = useInfiniteScroll({
-    hasNextPage: canLoadMore,
-    hasPreviousPage: canLoadPrevious,
-    isFetching: isFetchingNextPage,
-    fetchNextPage: () => {
-      console.log(
-        "fetchNextPage chamado - canLoadMore:",
-        canLoadMore,
-        "isFetching:",
-        isFetchingNextPage
-      );
-      if (canLoadMore && !isFetchingNextPage) {
-        loadMore();
-      }
-    },
-    fetchPreviousPage: () => {
-      console.log(
-        "fetchPreviousPage chamado - canLoadPrevious:",
-        canLoadPrevious,
-        "isFetching:",
-        isFetchingNextPage
-      );
-      if (canLoadPrevious && !isFetchingNextPage) {
-        loadPrevious();
-      }
-    },
-    threshold: 200, // Ajustado para um valor mais conservador
-  });
-
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setSearchTerm(value);
   };
-
-  // Reset scroll quando componente monta ou dados mudam significativamente
-  useEffect(() => {
-    if (pokemons.length === 0 && !isLoading) {
-      resetScroll();
-    }
-  }, [pokemons.length, isLoading, resetScroll]);
-
-  // Debug info (remover em produção)
-  useEffect(() => {
-    if (process.env.NODE_ENV === "development") {
-      const debugInfo = getDebugInfo();
-      console.log("Debug Infinite Scroll:", {
-        ...debugInfo,
-        canLoadMore,
-        canLoadPrevious,
-        isFetchingNextPage,
-        pokemonsCount: pokemons.length,
-      });
-    }
-  }, [
-    getDebugInfo,
-    canLoadMore,
-    canLoadPrevious,
-    isFetchingNextPage,
-    pokemons.length,
-  ]);
 
   // Show loading state
   if (isLoading) {
@@ -110,15 +49,7 @@ export const Home = () => {
         <main className="flex-1 flex items-center justify-center">
           <div className="text-center">
             <p className="text-lg mb-4">{t("errorLoading")}</p>
-            <Button
-              onClick={() => {
-                resetScroll();
-                resetWindow();
-                refetch();
-              }}
-            >
-              {t("tryAgain")}
-            </Button>
+            <Button onClick={() => refetch()}>{t("tryAgain")}</Button>
           </div>
         </main>
         <Footer windowInfo={windowInfo} />
@@ -153,36 +84,27 @@ export const Home = () => {
 
           {pokemons.length > 0 ? (
             <>
-              {/* Loading indicator for previous data (top) */}
-              {isFetchingNextPage && isScrollingUp && canLoadPrevious && (
-                <div className="flex justify-center items-center py-4 mb-4">
-                  <Loading />
-                  <span className="ml-2 text-sm text-muted-foreground">
-                    Carregando pokémons anteriores...
-                  </span>
-                </div>
-              )}
-
               <PokemonGrid pokemons={pokemons} />
 
-              {/* Loading indicator for next data (bottom) */}
-              {isFetchingNextPage && !isScrollingUp && canLoadMore && (
-                <div className="flex justify-center items-center py-8">
-                  <Loading />
-                  <span className="ml-2 text-sm text-muted-foreground">
-                    Carregando mais pokémons...
-                  </span>
-                </div>
-              )}
-
-              {/* Indicador quando não há mais dados para carregar */}
-              {!canLoadMore && !isFetchingNextPage && (
-                <div className="flex justify-center items-center py-8">
+              {/* Loading indicator and intersection observer trigger */}
+              <div
+                ref={loadMoreRef}
+                className="flex justify-center items-center py-8"
+              >
+                {isFetchingNextPage && (
+                  <>
+                    <Loading />
+                    <span className="ml-2 text-sm text-muted-foreground">
+                      Carregando mais pokémons...
+                    </span>
+                  </>
+                )}
+                {!hasNextPage && !isFetchingNextPage && (
                   <span className="text-sm text-muted-foreground">
                     Todos os pokémons foram carregados!
                   </span>
-                </div>
-              )}
+                )}
+              </div>
             </>
           ) : (
             <div className="flex flex-col items-center justify-center py-4">
