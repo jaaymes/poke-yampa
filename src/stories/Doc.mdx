@@ -1,0 +1,353 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+export const ColorSwatch = ({ color, name, description }) => (
+  <div className="flex items-center gap-3 p-3 rounded-lg border bg-card hover:shadow-md transition-all duration-300">
+    <div
+      className="w-12 h-12 rounded-lg shadow-sm border"
+      style={{ backgroundColor: color }}
+    />
+    <div>
+      <h4 className="font-medium text-sm">{name}</h4>
+      <p className="text-xs ">{description}</p>
+      <code className="text-xs bg-muted text-white px-1 rounded">{color}</code>
+    </div>
+  </div>
+);
+
+export const BadgeItem = ({ title, color }) => (
+  <div className={`p-3 h-2 rounded-md backdrop-blur-sm cursor-pointer flex items-center justify-center transition-all duration-500 group ${color}`}>
+    <span className="text-sm font-normal text-white transition-colors">
+      {title}
+    </span>
+  </div>
+);
+
+export const ComponentShowcase = ({ title, description, children }) => (
+  <div className="p-6 rounded-xl border bg-card/50 backdrop-blur-sm hover:bg-card transition-all duration-500 group">
+    <h3 className="text-lg font-semibold mb-2 text-white transition-colors">
+      {title}
+    </h3>
+    <p className="text-sm  mb-4">{description}</p>
+    <div className="space-y-3">{children}</div>
+  </div>
+);
+
+export const AnimatedSection = ({ children, delay = 0 }) => (
+  <div
+    className="animate-fade-in-up opacity-0"
+    style={{
+      animationDelay: `${delay}ms`,
+      animationFillMode: "forwards",
+    }}
+  >
+    {children}
+  </div>
+);
+
+<Meta title="Design System - Poke Yampa" />
+
+<div className="max-w-6xl mx-auto flex flex-col gap-12">
+  <AnimatedSection>
+    <div className="text-center w-full flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+        🎨 Design System Poke Yampa
+      </h1>
+      <p className="text-lg  max-w-2xl mx-auto">
+        Sistema de design completo baseado no universo Pokémon, construído com <strong>ShadCN/UI</strong>, <strong>Vite</strong>, <strong>TypeScript</strong> e <strong>Tailwind CSS</strong>.
+      </p>
+      <div className="flex items-center justify-center gap-2 text-sm">
+        <span>📱 Totalmente Responsivo</span>
+        <span>•</span>
+        <span>✨ Animações Suaves</span>
+        <span>•</span>
+        <span>🎯 Acessível</span>
+      </div>
+    </div>
+  </AnimatedSection>
+
+<AnimatedSection delay={200}>
+  <section className="space-y-6 ">
+    <div className="text-center">
+      <h2 className="text-3xl font-bold mb-2">🎨 Paleta de Cores</h2>
+      <p className="">
+        Cores inspiradas nos tipos Pokémon e sistema de design moderno
+      </p>
+    </div>
+
+    <div className="flex flex-col gap-2">
+      <span className="font-semibold text-sm uppercase tracking-wide">
+        Cores Principais
+      </span>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2 ">
+        <ColorSwatch
+          color="oklch(0.7246 0.1326 220.86)"
+          name="Primary"
+          description="Cor principal do sistema"
+        />
+        <ColorSwatch
+          color="oklch(0.3063 0.0452 278.12)"
+          name="Secondary"
+          description="Cor secundária"
+        />
+        <ColorSwatch
+          color="oklch(0.577 0.245 27.325)"
+          name="Destructive"
+          description="Ações destrutivas"
+        />
+      </div>
+    </div>
+    <div className="flex flex-col gap-2">
+
+      <span className="font-semibold text-sm uppercase tracking-wide ">
+        Tipos Pokémon
+      </span>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <ColorSwatch color="#f97316" name="Fire" description="Tipo Fogo" />
+        <ColorSwatch color="#3b82f6" name="Water" description="Tipo Água" />
+        <ColorSwatch color="#22c55e" name="Grass" description="Tipo Planta" />
+        <ColorSwatch
+          color="#facc15"
+          name="Electric"
+          description="Tipo Elétrico"
+        />
+          <ColorSwatch
+          color="#a855f7"
+          name="Psychic"
+          description="Tipo Psíquico"
+        />
+        <ColorSwatch
+          color="#ef4444"
+          name="Fighting"
+          description="Tipo Lutador"
+        />
+        <ColorSwatch color="#64748b" name="Steel" description="Tipo Aço" />
+        <ColorSwatch color="#ec4899" name="Fairy" description="Tipo Fada" />
+      </div>
+    </div>
+
+  </section>
+</AnimatedSection>
+
+<AnimatedSection delay={400}>
+  <section className="space-y-8">
+    <div className="text-center">
+      <h2 className="text-3xl font-bold mb-2">🧩 Componentes</h2>
+      <p className="">Biblioteca completa de componentes reutilizáveis</p>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <ComponentShowcase
+        title="Buttons"
+        description="Botões com múltiplas variações e estados"
+      >
+        <div className="flex flex-wrap gap-2">
+          <button className="inline-flex  items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2">
+            Primary
+          </button>
+          <button className="inline-flex text-secondary items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
+            Outline
+          </button>
+          <button className="inline-flex text-white items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-destructive  shadow-xs hover:bg-destructive/90 h-9 px-4 py-2">
+            Destructive
+          </button>
+        </div>
+      </ComponentShowcase>
+
+      <ComponentShowcase
+        title="Cards"
+        description="Containers flexíveis para conteúdo"
+      >
+        <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl shadow-custom p-4 border">
+          <h4 className="font-medium">Pokemon Card</h4>
+          <p className="text-sm ">
+            Exemplo de card usado para exibir informações dos Pokémon
+          </p>
+        </div>
+      </ComponentShowcase>
+
+      <ComponentShowcase
+        title="Badges"
+        description="Etiquetas para categorização e status"
+      >
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+        <BadgeItem title="Fire" color="bg-pokemon-fire" />
+         <BadgeItem title="Water" color="bg-pokemon-water" />
+         <BadgeItem title="Grass" color="bg-pokemon-grass" />
+         <BadgeItem title="Electric" color="bg-pokemon-electric" />
+         <BadgeItem title="Psychic" color="bg-pokemon-psychic" />
+         <BadgeItem title="Fighting" color="bg-pokemon-fighting" />
+         <BadgeItem title="Steel" color="bg-pokemon-steel" />
+         <BadgeItem title="Fairy" color="bg-pokemon-fairy" />
+         
+        </div>
+      </ComponentShowcase>
+
+      <ComponentShowcase
+        title="Inputs"
+        description="Campos de entrada com validação"
+      >
+        <input
+          type="text"
+          placeholder="Buscar Pokémon..."
+          className="flex h-9 w-full min-w-0 rounded-lg border border-input bg-transparent px-3 py-1 text-sm shadow-xs transition-[color,box-shadow] outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]"
+        />
+      </ComponentShowcase>
+
+      <ComponentShowcase
+        title="Skeleton"
+        description="Estados de carregamento animados"
+      >
+        <div className="space-y-2">
+          <div className="animate-pulse rounded-md bg-muted/30 h-4 w-3/4"></div>
+          <div className="animate-pulse rounded-md bg-muted/30 h-4 w-1/2"></div>
+          <div className="animate-pulse rounded-md bg-muted/30 h-4 w-2/3"></div>
+        </div>
+      </ComponentShowcase>
+
+      <ComponentShowcase
+        title="Accordion"
+        description="Conteúdo expansível e colapsável"
+      >
+        <div className="border rounded-lg p-3">
+          <div className="flex items-center justify-between cursor-pointer">
+            <span className="font-medium text-sm">Detalhes do Pokémon</span>
+            <span className="">▼</span>
+          </div>
+        </div>
+      </ComponentShowcase>
+    </div>
+
+  </section>
+</AnimatedSection>
+
+<AnimatedSection delay={600}>
+  <section className="space-y-6">
+    <div className="text-center">
+      <h2 className="text-3xl font-bold mb-2">📱 Responsividade</h2>
+      <p className="">Design adaptável para todos os dispositivos</p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="text-center p-6 rounded-xl border bg-card/30 hover:bg-card/50 transition-all duration-300">
+        <div className="text-2xl mb-2">📱</div>
+        <h3 className="font-semibold mb-1">Mobile First</h3>
+        <p className="text-sm ">Otimizado para dispositivos móveis</p>
+      </div>
+
+      <div className="text-center p-6 rounded-xl border bg-card/30 hover:bg-card/50 transition-all duration-300">
+        <div className="text-2xl mb-2">💻</div>
+        <h3 className="font-semibold mb-1">Desktop</h3>
+        <p className="text-sm ">Experiência rica em telas grandes</p>
+      </div>
+
+      <div className="text-center p-6 rounded-xl border bg-card/30 hover:bg-card/50 transition-all duration-300">
+        <div className="text-2xl mb-2">📐</div>
+        <h3 className="font-semibold mb-1">Flexível</h3>
+        <p className="text-sm ">Adapta-se a qualquer tamanho</p>
+      </div>
+    </div>
+
+  </section>
+</AnimatedSection>
+
+<AnimatedSection delay={800}>
+  <section className="space-y-6">
+    <div className="text-center">
+      <h2 className="text-3xl font-bold mb-2">✨ Animações</h2>
+      <p className="">Transições suaves e interações fluidas</p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="p-6 rounded-xl border bg-gradient-to-br from-primary/10 to-blue-500/10 hover:from-primary/20 hover:to-blue-500/20 transition-all duration-500 group">
+        <h3 className="font-semibold mb-2 group-hover:scale-105 transition-transform">
+          Hover Effects
+        </h3>
+        <p className="text-sm ">Efeitos suaves ao passar o mouse</p>
+      </div>
+
+      <div className="p-6 rounded-xl border bg-gradient-to-br from-green-500/10 to-emerald-500/10 hover:from-green-500/20 hover:to-emerald-500/20 transition-all duration-500 group">
+        <h3 className="font-semibold mb-2 group-hover:scale-105 transition-transform">
+          Loading States
+        </h3>
+        <p className="text-sm ">Animações de carregamento fluidas</p>
+      </div>
+    </div>
+
+  </section>
+</AnimatedSection>
+
+<AnimatedSection delay={1000}>
+    <section className="text-center py-12 space-y-4">
+      <h2 className="text-2xl font-bold">🚀 Tecnologias</h2>
+      <div className="flex flex-wrap justify-center gap-3">
+        {[
+          'React', 'TypeScript', 'Vite', 'Tailwind CSS', 
+          'ShadCN/UI', 'Radix UI', 'Storybook', 'Vitest'
+        ].map((tech, index) => (
+          <span 
+            key={tech}
+            className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium hover:bg-primary/20 transition-colors cursor-default"
+            style={{ animationDelay: `${index * 100}ms` }}
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
+    </section>
+</AnimatedSection>
+</div>
+
+<style>
+  {`
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .animate-fade-in-up {
+      animation: none;
+      opacity: 1;
+    }
+  }
+  
+  /* Responsividade aprimorada */
+  @media (max-width: 768px) {
+    .grid-cols-1.md\:grid-cols-2.lg\:grid-cols-3 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .grid-cols-1.lg\:grid-cols-2 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .text-4xl {
+      font-size: 2rem;
+    }
+    
+    .text-3xl {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .p-6 {
+      padding: 1rem;
+    }
+    
+    .gap-6 {
+      gap: 1rem;
+    }
+  }
+  `}
+</style>

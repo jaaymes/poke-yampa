@@ -1,5 +1,5 @@
 import { useLanguage } from "@/hooks/use-language";
-import { Button } from "./button";
+import { Button } from "../button";
 
 export function Header() {
   const { currentLanguage, changeLanguage, t } = useLanguage();

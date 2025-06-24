@@ -4,7 +4,7 @@ import { useScreenSize } from "@/hooks/use-screen-size";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { MdSearch, MdSend } from "react-icons/md";
-import { PokemonCard } from "../../components/pokemon-card/pokemon-card";
+import { PokemonCard } from "../../components/pokemon-card";
 import { Button } from "../../components/ui/button";
 import { Header } from "../../components/ui/header";
 import { Input } from "../../components/ui/input";
