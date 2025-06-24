@@ -1,7 +1,7 @@
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { defineConfig } from "vitest/config";
+import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -86,26 +86,5 @@ export default defineConfig({
       "react-i18next",
     ],
     exclude: ["@tanstack/react-virtual"],
-  },
-  test: {
-    globals: true,
-    environment: "jsdom",
-    setupFiles: ["./src/test/setup.ts"],
-    include: ["src/**/*.{test,spec}.{js,ts,jsx,tsx}"],
-    exclude: [
-      "**/node_modules/**",
-      "**/dist/**",
-      "**/e2e/**",
-      "**/integration/**",
-      "**/*.e2e.*",
-      "**/*.integration.*"
-    ],
-    coverage: {
-      reporter: ["text", "json", "html"],
-      exclude: [
-        "node_modules/",
-        "src/test/setup.ts",
-      ],
-    },
   },
 });
