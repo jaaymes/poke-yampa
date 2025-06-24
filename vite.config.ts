@@ -88,11 +88,24 @@ export default defineConfig({
     exclude: ["@tanstack/react-virtual"],
   },
   test: {
-    browser: {
-      enabled: true,
-      provider: "playwright",
-      name: "chromium",
-      instances: [{ browser: "chromium" }],
+    globals: true,
+    environment: "jsdom",
+    setupFiles: ["./src/test/setup.ts"],
+    include: ["src/**/*.{test,spec}.{js,ts,jsx,tsx}"],
+    exclude: [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/e2e/**",
+      "**/integration/**",
+      "**/*.e2e.*",
+      "**/*.integration.*"
+    ],
+    coverage: {
+      reporter: ["text", "json", "html"],
+      exclude: [
+        "node_modules/",
+        "src/test/setup.ts",
+      ],
     },
   },
 });

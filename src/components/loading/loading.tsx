@@ -23,10 +23,12 @@ export function Loading({
         "flex flex-col items-center justify-center gap-3",
         className
       )}
+      data-testid="loading"
     >
       <div className="relative">
         {/* Pokéball loading animation */}
         <div
+          role="presentation"
           className={cn(
             "rounded-full border-4 border-primary border-t-transparent animate-spin",
             sizeClasses[size]
@@ -51,7 +53,11 @@ export function LoadingSkeleton() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {Array.from({ length: 8 }).map((_, i) => (
-        <div key={i} className="bg-card rounded-lg p-4 space-y-3">
+        <div
+          key={i}
+          role="presentation"
+          className="bg-card rounded-lg p-4 space-y-3"
+        >
           <div className="w-full h-32 bg-muted animate-pulse rounded" />
           <div className="space-y-2">
             <div className="h-4 bg-muted animate-pulse rounded w-3/4" />
@@ -67,6 +73,7 @@ export function LoadingSkeleton() {
 export function Spinner({ className }: { className?: string }) {
   return (
     <div
+      role="presentation"
       className={cn(
         "w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin",
         className

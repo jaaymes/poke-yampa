@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router";
-import { Loading } from "./components/loading";
+import { Loading } from "./components/loading/loading";
 import "./i18n";
 import { router } from "./routes";
 import { CACHE_TIME } from "./utils/enums";

@@ -4,14 +4,14 @@ import { useScreenSize } from "@/hooks/use-screen-size";
 import { typeColors } from "@/utils/color";
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 import { MdExpandMore } from "react-icons/md";
-import type { IPokemon } from "../interface/pokemon";
+import type { IPokemon } from "../../interface/pokemon";
+import { PokemonDetailDrawer } from "../pokemon-detail-drawer";
+import { PokemonStatsExpanded } from "../pokemon-stats-expanded";
+import { Badge } from "../ui/badge";
+import { Button } from "../ui/button";
+import { Card, CardContent } from "../ui/card";
+import { Image } from "../ui/image";
 import { PokemonCardSkeleton } from "./pokemon-card-skeleton";
-import { PokemonDetailDrawer } from "./pokemon-detail-drawer";
-import { PokemonStatsExpanded } from "./pokemon-stats-expanded";
-import { Badge } from "./ui/badge";
-import { Button } from "./ui/button";
-import { Card, CardContent } from "./ui/card";
-import { Image } from "./ui/image";
 
 interface PokemonCardProps {
   pokemon: IPokemon;
@@ -71,6 +71,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
         className="flex items-center justify-center min-h-[200px] "
         role="alert"
         aria-label={t("pokemonNotFound")}
+        data-testid="pokemon-not-found"
       >
         {t("pokemonNotFound")}
       </div>
@@ -93,6 +94,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
         avatar={sprites}
         isOpen={isDrawerOpen}
         onClose={handleDrawerClose}
+        data-testid="pokemon-detail-drawer"
       />
       <Card
         ref={cardRef}
@@ -100,6 +102,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
         role="article"
         aria-labelledby={`pokemon-${name}-title`}
         aria-describedby={`pokemon-${name}-stats`}
+        data-testid="pokemon-card"
       >
         <CardContent className="p-4 flex flex-col">
           {/* Header section with Pokemon info and image */}
@@ -110,6 +113,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
               <h3
                 id={`pokemon-${name}-title`}
                 className="text-lg font-bold capitalize leading-[1.5]"
+                data-testid="pokemon-name"
               >
                 {name}
               </h3>
@@ -119,6 +123,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
                 className="flex flex-wrap gap-2"
                 role="list"
                 aria-label={t("pokemonTypes")}
+                data-testid="pokemon-types"
               >
                 {types.map((type) => (
                   <Badge
@@ -130,6 +135,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
                     }`}
                     role="listitem"
                     aria-label={`${t("type")}: ${t(type.type.name)}`}
+                    data-testid={`pokemon-type-${type.type.name}`}
                   >
                     {t(type.type.name)}
                   </Badge>
@@ -142,6 +148,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
                   id={`pokemon-${name}-stats`}
                   className="flex items-center gap-2"
                   aria-label={`${t("totalStats")}: ${totalStats}`}
+                  data-testid="pokemon-total-stats"
                 >
                   <span className="text-sm font-normal leading-[1.4]">
                     {t("total")}
@@ -163,6 +170,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
                 width={96}
                 height={96}
                 showLoadingIndicator={true}
+                data-testid="pokemon-image"
               />
             </div>
           </div>
@@ -179,6 +187,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
                 aria-label={`${
                   isExpanded ? t("collapse") : t("expand")
                 } ${name} ${t("stats")}`}
+                data-testid="expand-button"
               >
                 {t("expand")}
                 <MdExpandMore
@@ -194,6 +203,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
               size="sm"
               onClick={handleDrawerOpen}
               aria-label={`${t("viewDetails")} ${name}`}
+              data-testid="view-details-button"
             >
               {t("viewDetails")}
             </Button>
@@ -205,6 +215,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
               id={`pokemon-${name}-expanded-stats`}
               role="region"
               aria-label={`${name} ${t("detailedStats")}`}
+              data-testid="expanded-stats"
             >
               <PokemonStatsExpanded stats={stats} />
             </div>
