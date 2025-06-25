@@ -119,13 +119,9 @@ export function PokemonDetailDrawer({
         <span className="text-sm font-bold text-[#2A2D46]">
           {t("abilities")}
         </span>
-        {/* <span className="text-sm text-[#5D5F7C]">Overgrow</span>
-        <span className="text-sm text-[#5D5F7C]">Chlorophyll</span> */}
-        {abilities.map((ability) => (
-          <span key={ability.ability.name} className="text-sm text-[#5D5F7C]">
-            {ability.ability.name}
-          </span>
-        ))}
+        <span className="text-sm text-[#5D5F7C]">
+          {abilities.map((ability) => t(ability.ability.name)).join(", ")}
+        </span>
       </div>
 
       {/* Height and Weight Section */}
@@ -192,18 +188,6 @@ export function PokemonDetailDrawer({
               avatar.other["official-artwork"].front_shiny,
             ]}
           />
-          {/* <Image
-            src={
-              avatar.other["official-artwork"].front_default ||
-              avatar.front_default ||
-              ""
-            }
-            alt={name}
-            className="h-56 w-56 object-contain"
-            priority={true}
-            width={224}
-            height={224}
-          /> */}
         </div>
       </div>
       <Tabs defaultValue="status">

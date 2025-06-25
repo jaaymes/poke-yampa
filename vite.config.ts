@@ -108,10 +108,6 @@ export default defineConfig({
     hmr: {
       overlay: false,
     },
-    fs: {
-      // Permitir servir arquivos de fora do diretório raiz
-      allow: [path.resolve(__dirname, "public")],
-    },
   },
   optimizeDeps: {
     include: [

@@ -1,3 +1,0 @@
-# Redirecionamentos para o Netlify/Vercel
-/docs              /docs/index.html            200
-/docs/*            /docs/:splat                200
