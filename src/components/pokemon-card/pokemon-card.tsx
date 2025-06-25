@@ -61,6 +61,17 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
     setIsDrawerOpen(false);
   }, []);
 
+  // Handle copy pokemon name
+  const handleCopyName = useCallback(
+    (name: string) => (event: React.MouseEvent) => {
+      event.stopPropagation();
+      navigator.clipboard.writeText(name).catch((error) => {
+        console.error("Failed to copy name:", error);
+      });
+    },
+    []
+  );
+
   if (pokemonDetailQuery.isLoading) {
     return <PokemonCardSkeleton />;
   }
@@ -89,6 +100,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
     <>
       <PokemonDetailDrawer
         name={name}
+        abilities={pokemonDetailQuery.data.abilities}
         types={types}
         stats={stats}
         avatar={sprites}
@@ -112,8 +124,10 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
               {/* Name */}
               <h3
                 id={`pokemon-${name}-title`}
-                className="text-lg font-bold capitalize leading-[1.5]"
+                className="text-lg font-bold capitalize leading-[1.5] flex items-center gap-2 cursor-pointer group"
                 data-testid="pokemon-name"
+                onClick={handleCopyName(name)}
+                title={t("clickToCopy")}
               >
                 {name}
               </h3>

@@ -1,9 +1,11 @@
 import { Loading } from "@/components/loading/loading";
+import { PokemonDetailDrawer } from "@/components/pokemon-detail-drawer";
 import { useLanguage } from "@/hooks/use-language";
 import { useScreenSize } from "@/hooks/use-screen-size";
+import { useSearchPokemon } from "@/hooks/use-search-pokemon";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { useEffect, useMemo, useRef, useState } from "react";
-import { MdSearch, MdSend } from "react-icons/md";
+import { useEffect, useMemo, useRef } from "react";
+import { MdClear, MdSearch, MdSend } from "react-icons/md";
 import { PokemonCard } from "../../components/pokemon-card";
 import { Button } from "../../components/ui/button";
 import { Header } from "../../components/ui/header";
@@ -11,65 +13,87 @@ import { Input } from "../../components/ui/input";
 import { useListPokemons } from "../../hooks/use-list-pokemons";
 
 export const Home = () => {
-  const { pokemonsQuery } = useListPokemons();
+  const {
+    searchTerm,
+    activeSearch,
+    itemHeights,
+    setSearchTerm,
+
+    pokemonsQuery,
+    filteredPokemon,
+
+    handleSearch,
+    handleClearSearch,
+    updateItemHeight,
+
+    getColumns,
+    shouldFetchNextPage,
+    getEstimatedSize,
+  } = useListPokemons();
+
+  // Add search pokemon functionality
+  const {
+    isDetailOpen,
+    searchQuery,
+    handleSearchPokemon,
+    openDetailDrawer,
+    closeDetailDrawer,
+  } = useSearchPokemon();
+
   const { t } = useLanguage();
   const { isMobile, isTablet, isDesktop } = useScreenSize();
-  const [searchTerm, setSearchTerm] = useState("");
   const parentRef = useRef<HTMLDivElement>(null);
-  const [itemHeights, setItemHeights] = useState<Record<number, number> | null>(
-    null
-  );
-  const allPokemon = useMemo(() => {
-    return pokemonsQuery.data?.pages.flatMap((page) => page.results) ?? [];
-  }, [pokemonsQuery.data]);
 
   // Calcular número de colunas baseado no tamanho da tela
   const columns = useMemo(() => {
-    if (isMobile) return 1;
-    if (isTablet) return 2;
-    return 3;
-  }, [isMobile, isTablet]);
+    return getColumns(isMobile, isTablet);
+  }, [getColumns, isMobile, isTablet]);
 
   const virtualizer = useVirtualizer({
-    count: Math.ceil(allPokemon.length / columns),
+    count: Math.ceil(filteredPokemon.length / columns),
     getScrollElement: () => parentRef.current,
-    estimateSize: (index) => itemHeights?.[index] || 200,
-    overscan: 3, // Aumentar overscan para melhor performance
+    estimateSize: getEstimatedSize,
+    overscan: 5, // Aumentar overscan para melhor performance
     measureElement: (element) => element?.getBoundingClientRect().height,
   });
 
-  const virtualItems = virtualizer.getVirtualItems();
-
-  const handleHeightChange = (index: number, height: number) => {
-    setItemHeights((prev) => {
-      const adjustedHeight = height + 16; // Adicionar padding
-      if (prev?.[index] !== adjustedHeight) {
-        const newHeights = { ...prev, [index]: adjustedHeight };
-        // Força a remeasure do virtualizer
-        setTimeout(() => virtualizer.measure(), 0);
-        return newHeights;
-      }
-      return prev;
-    });
+  // Handler otimizado para mudança de altura
+  const handleHeightChangeOptimized = (index: number, height: number) => {
+    updateItemHeight(index, height, () => virtualizer.measure());
   };
 
-  // Debug: mostrar quantos itens estão sendo renderizados
-  useEffect(() => {
-    console.log(`🎨 Renderizando ${virtualItems.length} rows virtuais`);
-    console.log(`📊 Total de Pokémon carregados: ${allPokemon.length}`);
-    console.log(`🔍 Colunas: ${columns}`);
-    console.log(
-      `📱 Mobile: ${isMobile}, Tablet: ${isTablet}, Desktop: ${isDesktop}`
-    );
-  }, [
-    virtualItems.length,
-    allPokemon.length,
-    columns,
-    isMobile,
-    isTablet,
-    isDesktop,
-  ]);
+  // Handler para Enter no input
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSearch();
+    }
+  };
 
+  // Handler para buscar Pokémon específico
+  const handleSearchSpecificPokemon = () => {
+    if (searchTerm.trim()) {
+      handleSearchPokemon(searchTerm);
+      handleSearch(); // Manter a funcionalidade original
+    }
+  };
+
+  // Efeito para abrir o drawer quando a busca for bem-sucedida
+  useEffect(() => {
+    if (searchQuery.isSuccess) {
+      openDetailDrawer();
+    }
+  }, [searchQuery.isSuccess, openDetailDrawer]);
+
+  // Mostrar mensagem de erro quando a busca falhar
+  useEffect(() => {
+    if (searchQuery.isError) {
+      // Pode adicionar uma notificação de erro aqui se tiver um componente de toast
+      console.error("Erro ao buscar Pokémon:", searchQuery.error);
+    }
+  }, [searchQuery.isError, searchQuery.error]);
+
+  // Efeito para carregar mais dados quando necessário
   useEffect(() => {
     const [lastItem] = [...virtualizer.getVirtualItems()].reverse();
 
@@ -77,24 +101,32 @@ export const Home = () => {
       return;
     }
 
+    const totalRows = Math.ceil(filteredPokemon.length / columns);
+
     if (
-      lastItem.index >= Math.ceil(allPokemon.length / columns) - 1 &&
-      pokemonsQuery.hasNextPage &&
-      !pokemonsQuery.isFetchingNextPage &&
-      !searchTerm
+      shouldFetchNextPage(
+        lastItem.index,
+        totalRows,
+        pokemonsQuery.hasNextPage,
+        pokemonsQuery.isFetchingNextPage,
+        activeSearch
+      )
     ) {
       pokemonsQuery.fetchNextPage();
     }
-  }, [allPokemon.length, virtualizer, searchTerm, pokemonsQuery, columns]);
+  }, [
+    virtualizer,
+    filteredPokemon.length,
+    columns,
+    activeSearch,
+    pokemonsQuery,
+    shouldFetchNextPage,
+  ]);
 
+  // Efeito para remeasure quando alturas mudam
   useEffect(() => {
     virtualizer.measure();
   }, [itemHeights, virtualizer]);
-
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setSearchTerm(value);
-  };
 
   // Show loading state
   if (pokemonsQuery.isLoading) {
@@ -104,7 +136,6 @@ export const Home = () => {
         <main className="flex-1 flex items-center justify-center">
           <Loading />
         </main>
-        {/* <Footer windowInfo={windowInfo} /> */}
       </div>
     );
   }
@@ -125,7 +156,6 @@ export const Home = () => {
             </Button>
           </div>
         </main>
-        {/* <Footer windowInfo={windowInfo} /> */}
       </div>
     );
   }
@@ -139,25 +169,40 @@ export const Home = () => {
             <div className="relative w-full max-w-sm">
               <MdSearch className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-primary" />
               <Input
-                type="search"
                 placeholder={t("searchPlaceholder")}
-                className="bg-card pl-10 pr-12 h-11 placeholder:text-primary"
+                className="bg-card pl-10 pr-20 h-11 placeholder:text-primary"
                 value={searchTerm}
-                onChange={handleSearchChange}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyDown={handleKeyPress}
               />
+              {/* Botão de limpar busca */}
+              {(searchTerm || activeSearch) && (
+                <Button
+                  onClick={handleClearSearch}
+                  aria-label={t("clear")}
+                  variant="ghost"
+                  size="icon"
+                  className="absolute right-10 top-1/2 -translate-y-1/2 cursor-pointer hover:text-primary h-8 w-8"
+                >
+                  <MdClear className="size-4" />
+                </Button>
+              )}
+              {/* Botão de buscar */}
               <Button
-                aria-label={t("searchButton")}
-                variant="link"
+                onClick={handleSearchSpecificPokemon}
+                aria-label={t("search")}
+                variant="ghost"
                 size="icon"
-                className="absolute right-1 top-1/2 -translate-y-1/2 cursor-pointer hover:text-primary"
+                className="absolute right-1 top-1/2 -translate-y-1/2 cursor-pointer hover:text-primary h-8 w-8"
+                disabled={pokemonsQuery.isFetching || searchQuery.isFetching}
               >
                 <MdSend className="size-4" />
               </Button>
             </div>
           </div>
 
-          {allPokemon.length > 0 ? (
-            <div ref={parentRef} className={`overflow-auto max-h-[85vh]`}>
+          {filteredPokemon.length > 0 ? (
+            <div ref={parentRef} className={`overflow-auto max-h-[88vh]`}>
               <div
                 style={{
                   height: `${virtualizer.getTotalSize()}px`,
@@ -169,9 +214,12 @@ export const Home = () => {
                   const startIndex = virtualItem.index * columns;
                   const endIndex = Math.min(
                     startIndex + columns,
-                    allPokemon.length
+                    filteredPokemon.length
                   );
-                  const rowPokemons = allPokemon.slice(startIndex, endIndex);
+                  const rowPokemons = filteredPokemon.slice(
+                    startIndex,
+                    endIndex
+                  );
 
                   return (
                     <div
@@ -199,7 +247,10 @@ export const Home = () => {
                           <PokemonCard
                             pokemon={pokemon}
                             onHeightChange={(height) =>
-                              handleHeightChange(virtualItem.index, height)
+                              handleHeightChangeOptimized(
+                                virtualItem.index,
+                                height
+                              )
                             }
                           />
                         </div>
@@ -212,11 +263,32 @@ export const Home = () => {
           ) : (
             <div className="flex flex-col items-center justify-center py-4">
               <p className="mb-4 text-lg">{t("pokemonNotFound")}</p>
+              {activeSearch && (
+                <Button
+                  onClick={handleClearSearch}
+                  variant="outline"
+                  aria-label={t("clear")}
+                >
+                  {t("clear")} {t("search")}
+                </Button>
+              )}
             </div>
           )}
         </section>
       </main>
-      {/* <Footer windowInfo={windowInfo} /> */}
+
+      {/* Pokemon Detail Drawer */}
+      {isDetailOpen && searchQuery.data && (
+        <PokemonDetailDrawer
+          isOpen={isDetailOpen}
+          abilities={searchQuery.data.abilities}
+          onClose={closeDetailDrawer}
+          name={searchQuery.data.name}
+          types={searchQuery.data.types}
+          stats={searchQuery.data.stats}
+          avatar={searchQuery.data.sprites}
+        />
+      )}
     </div>
   );
 };

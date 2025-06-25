@@ -6,7 +6,13 @@ import { MdClose } from "react-icons/md";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { Dialog, DialogContent } from "./ui/dialog";
-import { Drawer, DrawerClose, DrawerContent, DrawerHeader } from "./ui/drawer";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+} from "./ui/drawer";
 import { Image } from "./ui/image";
 import { Label } from "./ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
@@ -16,6 +22,7 @@ interface PokemonDetailDrawerProps {
   stats: PokemonDetail["stats"];
   name: PokemonDetail["name"];
   avatar: PokemonDetail["sprites"];
+  abilities: PokemonDetail["abilities"];
   isOpen: boolean;
   onClose: () => void;
 }
@@ -25,6 +32,7 @@ export function PokemonDetailDrawer({
   stats,
   name,
   avatar,
+  abilities,
   isOpen,
   onClose,
 }: PokemonDetailDrawerProps) {
@@ -99,33 +107,34 @@ export function PokemonDetailDrawer({
   );
 
   const renderDetailsContent = () => (
-    <div>
-      <div className="space-y-3">
-        <h3 className="text-sm font-medium ">{t("abilities")}</h3>
-        <div className="space-y-2">
-          {/* Note: Using placeholder abilities as the current interface doesn't include abilities data */}
-          {/* In a real implementation, you would fetch abilities from PokemonDetail */}
-          <div className="text-sm ">Overgrow</div>
-          <div className="text-sm ">Chlorophyll</div>
-        </div>
+    <div className="space-y-4">
+      {/* Abilities Section */}
+      <div className="flex items-stretch gap-2">
+        <span className="text-sm font-bold text-[#2A2D46]">
+          {t("abilities")}
+        </span>
+        {/* <span className="text-sm text-[#5D5F7C]">Overgrow</span>
+        <span className="text-sm text-[#5D5F7C]">Chlorophyll</span> */}
+        {abilities.map((ability) => (
+          <span key={ability.ability.name} className="text-sm text-[#5D5F7C]">
+            {ability.ability.name}
+          </span>
+        ))}
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="space-y-1">
-          <span className="text-sm font-medium ">{t("height")}</span>
-          <div className="text-sm ">
-            {/* Note: Using placeholder height as the current interface doesn't include height data */}
-            {/* In a real implementation, you would use pokemon.height from PokemonDetail */}
-            7
-          </div>
+      {/* Height and Weight Section */}
+      <div className="flex gap-4">
+        <div className="flex gap-2 flex-1">
+          <span className="text-sm font-bold text-[#2A2D46]">
+            {t("height")}
+          </span>
+          <span className="text-sm text-[#5D5F7C]">7</span>
         </div>
-        <div className="space-y-1">
-          <span className="text-sm font-medium ">{t("weight")}</span>
-          <div className="text-sm ">
-            {/* Note: Using placeholder weight as the current interface doesn't include weight data */}
-            {/* In a real implementation, you would use pokemon.weight from PokemonDetail */}
-            69
-          </div>
+        <div className="flex gap-2 flex-1">
+          <span className="text-sm font-bold text-[#2A2D46]">
+            {t("weight")}
+          </span>
+          <span className="text-sm text-[#5D5F7C]">69</span>
         </div>
       </div>
     </div>
@@ -195,11 +204,6 @@ export function PokemonDetailDrawer({
         <TabsContent value="status">{renderStatusContent()}</TabsContent>
         <TabsContent value="details">{renderDetailsContent()}</TabsContent>
       </Tabs>
-
-      {/* Tab content */}
-      {/* {activeTab === "status" ? renderStatusContent() : renderDetailsContent()} */}
-      {/* Tab buttons */}
-      {/* {renderTabButtons()} */}
     </div>
   );
 
@@ -207,7 +211,8 @@ export function PokemonDetailDrawer({
   if (isMobile) {
     return (
       <Drawer open={isOpen} onOpenChange={onClose} direction="bottom">
-        <DrawerContent className="bg-[#F5FAFB] rounded-t-3xl max-h-[90vh]">
+        <DrawerContent>
+          <DrawerTitle></DrawerTitle>
           <DrawerHeader className="relative pb-0">
             <DrawerClose asChild>
               <Button

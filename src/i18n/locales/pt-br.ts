@@ -3,7 +3,8 @@ export const ptBR = {
   appName: "PokéYampa",
 
   // Home page
-  searchPlaceholder: "Buscar Pokémon...",
+  searchPlaceholder: "Buscar por nome ou número",
+  searchButton: "Buscar",
   loadMore: "Carregar mais",
   loading: "Carregando...",
   previous: "Anterior",
@@ -11,6 +12,7 @@ export const ptBR = {
   showing: "Mostrando",
   of: "de",
   pokemons: "Pokémons",
+  searching: "Buscando",
 
   // Pokemon details
   height: "Altura",
@@ -76,4 +78,5 @@ export const ptBR = {
   close: "Fechar",
   search: "Buscar",
   clear: "Limpar",
+  swipeToNavigate: "Deslize para navegar entre as abas",
 };

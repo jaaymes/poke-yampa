@@ -2,8 +2,12 @@
 const CACHE_NAME = 'poke-yampa-v1';
 const STATIC_CACHE_URLS = [
   '/',
-  '/manifest.json',
-  '/favicon.svg',
+  '/images/favicon.ico',
+  '/images/favicon-32x32.png',
+  '/images/favicon-16x16.png',
+  '/images/apple-touch-icon.png',
+  '/images/android-chrome-192x192.png',
+  '/images/android-chrome-512x512.png',
   '/offline.html'
 ];
 

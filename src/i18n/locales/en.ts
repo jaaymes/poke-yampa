@@ -3,7 +3,8 @@ export const en = {
   appName: "PokéYampa",
 
   // Home page
-  searchPlaceholder: "Search Pokémon...",
+  searchPlaceholder: "Search by name or number",
+  searchButton: "Search",
   loadMore: "Load more",
   loading: "Loading...",
   previous: "Previous",
@@ -30,7 +31,14 @@ export const en = {
   specialDefenseShort: "Sp. def",
   total: "Total",
   expand: "Expand",
+  collapse: "Collapse",
   viewDetails: "View details",
+  pokemonTypes: "Pokémon Types",
+  type: "Type",
+  totalStats: "Total stats",
+  sprite: "sprite",
+  detailedStats: "detailed stats",
+
   // Pokemon types
   normal: "Normal",
   fire: "Fire",
@@ -55,6 +63,8 @@ export const en = {
   errorLoading: "Error loading data",
   pokemonNotFound: "No Pokémon found",
   tryAgain: "Try again",
+  error: "Error",
+  imageLoadError: "Error loading image",
 
   // Footer
   allRightsReserved: "All rights reserved",
@@ -67,4 +77,6 @@ export const en = {
   close: "Close",
   search: "Search",
   clear: "Clear",
+  searching: "Searching",
+  swipeToNavigate: "Swipe to navigate between tabs",
 };
