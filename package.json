@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "pnpm run build-storybook-docs && vite",
+    "build": "pnpm run build-storybook-docs && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest --config vitest.config.ts",
@@ -14,11 +14,12 @@
     "test:ui": "vitest --ui --config vitest.config.ts",
     "analyze": "vite-bundle-analyzer dist/stats.json",
     "lighthouse": "lighthouse http://localhost:4173 --output json --output-path ./lighthouse-report.json",
-    "perf": "npm run build && npm run preview & npm run lighthouse",
+    "perf": "pnpm run build && pnpm run preview & pnpm run lighthouse",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "build-storybook-docs": "./scripts/build-storybook-docs.sh",
     "chromatic": "npx chromatic --project-token=chpt_5188b4c3cbde472",
-    "clean:full": "rm -rf node_modules && rm -rf dist && rm -rf pnpm-lock.yaml"
+    "clean:full": "rm -rf node_modules && rm -rf dist && rm -rf pnpm-lock.yaml && rm -rf storybook-static && rm -rf public/docs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",

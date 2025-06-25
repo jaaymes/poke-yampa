@@ -48,11 +48,40 @@ src/
 
 ## Desenvolvimento
 
-Para adicionar novos componentes shadcn/ui:
+```bash
+# Iniciar servidor de desenvolvimento
+pnpm dev
+
+# Iniciar Storybook
+pnpm storybook
+
+# Construir para produção
+pnpm build
+```
+
+## Storybook como Documentação (/docs)
+
+Este projeto inclui o Storybook integrado como uma rota `/docs` dentro da aplicação. Isso permite acessar a documentação dos componentes diretamente na aplicação em produção ou desenvolvimento.
+
+### Como usar
 
 ```bash
-pnpm dlx shadcn-ui@latest add [nome-do-componente]
+# Construir o Storybook e copiá-lo para public/docs
+pnpm build-storybook-docs
+
+# Iniciar o servidor de desenvolvimento com o Storybook integrado
+pnpm dev-with-docs
+
+# Construir para produção incluindo o Storybook
+pnpm build-with-docs
 ```
+
+### Acessando o Storybook
+
+- Em desenvolvimento: http://localhost:5173/docs
+- Em produção: https://seu-site.com/docs
+
+Isso permite que você compartilhe a documentação dos componentes junto com a aplicação em produção, facilitando o acesso para designers, desenvolvedores e stakeholders.
 
 ## Licença
 
