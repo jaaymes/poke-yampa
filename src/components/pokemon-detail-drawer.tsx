@@ -3,9 +3,15 @@ import { useScreenSize } from "@/hooks/use-screen-size";
 import type { PokemonDetail } from "@/interface/pokemon-detail";
 import { typeColors } from "@/utils/color";
 import { MdClose } from "react-icons/md";
+import { CarouselImage } from "./carousel-image";
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { Dialog, DialogContent } from "./ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+} from "./ui/dialog";
 import {
   Drawer,
   DrawerClose,
@@ -13,7 +19,6 @@ import {
   DrawerHeader,
   DrawerTitle,
 } from "./ui/drawer";
-import { Image } from "./ui/image";
 import { Label } from "./ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
@@ -38,6 +43,7 @@ export function PokemonDetailDrawer({
 }: PokemonDetailDrawerProps) {
   const { isMobile } = useScreenSize();
   const { t } = useLanguage();
+  const pokemonDescriptionId = `pokemon-${name}-description`;
 
   const getTypeTranslation = (type: string) => {
     const typeKey = type.toLowerCase() as keyof typeof typeColors;
@@ -174,7 +180,19 @@ export function PokemonDetailDrawer({
       <div className="space-y-4">
         {/* Pokemon Image */}
         <div className="flex justify-center mb-6">
-          <Image
+          <CarouselImage
+            images={[
+              avatar.other["official-artwork"].front_default,
+              avatar.front_default,
+              avatar.other["dream_world"].front_default,
+              avatar.other["home"].front_default,
+              avatar.other["home"].front_female,
+              avatar.other["home"].front_shiny,
+              avatar.other["home"].front_shiny_female,
+              avatar.other["official-artwork"].front_shiny,
+            ]}
+          />
+          {/* <Image
             src={
               avatar.other["official-artwork"].front_default ||
               avatar.front_default ||
@@ -185,7 +203,7 @@ export function PokemonDetailDrawer({
             priority={true}
             width={224}
             height={224}
-          />
+          /> */}
         </div>
       </div>
       <Tabs defaultValue="status">
@@ -201,8 +219,14 @@ export function PokemonDetailDrawer({
             </Button>
           </TabsTrigger>
         </TabsList>
-        <TabsContent value="status">{renderStatusContent()}</TabsContent>
-        <TabsContent value="details">{renderDetailsContent()}</TabsContent>
+        <div className="h-42">
+          <TabsContent value="status" className="mt-2 h-full">
+            {renderStatusContent()}
+          </TabsContent>
+          <TabsContent value="details" className="mt-2 h-full">
+            {renderDetailsContent()}
+          </TabsContent>
+        </div>
       </Tabs>
     </div>
   );
@@ -211,9 +235,9 @@ export function PokemonDetailDrawer({
   if (isMobile) {
     return (
       <Drawer open={isOpen} onOpenChange={onClose} direction="bottom">
-        <DrawerContent>
-          <DrawerTitle></DrawerTitle>
+        <DrawerContent data-testid="pokemon-detail-drawer">
           <DrawerHeader className="relative pb-0">
+            <DrawerTitle className="sr-only">{name}</DrawerTitle>
             <DrawerClose asChild>
               <Button
                 variant="ghost"
@@ -233,20 +257,12 @@ export function PokemonDetailDrawer({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-[#F5FAFB] max-w-[520px] rounded-3xl border-0 p-0">
-        <div className="relative p-6">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={onClose}
-            className="absolute right-4 top-4 size-10 rounded-full  z-10"
-            aria-label={t("close")}
-          >
-            <MdClose />
-          </Button>
-
-          {renderContent()}
-        </div>
+      <DialogContent>
+        <DialogTitle className="sr-only">{name}</DialogTitle>
+        <DialogDescription id={pokemonDescriptionId} className="sr-only">
+          {t("pokemonDetails")} {name}
+        </DialogDescription>
+        <div className="relative p-6">{renderContent()}</div>
       </DialogContent>
     </Dialog>
   );

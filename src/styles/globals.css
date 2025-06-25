@@ -130,5 +130,16 @@
   ::-webkit-scrollbar-corner {
     @apply bg-primary;
   }
+  
+  /* Fixed size for Pokemon detail drawer and dialog */
+  .fixed-size-drawer {
+    /* height: auto;
+    max-height: 90vh; */
+    @apply h-auto max-h-[100vh];
+  }
+  
+  .fixed-size-dialog {
+    @apply h-auto min-h-[600px];
+  }
 }
 /* End Generation Here */

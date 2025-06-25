@@ -19,10 +19,16 @@ describe("Drawer", () => {
         <DrawerTrigger data-testid="drawer-trigger">Abrir Drawer</DrawerTrigger>
         <DrawerContent data-testid="drawer-content">
           <DrawerHeader>
-            <DrawerTitle data-testid="drawer-title">
+            <DrawerTitle
+              data-testid="drawer-title"
+              aria-describedby={undefined}
+            >
               Título do Drawer
             </DrawerTitle>
-            <DrawerDescription data-testid="drawer-description">
+            <DrawerDescription
+              data-testid="drawer-description"
+              aria-describedby={undefined}
+            >
               Descrição do drawer
             </DrawerDescription>
           </DrawerHeader>
@@ -54,10 +60,16 @@ describe("Drawer", () => {
         <DrawerTrigger>Abrir</DrawerTrigger>
         <DrawerContent>
           <DrawerHeader data-testid="drawer-header">
-            <DrawerTitle data-testid="drawer-title">
+            <DrawerTitle
+              data-testid="drawer-title"
+              aria-describedby={undefined}
+            >
               Título do Drawer
             </DrawerTitle>
-            <DrawerDescription data-testid="drawer-description">
+            <DrawerDescription
+              data-testid="drawer-description"
+              aria-describedby={undefined}
+            >
               Descrição do drawer
             </DrawerDescription>
           </DrawerHeader>
@@ -79,6 +91,7 @@ describe("Drawer", () => {
       <Drawer open={true}>
         <DrawerTrigger>Abrir</DrawerTrigger>
         <DrawerContent>
+          <DrawerTitle className="sr-only" />
           <DrawerFooter data-testid="drawer-footer">
             <DrawerClose data-testid="drawer-close">Fechar</DrawerClose>
           </DrawerFooter>
@@ -113,7 +126,11 @@ describe("Drawer", () => {
       <Drawer open={true}>
         <DrawerTrigger>Abrir</DrawerTrigger>
         <DrawerContent>
-          <DrawerDescription data-testid="drawer-description">
+          <DrawerTitle className="sr-only" />
+          <DrawerDescription
+            data-testid="drawer-description"
+            aria-describedby={undefined}
+          >
             Esta é uma descrição de teste
           </DrawerDescription>
         </DrawerContent>

@@ -91,18 +91,18 @@ const PokemonVersionSpritesExtendedSchema = PokemonVersionSpritesSchema.extend({
 // Schema para sprites de outras fontes
 const PokemonOtherSpritesSchema = z.object({
   dream_world: z.object({
-    front_default: z.string().url().nullable(),
-    front_female: z.string().url().nullable(),
+    front_default: z.string().url(),
+    front_female: z.string().url(),
   }),
   home: z.object({
-    front_default: z.string().url().nullable(),
-    front_female: z.string().url().nullable(),
-    front_shiny: z.string().url().nullable(),
-    front_shiny_female: z.string().url().nullable(),
+    front_default: z.string().url(),
+    front_female: z.string().url(),
+    front_shiny: z.string().url(),
+    front_shiny_female: z.string().url(),
   }),
   "official-artwork": z.object({
-    front_default: z.string().url().nullable(),
-    front_shiny: z.string().url().nullable(),
+    front_default: z.string().url(),
+    front_shiny: z.string().url(),
   }),
   showdown: z.object({
     back_default: z.string().url().nullable(),
