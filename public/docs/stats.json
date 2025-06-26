@@ -1,0 +1,3876 @@
+[
+  {
+    "filename": "assets/Header-Ck-SSN7O.css",
+    "label": "assets/Header-Ck-SSN7O.css",
+    "parsedSize": 514,
+    "mapSize": 0,
+    "statSize": 514,
+    "gzipSize": 302,
+    "brotliSize": 207,
+    "source": [],
+    "stats": [],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": []
+  },
+  {
+    "filename": "assets/Button-B2efaGtC.css",
+    "label": "assets/Button-B2efaGtC.css",
+    "parsedSize": 522,
+    "mapSize": 0,
+    "statSize": 522,
+    "gzipSize": 292,
+    "brotliSize": 207,
+    "source": [],
+    "stats": [],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": []
+  },
+  {
+    "filename": "assets/Page-CeeQJVdd.css",
+    "label": "assets/Page-CeeQJVdd.css",
+    "parsedSize": 913,
+    "mapSize": 0,
+    "statSize": 913,
+    "gzipSize": 385,
+    "brotliSize": 289,
+    "source": [],
+    "stats": [],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": []
+  },
+  {
+    "filename": "assets/iframe-C77PrUXM.css",
+    "label": "assets/iframe-C77PrUXM.css",
+    "parsedSize": 68941,
+    "mapSize": 0,
+    "statSize": 68941,
+    "gzipSize": 11552,
+    "brotliSize": 9850,
+    "source": [],
+    "stats": [],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": []
+  },
+  {
+    "filename": "assets/button.stories-D01scqPE.js",
+    "label": "assets/button.stories-D01scqPE.js",
+    "parsedSize": 2884,
+    "mapSize": 5055,
+    "statSize": 4162,
+    "gzipSize": 812,
+    "brotliSize": 672,
+    "source": [
+      {
+        "parsedSize": 2884,
+        "gzipSize": 812,
+        "brotliSize": 672,
+        "label": "Users/jaaymes/src/components/ui/button/button.stories.tsx",
+        "filename": "Users/jaaymes/src/components/ui/button/button.stories.tsx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 4162,
+        "label": "src/components/ui/button/button.stories.tsx",
+        "filename": "src/components/ui/button/button.stories.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/button-DS3kFZGj.js",
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/index-BBWlx4az.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-CdJFUDDL.js",
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/carousel.stories-CEBVuakJ.js",
+    "label": "assets/carousel.stories-CEBVuakJ.js",
+    "parsedSize": 8116,
+    "mapSize": 10319,
+    "statSize": 10772,
+    "gzipSize": 1178,
+    "brotliSize": 991,
+    "source": [
+      {
+        "parsedSize": 8116,
+        "gzipSize": 1178,
+        "brotliSize": 991,
+        "label": "Users/jaaymes/src/components/ui/carousel/carousel.stories.tsx",
+        "filename": "Users/jaaymes/src/components/ui/carousel/carousel.stories.tsx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 10772,
+        "label": "src/components/ui/carousel/carousel.stories.tsx",
+        "filename": "src/components/ui/carousel/carousel.stories.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/carousel-C5h8Gzpx.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/button-DS3kFZGj.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-CdJFUDDL.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/createLucideIcon-C1AjKPti.js"
+    ]
+  },
+  {
+    "filename": "assets/image.stories-Ds22KZwU.js",
+    "label": "assets/image.stories-Ds22KZwU.js",
+    "parsedSize": 4098,
+    "mapSize": 6497,
+    "statSize": 5856,
+    "gzipSize": 1119,
+    "brotliSize": 941,
+    "source": [
+      {
+        "parsedSize": 4098,
+        "gzipSize": 1119,
+        "brotliSize": 941,
+        "label": "Users/jaaymes/src/components/ui/image/image.stories.tsx",
+        "filename": "Users/jaaymes/src/components/ui/image/image.stories.tsx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 5856,
+        "label": "src/components/ui/image/image.stories.tsx",
+        "filename": "src/components/ui/image/image.stories.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/image-BusruAOR.js",
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/use-language-CQOlZJfg.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/skeleton-CNQqPhWa.js",
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/image-BusruAOR.js",
+    "label": "assets/image-BusruAOR.js",
+    "parsedSize": 5047,
+    "mapSize": 10755,
+    "statSize": 8656,
+    "gzipSize": 1913,
+    "brotliSize": 1729,
+    "source": [
+      {
+        "parsedSize": 5047,
+        "gzipSize": 1913,
+        "brotliSize": 1729,
+        "label": "Users/jaaymes/src/components/ui/image/image.tsx",
+        "filename": "Users/jaaymes/src/components/ui/image/image.tsx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 8656,
+        "label": "src/components/ui/image/image.tsx",
+        "filename": "src/components/ui/image/image.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/use-language-CQOlZJfg.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/skeleton-CNQqPhWa.js"
+    ]
+  },
+  {
+    "filename": "assets/skeleton.stories-B0Xqa5hG.js",
+    "label": "assets/skeleton.stories-B0Xqa5hG.js",
+    "parsedSize": 5573,
+    "mapSize": 7600,
+    "statSize": 7682,
+    "gzipSize": 989,
+    "brotliSize": 852,
+    "source": [
+      {
+        "parsedSize": 5573,
+        "gzipSize": 989,
+        "brotliSize": 852,
+        "label": "Users/jaaymes/src/components/ui/skeleton/skeleton.stories.tsx",
+        "filename": "Users/jaaymes/src/components/ui/skeleton/skeleton.stories.tsx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 7682,
+        "label": "src/components/ui/skeleton/skeleton.stories.tsx",
+        "filename": "src/components/ui/skeleton/skeleton.stories.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/skeleton-CNQqPhWa.js",
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/skeleton-CNQqPhWa.js",
+    "label": "assets/skeleton-CNQqPhWa.js",
+    "parsedSize": 194,
+    "mapSize": 611,
+    "statSize": 383,
+    "gzipSize": 176,
+    "brotliSize": 139,
+    "source": [
+      {
+        "parsedSize": 194,
+        "gzipSize": 176,
+        "brotliSize": 139,
+        "label": "Users/jaaymes/src/components/ui/skeleton/skeleton.tsx",
+        "filename": "Users/jaaymes/src/components/ui/skeleton/skeleton.tsx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 383,
+        "label": "src/components/ui/skeleton/skeleton.tsx",
+        "filename": "src/components/ui/skeleton/skeleton.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/index-CoUDwHEq.js",
+    "label": "assets/index-CoUDwHEq.js",
+    "parsedSize": 132,
+    "mapSize": 971,
+    "statSize": 387,
+    "gzipSize": 125,
+    "brotliSize": 109,
+    "source": [
+      {
+        "parsedSize": 132,
+        "gzipSize": 125,
+        "brotliSize": 109,
+        "label": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-use-callback-ref@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs",
+        "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-use-callback-ref@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 387,
+        "label": "node_modules/.pnpm/@radix-ui+react-use-callback-ref@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs",
+        "filename": "node_modules/.pnpm/@radix-ui+react-use-callback-ref@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-callback-ref/dist/index.mjs"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js"
+    ]
+  },
+  {
+    "filename": "assets/index-D8jFTbpq.js",
+    "label": "assets/index-D8jFTbpq.js",
+    "parsedSize": 435,
+    "mapSize": 2353,
+    "statSize": 1119,
+    "gzipSize": 323,
+    "brotliSize": 300,
+    "source": [
+      {
+        "parsedSize": 435,
+        "gzipSize": 323,
+        "brotliSize": 300,
+        "label": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-primitive@2.1.3_@types+react-dom@19.1.6_@types+react@19.1.8__@types+rea_6e0f845fa0b5165e723599b67dc13bbf/node_modules/@radix-ui/react-primitive/dist/index.mjs",
+        "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-primitive@2.1.3_@types+react-dom@19.1.6_@types+react@19.1.8__@types+rea_6e0f845fa0b5165e723599b67dc13bbf/node_modules/@radix-ui/react-primitive/dist/index.mjs"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 1119,
+        "label": "node_modules/.pnpm/@radix-ui+react-primitive@2.1.3_@types+react-dom@19.1.6_@types+react@19.1.8__@types+rea_6e0f845fa0b5165e723599b67dc13bbf/node_modules/@radix-ui/react-primitive/dist/index.mjs",
+        "filename": "node_modules/.pnpm/@radix-ui+react-primitive@2.1.3_@types+react-dom@19.1.6_@types+react@19.1.8__@types+rea_6e0f845fa0b5165e723599b67dc13bbf/node_modules/@radix-ui/react-primitive/dist/index.mjs"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-BBWlx4az.js",
+      "assets/jsx-runtime-D_zvdyIk.js"
+    ]
+  },
+  {
+    "filename": "assets/button-DS3kFZGj.js",
+    "label": "assets/button-DS3kFZGj.js",
+    "parsedSize": 1696,
+    "mapSize": 3038,
+    "statSize": 2316,
+    "gzipSize": 764,
+    "brotliSize": 648,
+    "source": [
+      {
+        "parsedSize": 1696,
+        "gzipSize": 764,
+        "brotliSize": 648,
+        "label": "Users/jaaymes/src/components/ui/button/button.tsx",
+        "filename": "Users/jaaymes/src/components/ui/button/button.tsx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 2316,
+        "label": "src/components/ui/button/button.tsx",
+        "filename": "src/components/ui/button/button.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-CdJFUDDL.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/index-CdJFUDDL.js",
+    "label": "assets/index-CdJFUDDL.js",
+    "parsedSize": 659,
+    "mapSize": 4813,
+    "statSize": 3048,
+    "gzipSize": 395,
+    "brotliSize": 357,
+    "source": [
+      {
+        "parsedSize": 659,
+        "gzipSize": 395,
+        "brotliSize": 357,
+        "label": "Users/jaaymes/node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs",
+        "filename": "Users/jaaymes/node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 3048,
+        "label": "node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs",
+        "filename": "node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/Button.stories-0qDBd8NY.js",
+    "label": "assets/Button.stories-0qDBd8NY.js",
+    "parsedSize": 1149,
+    "mapSize": 2922,
+    "statSize": 2147,
+    "gzipSize": 439,
+    "brotliSize": 358,
+    "source": [
+      {
+        "parsedSize": 1149,
+        "gzipSize": 439,
+        "brotliSize": 358,
+        "label": "Users/jaaymes/src/stories/Button.stories.ts",
+        "filename": "Users/jaaymes/src/stories/Button.stories.ts"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 2147,
+        "label": "src/stories/Button.stories.ts",
+        "filename": "src/stories/Button.stories.ts"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/Button-CkIwafwb.js",
+      "assets/jsx-runtime-D_zvdyIk.js"
+    ]
+  },
+  {
+    "filename": "assets/Doc-BQZvmVJk.js",
+    "label": "assets/Doc-BQZvmVJk.js",
+    "parsedSize": 11630,
+    "mapSize": 21816,
+    "statSize": 18784,
+    "gzipSize": 3077,
+    "brotliSize": 2719,
+    "source": [
+      {
+        "parsedSize": 11630,
+        "gzipSize": 3077,
+        "brotliSize": 2719,
+        "label": "Users/jaaymes/src/stories/Doc.mdx",
+        "filename": "Users/jaaymes/src/stories/Doc.mdx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 18784,
+        "label": "src/stories/Doc.mdx",
+        "filename": "src/stories/Doc.mdx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/index-cpPu--kE.js",
+      "assets/blocks-DDaXr4mR.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-C9CuP99N.js"
+    ]
+  },
+  {
+    "filename": "assets/Header.stories-a-0XFUBz.js",
+    "label": "assets/Header.stories-a-0XFUBz.js",
+    "parsedSize": 622,
+    "mapSize": 1732,
+    "statSize": 1156,
+    "gzipSize": 346,
+    "brotliSize": 294,
+    "source": [
+      {
+        "parsedSize": 622,
+        "gzipSize": 346,
+        "brotliSize": 294,
+        "label": "Users/jaaymes/src/stories/Header.stories.ts",
+        "filename": "Users/jaaymes/src/stories/Header.stories.ts"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 1156,
+        "label": "src/stories/Header.stories.ts",
+        "filename": "src/stories/Header.stories.ts"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/Header-CrBEx-2s.js",
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/Button-CkIwafwb.js"
+    ]
+  },
+  {
+    "filename": "assets/DocsRenderer-PQXLIZUC-JBYuAe9b.js",
+    "label": "assets/DocsRenderer-PQXLIZUC-JBYuAe9b.js",
+    "parsedSize": 828,
+    "mapSize": 2838,
+    "statSize": 1398,
+    "gzipSize": 485,
+    "brotliSize": 405,
+    "source": [
+      {
+        "parsedSize": 828,
+        "gzipSize": 485,
+        "brotliSize": 405,
+        "label": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/DocsRenderer-PQXLIZUC.mjs",
+        "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/DocsRenderer-PQXLIZUC.mjs"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 1398,
+        "label": "node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/DocsRenderer-PQXLIZUC.mjs",
+        "filename": "node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/DocsRenderer-PQXLIZUC.mjs"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js",
+      "assets/react-18-C1BziE7h.js",
+      "assets/blocks-DDaXr4mR.js",
+      "assets/index-C9CuP99N.js",
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-cpPu--kE.js"
+    ]
+  },
+  {
+    "filename": "assets/index-D4VPCSyO.js",
+    "label": "assets/index-D4VPCSyO.js",
+    "parsedSize": 127,
+    "mapSize": 98,
+    "statSize": 384,
+    "gzipSize": 122,
+    "brotliSize": 118,
+    "source": [
+      {
+        "parsedSize": 127,
+        "gzipSize": 122,
+        "brotliSize": 118,
+        "label": "assets/index-D4VPCSyO.js",
+        "filename": "assets/index-D4VPCSyO.js"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 384,
+        "label": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/index.js?commonjs-es-import",
+        "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/index.js?commonjs-es-import"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-C9CuP99N.js"
+    ]
+  },
+  {
+    "filename": "assets/matchers-7Z3WT2CE-CcSi9QFY.js",
+    "label": "assets/matchers-7Z3WT2CE-CcSi9QFY.js",
+    "parsedSize": 29658,
+    "mapSize": 97228,
+    "statSize": 50305,
+    "gzipSize": 10285,
+    "brotliSize": 9215,
+    "source": [
+      {
+        "parsedSize": 29658,
+        "gzipSize": 10285,
+        "brotliSize": 9215,
+        "label": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-a11y@9.0.13_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-a11y/dist/matchers-7Z3WT2CE.mjs",
+        "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-a11y@9.0.13_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-a11y/dist/matchers-7Z3WT2CE.mjs"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 50305,
+        "label": "node_modules/.pnpm/@storybook+addon-a11y@9.0.13_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-a11y/dist/matchers-7Z3WT2CE.mjs",
+        "filename": "node_modules/.pnpm/@storybook+addon-a11y@9.0.13_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-a11y/dist/matchers-7Z3WT2CE.mjs"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": []
+  },
+  {
+    "filename": "assets/Color-AVL7NMMY-CVlvKHRl.js",
+    "label": "assets/Color-AVL7NMMY-CVlvKHRl.js",
+    "parsedSize": 28936,
+    "mapSize": 83105,
+    "statSize": 36319,
+    "gzipSize": 10877,
+    "brotliSize": 9546,
+    "source": [
+      {
+        "parsedSize": 28936,
+        "gzipSize": 10877,
+        "brotliSize": 9546,
+        "label": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/Color-AVL7NMMY.mjs",
+        "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/Color-AVL7NMMY.mjs"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 36319,
+        "label": "node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/Color-AVL7NMMY.mjs",
+        "filename": "node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/Color-AVL7NMMY.mjs"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/blocks-DDaXr4mR.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-C9CuP99N.js"
+    ]
+  },
+  {
+    "filename": "assets/carousel-image.stories-D5G43_5A.js",
+    "label": "assets/carousel-image.stories-D5G43_5A.js",
+    "parsedSize": 3537,
+    "mapSize": 4785,
+    "statSize": 4730,
+    "gzipSize": 896,
+    "brotliSize": 737,
+    "source": [
+      {
+        "parsedSize": 3537,
+        "gzipSize": 896,
+        "brotliSize": 737,
+        "label": "Users/jaaymes/src/components/carousel-image",
+        "groups": [
+          {
+            "parsedSize": 500,
+            "gzipSize": 321,
+            "brotliSize": 260,
+            "label": "carousel-image.tsx",
+            "filename": "Users/jaaymes/src/components/carousel-image/carousel-image.tsx"
+          },
+          {
+            "parsedSize": 3037,
+            "gzipSize": 575,
+            "brotliSize": 477,
+            "label": "carousel-image.stories.tsx",
+            "filename": "Users/jaaymes/src/components/carousel-image/carousel-image.stories.tsx"
+          }
+        ],
+        "filename": "Users/jaaymes/src/components/carousel-image"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 4730,
+        "label": "src/components/carousel-image",
+        "groups": [
+          {
+            "statSize": 1103,
+            "label": "carousel-image.tsx",
+            "filename": "src/components/carousel-image/carousel-image.tsx"
+          },
+          {
+            "statSize": 3627,
+            "label": "carousel-image.stories.tsx",
+            "filename": "src/components/carousel-image/carousel-image.stories.tsx"
+          }
+        ],
+        "filename": "src/components/carousel-image"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/carousel-C5h8Gzpx.js",
+      "assets/image-BusruAOR.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/button-DS3kFZGj.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-CdJFUDDL.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/createLucideIcon-C1AjKPti.js",
+      "assets/use-language-CQOlZJfg.js",
+      "assets/skeleton-CNQqPhWa.js"
+    ]
+  },
+  {
+    "filename": "assets/loading.stories-BtruDSWc.js",
+    "label": "assets/loading.stories-BtruDSWc.js",
+    "parsedSize": 4415,
+    "mapSize": 7480,
+    "statSize": 6879,
+    "gzipSize": 1468,
+    "brotliSize": 1234,
+    "source": [
+      {
+        "parsedSize": 4415,
+        "gzipSize": 1468,
+        "brotliSize": 1234,
+        "label": "Users/jaaymes/src/components/loading",
+        "groups": [
+          {
+            "parsedSize": 2085,
+            "gzipSize": 766,
+            "brotliSize": 655,
+            "label": "loading.tsx",
+            "filename": "Users/jaaymes/src/components/loading/loading.tsx"
+          },
+          {
+            "parsedSize": 2330,
+            "gzipSize": 702,
+            "brotliSize": 579,
+            "label": "loading.stories.tsx",
+            "filename": "Users/jaaymes/src/components/loading/loading.stories.tsx"
+          }
+        ],
+        "filename": "Users/jaaymes/src/components/loading"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 6879,
+        "label": "src/components/loading",
+        "groups": [
+          {
+            "statSize": 3409,
+            "label": "loading.tsx",
+            "filename": "src/components/loading/loading.tsx"
+          },
+          {
+            "statSize": 3470,
+            "label": "loading.stories.tsx",
+            "filename": "src/components/loading/loading.stories.tsx"
+          }
+        ],
+        "filename": "src/components/loading"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/badge.stories-C1n4sMaU.js",
+    "label": "assets/badge.stories-C1n4sMaU.js",
+    "parsedSize": 3193,
+    "mapSize": 5574,
+    "statSize": 4617,
+    "gzipSize": 1179,
+    "brotliSize": 984,
+    "source": [
+      {
+        "parsedSize": 3193,
+        "gzipSize": 1179,
+        "brotliSize": 984,
+        "label": "Users/jaaymes/src/components/ui/badge",
+        "groups": [
+          {
+            "parsedSize": 1241,
+            "gzipSize": 599,
+            "brotliSize": 489,
+            "label": "badge.tsx",
+            "filename": "Users/jaaymes/src/components/ui/badge/badge.tsx"
+          },
+          {
+            "parsedSize": 1952,
+            "gzipSize": 580,
+            "brotliSize": 495,
+            "label": "badge.stories.tsx",
+            "filename": "Users/jaaymes/src/components/ui/badge/badge.stories.tsx"
+          }
+        ],
+        "filename": "Users/jaaymes/src/components/ui/badge"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 4617,
+        "label": "src/components/ui/badge",
+        "groups": [
+          {
+            "statSize": 1784,
+            "label": "badge.tsx",
+            "filename": "src/components/ui/badge/badge.tsx"
+          },
+          {
+            "statSize": 2833,
+            "label": "badge.stories.tsx",
+            "filename": "src/components/ui/badge/badge.stories.tsx"
+          }
+        ],
+        "filename": "src/components/ui/badge"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-CdJFUDDL.js",
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/card.stories-DZ4dY6SA.js",
+    "label": "assets/card.stories-DZ4dY6SA.js",
+    "parsedSize": 7030,
+    "mapSize": 9919,
+    "statSize": 10088,
+    "gzipSize": 1739,
+    "brotliSize": 1491,
+    "source": [
+      {
+        "parsedSize": 7030,
+        "gzipSize": 1739,
+        "brotliSize": 1491,
+        "label": "Users/jaaymes/src/components/ui/card",
+        "groups": [
+          {
+            "parsedSize": 1574,
+            "gzipSize": 478,
+            "brotliSize": 394,
+            "label": "card.tsx",
+            "filename": "Users/jaaymes/src/components/ui/card/card.tsx"
+          },
+          {
+            "parsedSize": 5456,
+            "gzipSize": 1261,
+            "brotliSize": 1097,
+            "label": "card.stories.tsx",
+            "filename": "Users/jaaymes/src/components/ui/card/card.stories.tsx"
+          }
+        ],
+        "filename": "Users/jaaymes/src/components/ui/card"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 10088,
+        "label": "src/components/ui/card",
+        "groups": [
+          {
+            "statSize": 2666,
+            "label": "card.tsx",
+            "filename": "src/components/ui/card/card.tsx"
+          },
+          {
+            "statSize": 7422,
+            "label": "card.stories.tsx",
+            "filename": "src/components/ui/card/card.stories.tsx"
+          }
+        ],
+        "filename": "src/components/ui/card"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/footer.stories-Ed1uWDeu.js",
+    "label": "assets/footer.stories-Ed1uWDeu.js",
+    "parsedSize": 3351,
+    "mapSize": 6851,
+    "statSize": 6105,
+    "gzipSize": 1166,
+    "brotliSize": 969,
+    "source": [
+      {
+        "parsedSize": 3351,
+        "gzipSize": 1166,
+        "brotliSize": 969,
+        "label": "Users/jaaymes/src/components/ui/footer",
+        "groups": [
+          {
+            "parsedSize": 999,
+            "gzipSize": 458,
+            "brotliSize": 370,
+            "label": "footer.tsx",
+            "filename": "Users/jaaymes/src/components/ui/footer/footer.tsx"
+          },
+          {
+            "parsedSize": 2352,
+            "gzipSize": 708,
+            "brotliSize": 599,
+            "label": "footer.stories.tsx",
+            "filename": "Users/jaaymes/src/components/ui/footer/footer.stories.tsx"
+          }
+        ],
+        "filename": "Users/jaaymes/src/components/ui/footer"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 6105,
+        "label": "src/components/ui/footer",
+        "groups": [
+          {
+            "statSize": 2495,
+            "label": "footer.tsx",
+            "filename": "src/components/ui/footer/footer.tsx"
+          },
+          {
+            "statSize": 3610,
+            "label": "footer.stories.tsx",
+            "filename": "src/components/ui/footer/footer.stories.tsx"
+          }
+        ],
+        "filename": "src/components/ui/footer"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/use-language-CQOlZJfg.js",
+      "assets/iframe-CRWpp2I1.js"
+    ]
+  },
+  {
+    "filename": "assets/input.stories-C2Cnz1_e.js",
+    "label": "assets/input.stories-C2Cnz1_e.js",
+    "parsedSize": 5210,
+    "mapSize": 7441,
+    "statSize": 7159,
+    "gzipSize": 1602,
+    "brotliSize": 1338,
+    "source": [
+      {
+        "parsedSize": 5210,
+        "gzipSize": 1602,
+        "brotliSize": 1338,
+        "label": "Users/jaaymes/src/components/ui/input",
+        "groups": [
+          {
+            "parsedSize": 872,
+            "gzipSize": 482,
+            "brotliSize": 392,
+            "label": "input.tsx",
+            "filename": "Users/jaaymes/src/components/ui/input/input.tsx"
+          },
+          {
+            "parsedSize": 4338,
+            "gzipSize": 1120,
+            "brotliSize": 946,
+            "label": "input.stories.tsx",
+            "filename": "Users/jaaymes/src/components/ui/input/input.stories.tsx"
+          }
+        ],
+        "filename": "Users/jaaymes/src/components/ui/input"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 7159,
+        "label": "src/components/ui/input",
+        "groups": [
+          {
+            "statSize": 1191,
+            "label": "input.tsx",
+            "filename": "src/components/ui/input/input.tsx"
+          },
+          {
+            "statSize": 5968,
+            "label": "input.stories.tsx",
+            "filename": "src/components/ui/input/input.stories.tsx"
+          }
+        ],
+        "filename": "src/components/ui/input"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/button-DS3kFZGj.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-CdJFUDDL.js"
+    ]
+  },
+  {
+    "filename": "assets/index-nmY4uVqw.js",
+    "label": "assets/index-nmY4uVqw.js",
+    "parsedSize": 1197,
+    "mapSize": 21278,
+    "statSize": 17764,
+    "gzipSize": 645,
+    "brotliSize": 574,
+    "source": [
+      {
+        "parsedSize": 1197,
+        "gzipSize": 645,
+        "brotliSize": 574,
+        "label": "Users/jaaymes/node_modules/.pnpm",
+        "groups": [
+          {
+            "parsedSize": 1087,
+            "gzipSize": 529,
+            "brotliSize": 470,
+            "label": "@radix-ui+react-collection@1.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+re_b26c6d948d533107753195e05bbf9d47/node_modules/@radix-ui/react-collection/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-collection@1.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+re_b26c6d948d533107753195e05bbf9d47/node_modules/@radix-ui/react-collection/dist/index.mjs"
+          },
+          {
+            "parsedSize": 110,
+            "gzipSize": 116,
+            "brotliSize": 104,
+            "label": "@radix-ui+react-direction@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-direction/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-direction@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-direction/dist/index.mjs"
+          }
+        ],
+        "filename": "Users/jaaymes/node_modules/.pnpm"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 17764,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 17173,
+            "label": "@radix-ui+react-collection@1.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+re_b26c6d948d533107753195e05bbf9d47/node_modules/@radix-ui/react-collection/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-collection@1.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+re_b26c6d948d533107753195e05bbf9d47/node_modules/@radix-ui/react-collection/dist/index.mjs"
+          },
+          {
+            "statSize": 591,
+            "label": "@radix-ui+react-direction@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-direction/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-direction@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-direction/dist/index.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-D-wrNsn_.js",
+      "assets/index-BBWlx4az.js",
+      "assets/jsx-runtime-D_zvdyIk.js"
+    ]
+  },
+  {
+    "filename": "assets/toast.stories-BV7r03UI.js",
+    "label": "assets/toast.stories-BV7r03UI.js",
+    "parsedSize": 21886,
+    "mapSize": 77034,
+    "statSize": 69451,
+    "gzipSize": 5179,
+    "brotliSize": 4473,
+    "source": [
+      {
+        "parsedSize": 21886,
+        "gzipSize": 5179,
+        "brotliSize": 4473,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 18880,
+            "gzipSize": 4377,
+            "brotliSize": 3775,
+            "label": "node_modules/.pnpm/sonner@2.0.5_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/sonner/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/sonner@2.0.5_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/sonner/dist/index.mjs"
+          },
+          {
+            "parsedSize": 3006,
+            "gzipSize": 802,
+            "brotliSize": 698,
+            "label": "src/components/ui/toast/toast.stories.tsx",
+            "filename": "Users/jaaymes/src/components/ui/toast/toast.stories.tsx"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 65488,
+        "label": "node_modules/.pnpm/sonner@2.0.5_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/sonner/dist/index.mjs",
+        "filename": "node_modules/.pnpm/sonner@2.0.5_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/sonner/dist/index.mjs"
+      },
+      {
+        "statSize": 3963,
+        "label": "src/components/ui/toast/toast.stories.tsx",
+        "filename": "src/components/ui/toast/toast.stories.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/button-DS3kFZGj.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-CdJFUDDL.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/index-C9CuP99N.js"
+    ]
+  },
+  {
+    "filename": "assets/index-BBWlx4az.js",
+    "label": "assets/index-BBWlx4az.js",
+    "parsedSize": 1739,
+    "mapSize": 8914,
+    "statSize": 5080,
+    "gzipSize": 893,
+    "brotliSize": 797,
+    "source": [
+      {
+        "parsedSize": 1739,
+        "gzipSize": 893,
+        "brotliSize": 797,
+        "label": "Users/jaaymes/node_modules/.pnpm",
+        "groups": [
+          {
+            "parsedSize": 335,
+            "gzipSize": 223,
+            "brotliSize": 191,
+            "label": "@radix-ui+react-compose-refs@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-compose-refs/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-compose-refs@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-compose-refs/dist/index.mjs"
+          },
+          {
+            "parsedSize": 1404,
+            "gzipSize": 670,
+            "brotliSize": 606,
+            "label": "@radix-ui+react-slot@1.2.3_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-slot/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-slot@1.2.3_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-slot/dist/index.mjs"
+          }
+        ],
+        "filename": "Users/jaaymes/node_modules/.pnpm"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 5080,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 1010,
+            "label": "@radix-ui+react-compose-refs@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-compose-refs/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-compose-refs@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-compose-refs/dist/index.mjs"
+          },
+          {
+            "statSize": 4070,
+            "label": "@radix-ui+react-slot@1.2.3_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-slot/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-slot@1.2.3_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-slot/dist/index.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js",
+      "assets/jsx-runtime-D_zvdyIk.js"
+    ]
+  },
+  {
+    "filename": "assets/Header-CrBEx-2s.js",
+    "label": "assets/Header-CrBEx-2s.js",
+    "parsedSize": 1146,
+    "mapSize": 2933,
+    "statSize": 2927,
+    "gzipSize": 607,
+    "brotliSize": 523,
+    "source": [
+      {
+        "parsedSize": 1146,
+        "gzipSize": 607,
+        "brotliSize": 523,
+        "label": "Users/jaaymes/src/stories/Header.tsx",
+        "filename": "Users/jaaymes/src/stories/Header.tsx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 2927,
+        "label": "src/stories/Header.tsx",
+        "filename": "src/stories/Header.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/Button-CkIwafwb.js"
+    ]
+  },
+  {
+    "filename": "assets/Button-CkIwafwb.js",
+    "label": "assets/Button-CkIwafwb.js",
+    "parsedSize": 1182,
+    "mapSize": 1439,
+    "statSize": 1639,
+    "gzipSize": 564,
+    "brotliSize": 439,
+    "source": [
+      {
+        "parsedSize": 1182,
+        "gzipSize": 564,
+        "brotliSize": 439,
+        "label": "Users/jaaymes/src/stories/Button.tsx",
+        "filename": "Users/jaaymes/src/stories/Button.tsx"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 1639,
+        "label": "src/stories/Button.tsx",
+        "filename": "src/stories/Button.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js"
+    ]
+  },
+  {
+    "filename": "assets/drawer.stories-Bl5C9gvI.js",
+    "label": "assets/drawer.stories-Bl5C9gvI.js",
+    "parsedSize": 39388,
+    "mapSize": 131692,
+    "statSize": 93826,
+    "gzipSize": 11081,
+    "brotliSize": 9964,
+    "source": [
+      {
+        "parsedSize": 39388,
+        "gzipSize": 11081,
+        "brotliSize": 9964,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 28957,
+            "gzipSize": 8814,
+            "brotliSize": 7966,
+            "label": "node_modules/.pnpm/vaul@1.1.2_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@19.1.8_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/vaul/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/vaul@1.1.2_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@19.1.8_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/vaul/dist/index.mjs"
+          },
+          {
+            "parsedSize": 10431,
+            "gzipSize": 2267,
+            "brotliSize": 1998,
+            "label": "src/components/ui/drawer",
+            "groups": [
+              {
+                "parsedSize": 3284,
+                "gzipSize": 791,
+                "brotliSize": 692,
+                "label": "drawer.tsx",
+                "filename": "Users/jaaymes/src/components/ui/drawer/drawer.tsx"
+              },
+              {
+                "parsedSize": 7147,
+                "gzipSize": 1476,
+                "brotliSize": 1306,
+                "label": "drawer.stories.tsx",
+                "filename": "Users/jaaymes/src/components/ui/drawer/drawer.stories.tsx"
+              }
+            ],
+            "filename": "Users/jaaymes/src/components/ui/drawer"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 79120,
+        "label": "node_modules/.pnpm/vaul@1.1.2_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@19.1.8_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/vaul/dist/index.mjs",
+        "filename": "node_modules/.pnpm/vaul@1.1.2_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@19.1.8_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/vaul/dist/index.mjs"
+      },
+      {
+        "statSize": 14706,
+        "label": "src/components/ui/drawer",
+        "groups": [
+          {
+            "statSize": 4974,
+            "label": "drawer.tsx",
+            "filename": "src/components/ui/drawer/drawer.tsx"
+          },
+          {
+            "statSize": 9732,
+            "label": "drawer.stories.tsx",
+            "filename": "src/components/ui/drawer/drawer.stories.tsx"
+          }
+        ],
+        "filename": "src/components/ui/drawer"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/button-DS3kFZGj.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-CrMqCRIq.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-CdJFUDDL.js",
+      "assets/index-D-wrNsn_.js",
+      "assets/index-D8jFTbpq.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-C9CuP99N.js",
+      "assets/index-CoUDwHEq.js"
+    ]
+  },
+  {
+    "filename": "assets/header.stories-l9zixSVO.js",
+    "label": "assets/header.stories-l9zixSVO.js",
+    "parsedSize": 661512,
+    "mapSize": 1907431,
+    "statSize": 1149441,
+    "gzipSize": 157553,
+    "brotliSize": 122259,
+    "source": [
+      {
+        "parsedSize": 661512,
+        "gzipSize": 157553,
+        "brotliSize": 122259,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 657991,
+            "gzipSize": 156348,
+            "brotliSize": 121202,
+            "label": "node_modules/.pnpm",
+            "groups": [
+              {
+                "parsedSize": 58249,
+                "gzipSize": 20279,
+                "brotliSize": 18213,
+                "label": "@storybook+instrumenter@8.6.14_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/instrumenter/dist/index.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+instrumenter@8.6.14_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/instrumenter/dist/index.mjs"
+              },
+              {
+                "parsedSize": 599742,
+                "gzipSize": 136069,
+                "brotliSize": 102989,
+                "label": "@storybook+test@8.6.14_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/test/dist/index.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+test@8.6.14_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/test/dist/index.mjs"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm"
+          },
+          {
+            "parsedSize": 3521,
+            "gzipSize": 1205,
+            "brotliSize": 1057,
+            "label": "src/components/ui/header/header.stories.tsx",
+            "filename": "Users/jaaymes/src/components/ui/header/header.stories.tsx"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 1144404,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 115695,
+            "label": "@storybook+instrumenter@8.6.14_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/instrumenter/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@storybook+instrumenter@8.6.14_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/instrumenter/dist/index.mjs"
+          },
+          {
+            "statSize": 1028709,
+            "label": "@storybook+test@8.6.14_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/test/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@storybook+test@8.6.14_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/test/dist/index.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      },
+      {
+        "statSize": 5037,
+        "label": "src/components/ui/header/header.stories.tsx",
+        "filename": "src/components/ui/header/header.stories.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/button-DS3kFZGj.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-CdJFUDDL.js",
+      "assets/utils-CBfrqCZ4.js"
+    ]
+  },
+  {
+    "filename": "assets/label.stories-DN08-y1N.js",
+    "label": "assets/label.stories-DN08-y1N.js",
+    "parsedSize": 5275,
+    "mapSize": 8506,
+    "statSize": 7710,
+    "gzipSize": 1558,
+    "brotliSize": 1312,
+    "source": [
+      {
+        "parsedSize": 5275,
+        "gzipSize": 1558,
+        "brotliSize": 1312,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 232,
+            "gzipSize": 199,
+            "brotliSize": 158,
+            "label": "node_modules/.pnpm/@radix-ui+react-label@2.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@1_f026c130782473ba8001b4f96e481e94/node_modules/@radix-ui/react-label/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-label@2.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@1_f026c130782473ba8001b4f96e481e94/node_modules/@radix-ui/react-label/dist/index.mjs"
+          },
+          {
+            "parsedSize": 5043,
+            "gzipSize": 1359,
+            "brotliSize": 1154,
+            "label": "src/components/ui/label",
+            "groups": [
+              {
+                "parsedSize": 366,
+                "gzipSize": 249,
+                "brotliSize": 196,
+                "label": "label.tsx",
+                "filename": "Users/jaaymes/src/components/ui/label/label.tsx"
+              },
+              {
+                "parsedSize": 4677,
+                "gzipSize": 1110,
+                "brotliSize": 958,
+                "label": "label.stories.tsx",
+                "filename": "Users/jaaymes/src/components/ui/label/label.stories.tsx"
+              }
+            ],
+            "filename": "Users/jaaymes/src/components/ui/label"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 721,
+        "label": "node_modules/.pnpm/@radix-ui+react-label@2.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@1_f026c130782473ba8001b4f96e481e94/node_modules/@radix-ui/react-label/dist/index.mjs",
+        "filename": "node_modules/.pnpm/@radix-ui+react-label@2.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@1_f026c130782473ba8001b4f96e481e94/node_modules/@radix-ui/react-label/dist/index.mjs"
+      },
+      {
+        "statSize": 6989,
+        "label": "src/components/ui/label",
+        "groups": [
+          {
+            "statSize": 699,
+            "label": "label.tsx",
+            "filename": "src/components/ui/label/label.tsx"
+          },
+          {
+            "statSize": 6290,
+            "label": "label.stories.tsx",
+            "filename": "src/components/ui/label/label.stories.tsx"
+          }
+        ],
+        "filename": "src/components/ui/label"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-D8jFTbpq.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-C9CuP99N.js",
+      "assets/index-BBWlx4az.js"
+    ]
+  },
+  {
+    "filename": "assets/utils-CBfrqCZ4.js",
+    "label": "assets/utils-CBfrqCZ4.js",
+    "parsedSize": 24860,
+    "mapSize": 132835,
+    "statSize": 93922,
+    "gzipSize": 8064,
+    "brotliSize": 6997,
+    "source": [
+      {
+        "parsedSize": 24860,
+        "gzipSize": 8064,
+        "brotliSize": 6997,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 24800,
+            "gzipSize": 7987,
+            "brotliSize": 6933,
+            "label": "node_modules/.pnpm",
+            "groups": [
+              {
+                "parsedSize": 362,
+                "gzipSize": 230,
+                "brotliSize": 185,
+                "label": "clsx@2.1.1/node_modules/clsx/dist/clsx.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs"
+              },
+              {
+                "parsedSize": 24438,
+                "gzipSize": 7757,
+                "brotliSize": 6748,
+                "label": "tailwind-merge@3.3.1/node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/tailwind-merge@3.3.1/node_modules/tailwind-merge/dist/bundle-mjs.mjs"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm"
+          },
+          {
+            "parsedSize": 60,
+            "gzipSize": 77,
+            "brotliSize": 64,
+            "label": "src/lib/utils.ts",
+            "filename": "Users/jaaymes/src/lib/utils.ts"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 93785,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 388,
+            "label": "clsx@2.1.1/node_modules/clsx/dist/clsx.mjs",
+            "filename": "node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs"
+          },
+          {
+            "statSize": 93397,
+            "label": "tailwind-merge@3.3.1/node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+            "filename": "node_modules/.pnpm/tailwind-merge@3.3.1/node_modules/tailwind-merge/dist/bundle-mjs.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      },
+      {
+        "statSize": 137,
+        "label": "src/lib/utils.ts",
+        "filename": "src/lib/utils.ts"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": []
+  },
+  {
+    "filename": "assets/Page.stories-CDt9u7wj.js",
+    "label": "assets/Page.stories-CDt9u7wj.js",
+    "parsedSize": 3305,
+    "mapSize": 6260,
+    "statSize": 4869,
+    "gzipSize": 1490,
+    "brotliSize": 1235,
+    "source": [
+      {
+        "parsedSize": 3305,
+        "gzipSize": 1490,
+        "brotliSize": 1235,
+        "label": "Users/jaaymes/src/stories",
+        "groups": [
+          {
+            "parsedSize": 2109,
+            "gzipSize": 986,
+            "brotliSize": 801,
+            "label": "Page.tsx",
+            "filename": "Users/jaaymes/src/stories/Page.tsx"
+          },
+          {
+            "parsedSize": 1196,
+            "gzipSize": 504,
+            "brotliSize": 434,
+            "label": "Page.stories.ts",
+            "filename": "Users/jaaymes/src/stories/Page.stories.ts"
+          }
+        ],
+        "filename": "Users/jaaymes/src/stories"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 4869,
+        "label": "src/stories",
+        "groups": [
+          {
+            "statSize": 3111,
+            "label": "Page.tsx",
+            "filename": "src/stories/Page.tsx"
+          },
+          {
+            "statSize": 1758,
+            "label": "Page.stories.ts",
+            "filename": "src/stories/Page.stories.ts"
+          }
+        ],
+        "filename": "src/stories"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/Header-CrBEx-2s.js",
+      "assets/Button-CkIwafwb.js"
+    ]
+  },
+  {
+    "filename": "assets/axe-DAiA6sW1.js",
+    "label": "assets/axe-DAiA6sW1.js",
+    "parsedSize": 571642,
+    "mapSize": 2073861,
+    "statSize": 1310671,
+    "gzipSize": 157667,
+    "brotliSize": 131562,
+    "source": [
+      {
+        "parsedSize": 571642,
+        "gzipSize": 157667,
+        "brotliSize": 131562,
+        "label": "Users/jaaymes/node_modules/.pnpm/axe-core@4.10.3/node_modules/axe-core/axe.js",
+        "filename": "Users/jaaymes/node_modules/.pnpm/axe-core@4.10.3/node_modules/axe-core/axe.js"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 1310671,
+        "label": "node_modules/.pnpm/axe-core@4.10.3/node_modules/axe-core",
+        "groups": [
+          {
+            "statSize": 49,
+            "label": "axe.js?commonjs-module",
+            "filename": "node_modules/.pnpm/axe-core@4.10.3/node_modules/axe-core/axe.js?commonjs-module"
+          },
+          {
+            "statSize": 1310280,
+            "label": "axe.js",
+            "filename": "node_modules/.pnpm/axe-core@4.10.3/node_modules/axe-core/axe.js"
+          },
+          {
+            "statSize": 342,
+            "label": "axe.js?commonjs-es-import",
+            "filename": "node_modules/.pnpm/axe-core@4.10.3/node_modules/axe-core/axe.js?commonjs-es-import"
+          }
+        ],
+        "filename": "node_modules/.pnpm/axe-core@4.10.3/node_modules/axe-core"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js"
+    ]
+  },
+  {
+    "filename": "assets/createLucideIcon-C1AjKPti.js",
+    "label": "assets/createLucideIcon-C1AjKPti.js",
+    "parsedSize": 1817,
+    "mapSize": 6192,
+    "statSize": 3481,
+    "gzipSize": 1282,
+    "brotliSize": 1093,
+    "source": [
+      {
+        "parsedSize": 1817,
+        "gzipSize": 1282,
+        "brotliSize": 1093,
+        "label": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm",
+        "groups": [
+          {
+            "parsedSize": 347,
+            "gzipSize": 255,
+            "brotliSize": 220,
+            "label": "defaultAttributes.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/defaultAttributes.js"
+          },
+          {
+            "parsedSize": 549,
+            "gzipSize": 378,
+            "brotliSize": 338,
+            "label": "Icon.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/Icon.js"
+          },
+          {
+            "parsedSize": 371,
+            "gzipSize": 271,
+            "brotliSize": 220,
+            "label": "createLucideIcon.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/createLucideIcon.js"
+          },
+          {
+            "parsedSize": 550,
+            "gzipSize": 378,
+            "brotliSize": 315,
+            "label": "shared/src",
+            "groups": [
+              {
+                "parsedSize": 550,
+                "gzipSize": 378,
+                "brotliSize": 315,
+                "label": "utils.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/shared/src/utils.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/shared/src"
+          }
+        ],
+        "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 3481,
+        "label": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm",
+        "groups": [
+          {
+            "statSize": 493,
+            "label": "defaultAttributes.js",
+            "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/defaultAttributes.js"
+          },
+          {
+            "statSize": 1118,
+            "label": "Icon.js",
+            "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/Icon.js"
+          },
+          {
+            "statSize": 838,
+            "label": "createLucideIcon.js",
+            "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/createLucideIcon.js"
+          },
+          {
+            "statSize": 1032,
+            "label": "shared/src",
+            "groups": [
+              {
+                "statSize": 1032,
+                "label": "utils.js",
+                "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/shared/src/utils.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/shared/src"
+          }
+        ],
+        "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js"
+    ]
+  },
+  {
+    "filename": "assets/tabs.stories-DPFOmUSW.js",
+    "label": "assets/tabs.stories-DPFOmUSW.js",
+    "parsedSize": 27020,
+    "mapSize": 50862,
+    "statSize": 43923,
+    "gzipSize": 6047,
+    "brotliSize": 5301,
+    "source": [
+      {
+        "parsedSize": 27020,
+        "gzipSize": 6047,
+        "brotliSize": 5301,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 5449,
+            "gzipSize": 2437,
+            "brotliSize": 2183,
+            "label": "node_modules/.pnpm",
+            "groups": [
+              {
+                "parsedSize": 3334,
+                "gzipSize": 1487,
+                "brotliSize": 1345,
+                "label": "@radix-ui+react-roving-focus@1.1.10_@types+react-dom@19.1.6_@types+react@19.1.8__@types_7b46adce8be1bcd7dba6d0dca748f267/node_modules/@radix-ui/react-roving-focus/dist/index.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-roving-focus@1.1.10_@types+react-dom@19.1.6_@types+react@19.1.8__@types_7b46adce8be1bcd7dba6d0dca748f267/node_modules/@radix-ui/react-roving-focus/dist/index.mjs"
+              },
+              {
+                "parsedSize": 2115,
+                "gzipSize": 950,
+                "brotliSize": 838,
+                "label": "@radix-ui+react-tabs@1.1.12_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@1_6d771d0116623fb5c2e6e349f714bf48/node_modules/@radix-ui/react-tabs/dist/index.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-tabs@1.1.12_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@1_6d771d0116623fb5c2e6e349f714bf48/node_modules/@radix-ui/react-tabs/dist/index.mjs"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm"
+          },
+          {
+            "parsedSize": 21571,
+            "gzipSize": 3610,
+            "brotliSize": 3118,
+            "label": "src/components/ui/tabs",
+            "groups": [
+              {
+                "parsedSize": 1570,
+                "gzipSize": 596,
+                "brotliSize": 481,
+                "label": "tabs.tsx",
+                "filename": "Users/jaaymes/src/components/ui/tabs/tabs.tsx"
+              },
+              {
+                "parsedSize": 20001,
+                "gzipSize": 3014,
+                "brotliSize": 2637,
+                "label": "tabs.stories.tsx",
+                "filename": "Users/jaaymes/src/components/ui/tabs/tabs.stories.tsx"
+              }
+            ],
+            "filename": "Users/jaaymes/src/components/ui/tabs"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 15737,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 9311,
+            "label": "@radix-ui+react-roving-focus@1.1.10_@types+react-dom@19.1.6_@types+react@19.1.8__@types_7b46adce8be1bcd7dba6d0dca748f267/node_modules/@radix-ui/react-roving-focus/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-roving-focus@1.1.10_@types+react-dom@19.1.6_@types+react@19.1.8__@types_7b46adce8be1bcd7dba6d0dca748f267/node_modules/@radix-ui/react-roving-focus/dist/index.mjs"
+          },
+          {
+            "statSize": 6426,
+            "label": "@radix-ui+react-tabs@1.1.12_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@1_6d771d0116623fb5c2e6e349f714bf48/node_modules/@radix-ui/react-tabs/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-tabs@1.1.12_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@1_6d771d0116623fb5c2e6e349f714bf48/node_modules/@radix-ui/react-tabs/dist/index.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      },
+      {
+        "statSize": 28186,
+        "label": "src/components/ui/tabs",
+        "groups": [
+          {
+            "statSize": 2401,
+            "label": "tabs.tsx",
+            "filename": "src/components/ui/tabs/tabs.tsx"
+          },
+          {
+            "statSize": 25785,
+            "label": "tabs.stories.tsx",
+            "filename": "src/components/ui/tabs/tabs.stories.tsx"
+          }
+        ],
+        "filename": "src/components/ui/tabs"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-D-wrNsn_.js",
+      "assets/index-nmY4uVqw.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-D8jFTbpq.js",
+      "assets/index-CoUDwHEq.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-C9CuP99N.js"
+    ]
+  },
+  {
+    "filename": "assets/index-C9CuP99N.js",
+    "label": "assets/index-C9CuP99N.js",
+    "parsedSize": 3553,
+    "mapSize": 12951,
+    "statSize": 9032,
+    "gzipSize": 1386,
+    "brotliSize": 1183,
+    "source": [
+      {
+        "parsedSize": 3553,
+        "gzipSize": 1386,
+        "brotliSize": 1183,
+        "label": "Users/jaaymes/node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom",
+        "groups": [
+          {
+            "parsedSize": 246,
+            "gzipSize": 170,
+            "brotliSize": 132,
+            "label": "index.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/index.js"
+          },
+          {
+            "parsedSize": 3307,
+            "gzipSize": 1216,
+            "brotliSize": 1051,
+            "label": "cjs/react-dom.production.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/cjs/react-dom.production.js"
+          }
+        ],
+        "filename": "Users/jaaymes/node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 9032,
+        "label": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom",
+        "groups": [
+          {
+            "statSize": 59,
+            "label": "index.js?commonjs-module",
+            "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/index.js?commonjs-module"
+          },
+          {
+            "statSize": 7780,
+            "label": "cjs",
+            "groups": [
+              {
+                "statSize": 71,
+                "label": "react-dom.production.js?commonjs-exports",
+                "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/cjs/react-dom.production.js?commonjs-exports"
+              },
+              {
+                "statSize": 7709,
+                "label": "react-dom.production.js",
+                "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/cjs/react-dom.production.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/cjs"
+          },
+          {
+            "statSize": 1193,
+            "label": "index.js",
+            "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/index.js"
+          }
+        ],
+        "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js"
+    ]
+  },
+  {
+    "filename": "assets/accordion.stories-DOTAuVKk.js",
+    "label": "assets/accordion.stories-DOTAuVKk.js",
+    "parsedSize": 16853,
+    "mapSize": 42930,
+    "statSize": 32441,
+    "gzipSize": 4974,
+    "brotliSize": 4401,
+    "source": [
+      {
+        "parsedSize": 16853,
+        "gzipSize": 4974,
+        "brotliSize": 4401,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 5788,
+            "gzipSize": 2443,
+            "brotliSize": 2197,
+            "label": "node_modules/.pnpm",
+            "groups": [
+              {
+                "parsedSize": 249,
+                "gzipSize": 208,
+                "brotliSize": 182,
+                "label": "lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons/chevron-down.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons/chevron-down.js"
+              },
+              {
+                "parsedSize": 2036,
+                "gzipSize": 877,
+                "brotliSize": 793,
+                "label": "@radix-ui+react-collapsible@1.1.11_@types+react-dom@19.1.6_@types+react@19.1.8__@types+_f5622cb202571cb8469c791d8ff9ca86/node_modules/@radix-ui/react-collapsible/dist/index.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-collapsible@1.1.11_@types+react-dom@19.1.6_@types+react@19.1.8__@types+_f5622cb202571cb8469c791d8ff9ca86/node_modules/@radix-ui/react-collapsible/dist/index.mjs"
+              },
+              {
+                "parsedSize": 3503,
+                "gzipSize": 1358,
+                "brotliSize": 1222,
+                "label": "@radix-ui+react-accordion@1.2.11_@types+react-dom@19.1.6_@types+react@19.1.8__@types+re_e68181a08b128bdf7646d3a433d56cc9/node_modules/@radix-ui/react-accordion/dist/index.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-accordion@1.2.11_@types+react-dom@19.1.6_@types+react@19.1.8__@types+re_e68181a08b128bdf7646d3a433d56cc9/node_modules/@radix-ui/react-accordion/dist/index.mjs"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm"
+          },
+          {
+            "parsedSize": 11065,
+            "gzipSize": 2531,
+            "brotliSize": 2204,
+            "label": "src/components/ui/accordion",
+            "groups": [
+              {
+                "parsedSize": 1355,
+                "gzipSize": 567,
+                "brotliSize": 465,
+                "label": "accordion.tsx",
+                "filename": "Users/jaaymes/src/components/ui/accordion/accordion.tsx"
+              },
+              {
+                "parsedSize": 9710,
+                "gzipSize": 1964,
+                "brotliSize": 1739,
+                "label": "accordion.stories.tsx",
+                "filename": "Users/jaaymes/src/components/ui/accordion/accordion.stories.tsx"
+              }
+            ],
+            "filename": "Users/jaaymes/src/components/ui/accordion"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 17345,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 454,
+            "label": "lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons/chevron-down.js",
+            "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons/chevron-down.js"
+          },
+          {
+            "statSize": 5497,
+            "label": "@radix-ui+react-collapsible@1.1.11_@types+react-dom@19.1.6_@types+react@19.1.8__@types+_f5622cb202571cb8469c791d8ff9ca86/node_modules/@radix-ui/react-collapsible/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-collapsible@1.1.11_@types+react-dom@19.1.6_@types+react@19.1.8__@types+_f5622cb202571cb8469c791d8ff9ca86/node_modules/@radix-ui/react-collapsible/dist/index.mjs"
+          },
+          {
+            "statSize": 11394,
+            "label": "@radix-ui+react-accordion@1.2.11_@types+react-dom@19.1.6_@types+react@19.1.8__@types+re_e68181a08b128bdf7646d3a433d56cc9/node_modules/@radix-ui/react-accordion/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-accordion@1.2.11_@types+react-dom@19.1.6_@types+react@19.1.8__@types+re_e68181a08b128bdf7646d3a433d56cc9/node_modules/@radix-ui/react-accordion/dist/index.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      },
+      {
+        "statSize": 15096,
+        "label": "src/components/ui/accordion",
+        "groups": [
+          {
+            "statSize": 2368,
+            "label": "accordion.tsx",
+            "filename": "src/components/ui/accordion/accordion.tsx"
+          },
+          {
+            "statSize": 12728,
+            "label": "accordion.stories.tsx",
+            "filename": "src/components/ui/accordion/accordion.stories.tsx"
+          }
+        ],
+        "filename": "src/components/ui/accordion"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-D-wrNsn_.js",
+      "assets/index-nmY4uVqw.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-D8jFTbpq.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/createLucideIcon-C1AjKPti.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-C9CuP99N.js"
+    ]
+  },
+  {
+    "filename": "assets/dialog.stories-PYwzNnW2.js",
+    "label": "assets/dialog.stories-PYwzNnW2.js",
+    "parsedSize": 16820,
+    "mapSize": 2420148,
+    "statSize": 2215433,
+    "gzipSize": 4443,
+    "brotliSize": 3912,
+    "source": [
+      {
+        "parsedSize": 16820,
+        "gzipSize": 4443,
+        "brotliSize": 3912,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 2691,
+            "gzipSize": 1279,
+            "brotliSize": 1107,
+            "label": "node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons",
+            "groups": [
+              {
+                "parsedSize": 2433,
+                "gzipSize": 1097,
+                "brotliSize": 955,
+                "label": "lib",
+                "groups": [
+                  {
+                    "parsedSize": 113,
+                    "gzipSize": 93,
+                    "brotliSize": 79,
+                    "label": "iconContext.mjs",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons/lib/iconContext.mjs"
+                  },
+                  {
+                    "parsedSize": 2320,
+                    "gzipSize": 1004,
+                    "brotliSize": 876,
+                    "label": "iconBase.mjs",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons/lib/iconBase.mjs"
+                  }
+                ],
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons/lib"
+              },
+              {
+                "parsedSize": 258,
+                "gzipSize": 182,
+                "brotliSize": 152,
+                "label": "md/index.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons/md/index.mjs"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons"
+          },
+          {
+            "parsedSize": 14129,
+            "gzipSize": 3164,
+            "brotliSize": 2805,
+            "label": "src/components/ui/dialog",
+            "groups": [
+              {
+                "parsedSize": 2888,
+                "gzipSize": 943,
+                "brotliSize": 802,
+                "label": "dialog.tsx",
+                "filename": "Users/jaaymes/src/components/ui/dialog/dialog.tsx"
+              },
+              {
+                "parsedSize": 11241,
+                "gzipSize": 2221,
+                "brotliSize": 2003,
+                "label": "dialog.stories.tsx",
+                "filename": "Users/jaaymes/src/components/ui/dialog/dialog.stories.tsx"
+              }
+            ],
+            "filename": "Users/jaaymes/src/components/ui/dialog"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 2195962,
+        "label": "node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons",
+        "groups": [
+          {
+            "statSize": 4293,
+            "label": "lib",
+            "groups": [
+              {
+                "statSize": 258,
+                "label": "iconContext.mjs",
+                "filename": "node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons/lib/iconContext.mjs"
+              },
+              {
+                "statSize": 4035,
+                "label": "iconBase.mjs",
+                "filename": "node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons/lib/iconBase.mjs"
+              }
+            ],
+            "filename": "node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons/lib"
+          },
+          {
+            "statSize": 2191669,
+            "label": "md/index.mjs",
+            "filename": "node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons/md/index.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm/react-icons@5.5.0_react@19.1.0/node_modules/react-icons"
+      },
+      {
+        "statSize": 19471,
+        "label": "src/components/ui/dialog",
+        "groups": [
+          {
+            "statSize": 5146,
+            "label": "dialog.tsx",
+            "filename": "src/components/ui/dialog/dialog.tsx"
+          },
+          {
+            "statSize": 14325,
+            "label": "dialog.stories.tsx",
+            "filename": "src/components/ui/dialog/dialog.stories.tsx"
+          }
+        ],
+        "filename": "src/components/ui/dialog"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/index-CrMqCRIq.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/index-D-wrNsn_.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-D8jFTbpq.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/index-C9CuP99N.js",
+      "assets/index-CoUDwHEq.js"
+    ]
+  },
+  {
+    "filename": "assets/jsx-runtime-D_zvdyIk.js",
+    "label": "assets/jsx-runtime-D_zvdyIk.js",
+    "parsedSize": 418,
+    "mapSize": 2202,
+    "statSize": 2999,
+    "gzipSize": 314,
+    "brotliSize": 273,
+    "source": [
+      {
+        "parsedSize": 418,
+        "gzipSize": 314,
+        "brotliSize": 273,
+        "label": "Users/jaaymes/node_modules/.pnpm/react@19.1.0/node_modules/react",
+        "groups": [
+          {
+            "parsedSize": 51,
+            "gzipSize": 60,
+            "brotliSize": 55,
+            "label": "jsx-runtime.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/react@19.1.0/node_modules/react/jsx-runtime.js"
+          },
+          {
+            "parsedSize": 367,
+            "gzipSize": 254,
+            "brotliSize": 218,
+            "label": "cjs/react-jsx-runtime.production.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/react@19.1.0/node_modules/react/cjs/react-jsx-runtime.production.js"
+          }
+        ],
+        "filename": "Users/jaaymes/node_modules/.pnpm/react@19.1.0/node_modules/react"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 2999,
+        "label": "node_modules/.pnpm/react@19.1.0/node_modules/react",
+        "groups": [
+          {
+            "statSize": 63,
+            "label": "jsx-runtime.js?commonjs-module",
+            "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/jsx-runtime.js?commonjs-module"
+          },
+          {
+            "statSize": 1714,
+            "label": "cjs",
+            "groups": [
+              {
+                "statSize": 85,
+                "label": "react-jsx-runtime.production.js?commonjs-exports",
+                "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/cjs/react-jsx-runtime.production.js?commonjs-exports"
+              },
+              {
+                "statSize": 1629,
+                "label": "react-jsx-runtime.production.js",
+                "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/cjs/react-jsx-runtime.production.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/cjs"
+          },
+          {
+            "statSize": 843,
+            "label": "jsx-runtime.js",
+            "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/jsx-runtime.js"
+          },
+          {
+            "statSize": 379,
+            "label": "jsx-runtime.js?commonjs-es-import",
+            "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/jsx-runtime.js?commonjs-es-import"
+          }
+        ],
+        "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": []
+  },
+  {
+    "filename": "assets/carousel-C5h8Gzpx.js",
+    "label": "assets/carousel-C5h8Gzpx.js",
+    "parsedSize": 24242,
+    "mapSize": 105970,
+    "statSize": 59138,
+    "gzipSize": 10095,
+    "brotliSize": 9071,
+    "source": [
+      {
+        "parsedSize": 24242,
+        "gzipSize": 10095,
+        "brotliSize": 9071,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 20299,
+            "gzipSize": 8747,
+            "brotliSize": 7898,
+            "label": "node_modules/.pnpm",
+            "groups": [
+              {
+                "parsedSize": 734,
+                "gzipSize": 393,
+                "brotliSize": 332,
+                "label": "embla-carousel-reactive-utils@8.6.0_embla-carousel@8.6.0/node_modules/embla-carousel-reactive-utils/esm/embla-carousel-reactive-utils.esm.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/embla-carousel-reactive-utils@8.6.0_embla-carousel@8.6.0/node_modules/embla-carousel-reactive-utils/esm/embla-carousel-reactive-utils.esm.js"
+              },
+              {
+                "parsedSize": 18533,
+                "gzipSize": 7641,
+                "brotliSize": 6932,
+                "label": "embla-carousel@8.6.0/node_modules/embla-carousel/esm/embla-carousel.esm.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/embla-carousel@8.6.0/node_modules/embla-carousel/esm/embla-carousel.esm.js"
+              },
+              {
+                "parsedSize": 460,
+                "gzipSize": 254,
+                "brotliSize": 221,
+                "label": "embla-carousel-react@8.6.0_react@19.1.0/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/embla-carousel-react@8.6.0_react@19.1.0/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js"
+              },
+              {
+                "parsedSize": 572,
+                "gzipSize": 459,
+                "brotliSize": 413,
+                "label": "lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons",
+                "groups": [
+                  {
+                    "parsedSize": 286,
+                    "gzipSize": 230,
+                    "brotliSize": 205,
+                    "label": "arrow-left.js",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons/arrow-left.js"
+                  },
+                  {
+                    "parsedSize": 286,
+                    "gzipSize": 229,
+                    "brotliSize": 208,
+                    "label": "arrow-right.js",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons/arrow-right.js"
+                  }
+                ],
+                "filename": "Users/jaaymes/node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm"
+          },
+          {
+            "parsedSize": 3943,
+            "gzipSize": 1348,
+            "brotliSize": 1173,
+            "label": "src/components/ui/carousel/carousel.tsx",
+            "filename": "Users/jaaymes/src/components/ui/carousel/carousel.tsx"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 52202,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 1674,
+            "label": "embla-carousel-reactive-utils@8.6.0_embla-carousel@8.6.0/node_modules/embla-carousel-reactive-utils/esm/embla-carousel-reactive-utils.esm.js",
+            "filename": "node_modules/.pnpm/embla-carousel-reactive-utils@8.6.0_embla-carousel@8.6.0/node_modules/embla-carousel-reactive-utils/esm/embla-carousel-reactive-utils.esm.js"
+          },
+          {
+            "statSize": 48089,
+            "label": "embla-carousel@8.6.0/node_modules/embla-carousel/esm/embla-carousel.esm.js",
+            "filename": "node_modules/.pnpm/embla-carousel@8.6.0/node_modules/embla-carousel/esm/embla-carousel.esm.js"
+          },
+          {
+            "statSize": 1440,
+            "label": "embla-carousel-react@8.6.0_react@19.1.0/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js",
+            "filename": "node_modules/.pnpm/embla-carousel-react@8.6.0_react@19.1.0/node_modules/embla-carousel-react/esm/embla-carousel-react.esm.js"
+          },
+          {
+            "statSize": 999,
+            "label": "lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons",
+            "groups": [
+              {
+                "statSize": 498,
+                "label": "arrow-left.js",
+                "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons/arrow-left.js"
+              },
+              {
+                "statSize": 501,
+                "label": "arrow-right.js",
+                "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons/arrow-right.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/lucide-react@0.522.0_react@19.1.0/node_modules/lucide-react/dist/esm/icons"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      },
+      {
+        "statSize": 6936,
+        "label": "src/components/ui/carousel/carousel.tsx",
+        "filename": "src/components/ui/carousel/carousel.tsx"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/iframe-CRWpp2I1.js",
+      "assets/button-DS3kFZGj.js",
+      "assets/utils-CBfrqCZ4.js",
+      "assets/createLucideIcon-C1AjKPti.js"
+    ]
+  },
+  {
+    "filename": "assets/index-D-wrNsn_.js",
+    "label": "assets/index-D-wrNsn_.js",
+    "parsedSize": 4510,
+    "mapSize": 23838,
+    "statSize": 14310,
+    "gzipSize": 2277,
+    "brotliSize": 1982,
+    "source": [
+      {
+        "parsedSize": 4510,
+        "gzipSize": 2277,
+        "brotliSize": 1982,
+        "label": "Users/jaaymes/node_modules/.pnpm",
+        "groups": [
+          {
+            "parsedSize": 1277,
+            "gzipSize": 568,
+            "brotliSize": 503,
+            "label": "@radix-ui+react-context@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-context/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-context@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-context/dist/index.mjs"
+          },
+          {
+            "parsedSize": 123,
+            "gzipSize": 115,
+            "brotliSize": 112,
+            "label": "@radix-ui+primitive@1.1.2/node_modules/@radix-ui/primitive/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+primitive@1.1.2/node_modules/@radix-ui/primitive/dist/index.mjs"
+          },
+          {
+            "parsedSize": 52,
+            "gzipSize": 72,
+            "brotliSize": 53,
+            "label": "@radix-ui+react-use-layout-effect@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-use-layout-effect@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs"
+          },
+          {
+            "parsedSize": 895,
+            "gzipSize": 484,
+            "brotliSize": 409,
+            "label": "@radix-ui+react-use-controllable-state@1.2.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-use-controllable-state@1.2.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs"
+          },
+          {
+            "parsedSize": 1949,
+            "gzipSize": 844,
+            "brotliSize": 742,
+            "label": "@radix-ui+react-presence@1.1.4_@types+react-dom@19.1.6_@types+react@19.1.8__@types+reac_949a0df3eae86665e086aa01aee25ebf/node_modules/@radix-ui/react-presence/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-presence@1.1.4_@types+react-dom@19.1.6_@types+react@19.1.8__@types+reac_949a0df3eae86665e086aa01aee25ebf/node_modules/@radix-ui/react-presence/dist/index.mjs"
+          },
+          {
+            "parsedSize": 214,
+            "gzipSize": 194,
+            "brotliSize": 163,
+            "label": "@radix-ui+react-id@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-id/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-id@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-id/dist/index.mjs"
+          }
+        ],
+        "filename": "Users/jaaymes/node_modules/.pnpm"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 14310,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 3347,
+            "label": "@radix-ui+react-context@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-context/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-context@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-context/dist/index.mjs"
+          },
+          {
+            "statSize": 427,
+            "label": "@radix-ui+primitive@1.1.2/node_modules/@radix-ui/primitive/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+primitive@1.1.2/node_modules/@radix-ui/primitive/dist/index.mjs"
+          },
+          {
+            "statSize": 260,
+            "label": "@radix-ui+react-use-layout-effect@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-use-layout-effect@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-layout-effect/dist/index.mjs"
+          },
+          {
+            "statSize": 4811,
+            "label": "@radix-ui+react-use-controllable-state@1.2.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-use-controllable-state@1.2.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-controllable-state/dist/index.mjs"
+          },
+          {
+            "statSize": 4923,
+            "label": "@radix-ui+react-presence@1.1.4_@types+react-dom@19.1.6_@types+react@19.1.8__@types+reac_949a0df3eae86665e086aa01aee25ebf/node_modules/@radix-ui/react-presence/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-presence@1.1.4_@types+react-dom@19.1.6_@types+react@19.1.8__@types+reac_949a0df3eae86665e086aa01aee25ebf/node_modules/@radix-ui/react-presence/dist/index.mjs"
+          },
+          {
+            "statSize": 542,
+            "label": "@radix-ui+react-id@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-id/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-id@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-id/dist/index.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js",
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/index-BBWlx4az.js"
+    ]
+  },
+  {
+    "filename": "assets/use-language-CQOlZJfg.js",
+    "label": "assets/use-language-CQOlZJfg.js",
+    "parsedSize": 3846,
+    "mapSize": 17651,
+    "statSize": 9668,
+    "gzipSize": 2282,
+    "brotliSize": 1975,
+    "source": [
+      {
+        "parsedSize": 3846,
+        "gzipSize": 2282,
+        "brotliSize": 1975,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 3663,
+            "gzipSize": 2131,
+            "brotliSize": 1854,
+            "label": "node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es",
+            "groups": [
+              {
+                "parsedSize": 1097,
+                "gzipSize": 588,
+                "brotliSize": 500,
+                "label": "utils.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/utils.js"
+              },
+              {
+                "parsedSize": 395,
+                "gzipSize": 255,
+                "brotliSize": 231,
+                "label": "unescape.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/unescape.js"
+              },
+              {
+                "parsedSize": 218,
+                "gzipSize": 179,
+                "brotliSize": 155,
+                "label": "defaults.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/defaults.js"
+              },
+              {
+                "parsedSize": 20,
+                "gzipSize": 40,
+                "brotliSize": 24,
+                "label": "i18nInstance.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/i18nInstance.js"
+              },
+              {
+                "parsedSize": 215,
+                "gzipSize": 145,
+                "brotliSize": 113,
+                "label": "context.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/context.js"
+              },
+              {
+                "parsedSize": 1718,
+                "gzipSize": 924,
+                "brotliSize": 831,
+                "label": "useTranslation.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/useTranslation.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es"
+          },
+          {
+            "parsedSize": 183,
+            "gzipSize": 151,
+            "brotliSize": 121,
+            "label": "src/hooks/use-language.ts",
+            "filename": "Users/jaaymes/src/hooks/use-language.ts"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 9200,
+        "label": "node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es",
+        "groups": [
+          {
+            "statSize": 2251,
+            "label": "utils.js",
+            "filename": "node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/utils.js"
+          },
+          {
+            "statSize": 620,
+            "label": "unescape.js",
+            "filename": "node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/unescape.js"
+          },
+          {
+            "statSize": 461,
+            "label": "defaults.js",
+            "filename": "node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/defaults.js"
+          },
+          {
+            "statSize": 127,
+            "label": "i18nInstance.js",
+            "filename": "node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/i18nInstance.js"
+          },
+          {
+            "statSize": 1359,
+            "label": "context.js",
+            "filename": "node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/context.js"
+          },
+          {
+            "statSize": 4382,
+            "label": "useTranslation.js",
+            "filename": "node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es/useTranslation.js"
+          }
+        ],
+        "filename": "node_modules/.pnpm/react-i18next@15.5.3_i18next@25.2.1_typescript@5.8.3__react-dom@19.1.0_react@19.1.0__react@19.1.0_typescript@5.8.3/node_modules/react-i18next/dist/es"
+      },
+      {
+        "statSize": 468,
+        "label": "src/hooks/use-language.ts",
+        "filename": "src/hooks/use-language.ts"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js"
+    ]
+  },
+  {
+    "filename": "assets/blocks-DDaXr4mR.js",
+    "label": "assets/blocks-DDaXr4mR.js",
+    "parsedSize": 522802,
+    "mapSize": 1683320,
+    "statSize": 1023088,
+    "gzipSize": 172623,
+    "brotliSize": 148378,
+    "source": [
+      {
+        "parsedSize": 522802,
+        "gzipSize": 172623,
+        "brotliSize": 148378,
+        "label": "Users/jaaymes/node_modules/.pnpm",
+        "groups": [
+          {
+            "parsedSize": 328688,
+            "gzipSize": 113223,
+            "brotliSize": 97625,
+            "label": "storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist",
+            "groups": [
+              {
+                "parsedSize": 3620,
+                "gzipSize": 1622,
+                "brotliSize": 1464,
+                "label": "csf/index.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/csf/index.js"
+              },
+              {
+                "parsedSize": 67072,
+                "gzipSize": 24705,
+                "brotliSize": 21846,
+                "label": "theming/index.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming/index.js"
+              },
+              {
+                "parsedSize": 257996,
+                "gzipSize": 86896,
+                "brotliSize": 74315,
+                "label": "components/index.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/components/index.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist"
+          },
+          {
+            "parsedSize": 185920,
+            "gzipSize": 57298,
+            "brotliSize": 48863,
+            "label": "@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist",
+            "groups": [
+              {
+                "parsedSize": 6077,
+                "gzipSize": 2316,
+                "brotliSize": 2086,
+                "label": "chunk-SPFYY5GD.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/chunk-SPFYY5GD.mjs"
+              },
+              {
+                "parsedSize": 776,
+                "gzipSize": 449,
+                "brotliSize": 393,
+                "label": "chunk-QUZPS4B6.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/chunk-QUZPS4B6.mjs"
+              },
+              {
+                "parsedSize": 179067,
+                "gzipSize": 54533,
+                "brotliSize": 46384,
+                "label": "blocks.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/blocks.mjs"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist"
+          },
+          {
+            "parsedSize": 7442,
+            "gzipSize": 1642,
+            "brotliSize": 1490,
+            "label": "@storybook+icons@1.4.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/@storybook/icons/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+icons@1.4.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/@storybook/icons/dist/index.mjs"
+          },
+          {
+            "parsedSize": 752,
+            "gzipSize": 460,
+            "brotliSize": 400,
+            "label": "ts-dedent@2.2.0/node_modules/ts-dedent/esm/index.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/ts-dedent@2.2.0/node_modules/ts-dedent/esm/index.js"
+          }
+        ],
+        "filename": "Users/jaaymes/node_modules/.pnpm"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 1023088,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 526735,
+            "label": "storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist",
+            "groups": [
+              {
+                "statSize": 6505,
+                "label": "csf/index.js",
+                "filename": "node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/csf/index.js"
+              },
+              {
+                "statSize": 100753,
+                "label": "theming/index.js",
+                "filename": "node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/theming/index.js"
+              },
+              {
+                "statSize": 419477,
+                "label": "components/index.js",
+                "filename": "node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/components/index.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist"
+          },
+          {
+            "statSize": 261109,
+            "label": "@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist",
+            "groups": [
+              {
+                "statSize": 10524,
+                "label": "chunk-SPFYY5GD.mjs",
+                "filename": "node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/chunk-SPFYY5GD.mjs"
+              },
+              {
+                "statSize": 1275,
+                "label": "chunk-QUZPS4B6.mjs",
+                "filename": "node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/chunk-QUZPS4B6.mjs"
+              },
+              {
+                "statSize": 249310,
+                "label": "blocks.mjs",
+                "filename": "node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/blocks.mjs"
+              }
+            ],
+            "filename": "node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist"
+          },
+          {
+            "statSize": 233610,
+            "label": "@storybook+icons@1.4.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/@storybook/icons/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@storybook+icons@1.4.0_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/@storybook/icons/dist/index.mjs"
+          },
+          {
+            "statSize": 1634,
+            "label": "ts-dedent@2.2.0/node_modules/ts-dedent/esm/index.js",
+            "filename": "node_modules/.pnpm/ts-dedent@2.2.0/node_modules/ts-dedent/esm/index.js"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js",
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/index-D4VPCSyO.js",
+      "assets/Color-AVL7NMMY-CVlvKHRl.js"
+    ]
+  },
+  {
+    "filename": "assets/react-18-C1BziE7h.js",
+    "label": "assets/react-18-C1BziE7h.js",
+    "parsedSize": 173818,
+    "mapSize": 834246,
+    "statSize": 546681,
+    "gzipSize": 55460,
+    "brotliSize": 47938,
+    "source": [
+      {
+        "parsedSize": 173818,
+        "gzipSize": 55460,
+        "brotliSize": 47938,
+        "label": "Users/jaaymes/node_modules/.pnpm",
+        "groups": [
+          {
+            "parsedSize": 3684,
+            "gzipSize": 1636,
+            "brotliSize": 1442,
+            "label": "scheduler@0.26.0/node_modules/scheduler",
+            "groups": [
+              {
+                "parsedSize": 32,
+                "gzipSize": 45,
+                "brotliSize": 36,
+                "label": "index.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/scheduler@0.26.0/node_modules/scheduler/index.js"
+              },
+              {
+                "parsedSize": 3652,
+                "gzipSize": 1591,
+                "brotliSize": 1406,
+                "label": "cjs/scheduler.production.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/scheduler@0.26.0/node_modules/scheduler/cjs/scheduler.production.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/scheduler@0.26.0/node_modules/scheduler"
+          },
+          {
+            "parsedSize": 169416,
+            "gzipSize": 53396,
+            "brotliSize": 46120,
+            "label": "react-dom@19.1.0_react@19.1.0/node_modules/react-dom",
+            "groups": [
+              {
+                "parsedSize": 247,
+                "gzipSize": 168,
+                "brotliSize": 126,
+                "label": "client.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/client.js"
+              },
+              {
+                "parsedSize": 169169,
+                "gzipSize": 53228,
+                "brotliSize": 45994,
+                "label": "cjs/react-dom-client.production.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/cjs/react-dom-client.production.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom"
+          },
+          {
+            "parsedSize": 718,
+            "gzipSize": 428,
+            "brotliSize": 376,
+            "label": "@storybook+react-dom-shim@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@_84e5aa2926c4430aa946aa27a69dce45/node_modules/@storybook/react-dom-shim/dist/react-18.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+react-dom-shim@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@_84e5aa2926c4430aa946aa27a69dce45/node_modules/@storybook/react-dom-shim/dist/react-18.mjs"
+          }
+        ],
+        "filename": "Users/jaaymes/node_modules/.pnpm"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 546681,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 533203,
+            "label": "react-dom@19.1.0_react@19.1.0/node_modules/react-dom",
+            "groups": [
+              {
+                "statSize": 55,
+                "label": "client.js?commonjs-module",
+                "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/client.js?commonjs-module"
+              },
+              {
+                "statSize": 531587,
+                "label": "cjs",
+                "groups": [
+                  {
+                    "statSize": 83,
+                    "label": "react-dom-client.production.js?commonjs-exports",
+                    "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/cjs/react-dom-client.production.js?commonjs-exports"
+                  },
+                  {
+                    "statSize": 531504,
+                    "label": "react-dom-client.production.js",
+                    "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/cjs/react-dom-client.production.js"
+                  }
+                ],
+                "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/cjs"
+              },
+              {
+                "statSize": 1186,
+                "label": "client.js",
+                "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/client.js"
+              },
+              {
+                "statSize": 375,
+                "label": "client.js?commonjs-es-import",
+                "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom/client.js?commonjs-es-import"
+              }
+            ],
+            "filename": "node_modules/.pnpm/react-dom@19.1.0_react@19.1.0/node_modules/react-dom"
+          },
+          {
+            "statSize": 12373,
+            "label": "scheduler@0.26.0/node_modules/scheduler",
+            "groups": [
+              {
+                "statSize": 61,
+                "label": "index.js?commonjs-module",
+                "filename": "node_modules/.pnpm/scheduler@0.26.0/node_modules/scheduler/index.js?commonjs-module"
+              },
+              {
+                "statSize": 11486,
+                "label": "cjs",
+                "groups": [
+                  {
+                    "statSize": 73,
+                    "label": "scheduler.production.js?commonjs-exports",
+                    "filename": "node_modules/.pnpm/scheduler@0.26.0/node_modules/scheduler/cjs/scheduler.production.js?commonjs-exports"
+                  },
+                  {
+                    "statSize": 11413,
+                    "label": "scheduler.production.js",
+                    "filename": "node_modules/.pnpm/scheduler@0.26.0/node_modules/scheduler/cjs/scheduler.production.js"
+                  }
+                ],
+                "filename": "node_modules/.pnpm/scheduler@0.26.0/node_modules/scheduler/cjs"
+              },
+              {
+                "statSize": 826,
+                "label": "index.js",
+                "filename": "node_modules/.pnpm/scheduler@0.26.0/node_modules/scheduler/index.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/scheduler@0.26.0/node_modules/scheduler"
+          },
+          {
+            "statSize": 1105,
+            "label": "@storybook+react-dom-shim@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@_84e5aa2926c4430aa946aa27a69dce45/node_modules/@storybook/react-dom-shim/dist/react-18.mjs",
+            "filename": "node_modules/.pnpm/@storybook+react-dom-shim@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@_84e5aa2926c4430aa946aa27a69dce45/node_modules/@storybook/react-dom-shim/dist/react-18.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-C9CuP99N.js"
+    ]
+  },
+  {
+    "filename": "assets/index-CrMqCRIq.js",
+    "label": "assets/index-CrMqCRIq.js",
+    "parsedSize": 25129,
+    "mapSize": 135401,
+    "statSize": 87372,
+    "gzipSize": 11798,
+    "brotliSize": 10071,
+    "source": [
+      {
+        "parsedSize": 25129,
+        "gzipSize": 11798,
+        "brotliSize": 10071,
+        "label": "Users/jaaymes/node_modules/.pnpm",
+        "groups": [
+          {
+            "parsedSize": 216,
+            "gzipSize": 172,
+            "brotliSize": 126,
+            "label": "@radix-ui+react-use-escape-keydown@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-escape-keydown/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-use-escape-keydown@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-escape-keydown/dist/index.mjs"
+          },
+          {
+            "parsedSize": 3316,
+            "gzipSize": 1204,
+            "brotliSize": 1087,
+            "label": "@radix-ui+react-dismissable-layer@1.1.10_@types+react-dom@19.1.6_@types+react@19.1.8__@_a1d343a3b3ef56a897be7e3ac188901b/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-dismissable-layer@1.1.10_@types+react-dom@19.1.6_@types+react@19.1.8__@_a1d343a3b3ef56a897be7e3ac188901b/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs"
+          },
+          {
+            "parsedSize": 3143,
+            "gzipSize": 1381,
+            "brotliSize": 1243,
+            "label": "@radix-ui+react-focus-scope@1.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+r_0bdc87f04c4d759e2025cd48d0340f12/node_modules/@radix-ui/react-focus-scope/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-focus-scope@1.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+r_0bdc87f04c4d759e2025cd48d0340f12/node_modules/@radix-ui/react-focus-scope/dist/index.mjs"
+          },
+          {
+            "parsedSize": 224,
+            "gzipSize": 204,
+            "brotliSize": 171,
+            "label": "@radix-ui+react-portal@1.1.9_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@_daa6284eb61b5d92679ce5e11f38cd01/node_modules/@radix-ui/react-portal/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-portal@1.1.9_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@_daa6284eb61b5d92679ce5e11f38cd01/node_modules/@radix-ui/react-portal/dist/index.mjs"
+          },
+          {
+            "parsedSize": 548,
+            "gzipSize": 302,
+            "brotliSize": 244,
+            "label": "@radix-ui+react-focus-guards@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-focus-guards/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-focus-guards@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-focus-guards/dist/index.mjs"
+          },
+          {
+            "parsedSize": 744,
+            "gzipSize": 388,
+            "brotliSize": 333,
+            "label": "tslib@2.8.1/node_modules/tslib/tslib.es6.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/tslib@2.8.1/node_modules/tslib/tslib.es6.mjs"
+          },
+          {
+            "parsedSize": 2189,
+            "gzipSize": 1039,
+            "brotliSize": 852,
+            "label": "react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015",
+            "groups": [
+              {
+                "parsedSize": 127,
+                "gzipSize": 110,
+                "brotliSize": 83,
+                "label": "constants.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015/constants.js"
+              },
+              {
+                "parsedSize": 513,
+                "gzipSize": 310,
+                "brotliSize": 254,
+                "label": "utils.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015/utils.js"
+              },
+              {
+                "parsedSize": 1549,
+                "gzipSize": 619,
+                "brotliSize": 515,
+                "label": "component.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015/component.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015"
+          },
+          {
+            "parsedSize": 632,
+            "gzipSize": 467,
+            "brotliSize": 371,
+            "label": "use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015",
+            "groups": [
+              {
+                "parsedSize": 69,
+                "gzipSize": 84,
+                "brotliSize": 57,
+                "label": "assignRef.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015/assignRef.js"
+              },
+              {
+                "parsedSize": 210,
+                "gzipSize": 155,
+                "brotliSize": 124,
+                "label": "useRef.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015/useRef.js"
+              },
+              {
+                "parsedSize": 353,
+                "gzipSize": 228,
+                "brotliSize": 190,
+                "label": "useMergeRef.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015/useMergeRef.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015"
+          },
+          {
+            "parsedSize": 1157,
+            "gzipSize": 659,
+            "brotliSize": 551,
+            "label": "use-sidecar@1.1.3_@types+react@19.1.8_react@19.1.0/node_modules/use-sidecar/dist/es2015",
+            "groups": [
+              {
+                "parsedSize": 846,
+                "gzipSize": 431,
+                "brotliSize": 376,
+                "label": "medium.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.1.8_react@19.1.0/node_modules/use-sidecar/dist/es2015/medium.js"
+              },
+              {
+                "parsedSize": 311,
+                "gzipSize": 228,
+                "brotliSize": 175,
+                "label": "exports.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.1.8_react@19.1.0/node_modules/use-sidecar/dist/es2015/exports.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.1.8_react@19.1.0/node_modules/use-sidecar/dist/es2015"
+          },
+          {
+            "parsedSize": 5699,
+            "gzipSize": 2793,
+            "brotliSize": 2383,
+            "label": "react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015",
+            "groups": [
+              {
+                "parsedSize": 12,
+                "gzipSize": 32,
+                "brotliSize": 16,
+                "label": "medium.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/medium.js"
+              },
+              {
+                "parsedSize": 940,
+                "gzipSize": 524,
+                "brotliSize": 458,
+                "label": "UI.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/UI.js"
+              },
+              {
+                "parsedSize": 219,
+                "gzipSize": 176,
+                "brotliSize": 130,
+                "label": "aggresiveCapture.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js"
+              },
+              {
+                "parsedSize": 1209,
+                "gzipSize": 643,
+                "brotliSize": 546,
+                "label": "handleScroll.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/handleScroll.js"
+              },
+              {
+                "parsedSize": 3184,
+                "gzipSize": 1259,
+                "brotliSize": 1126,
+                "label": "SideEffect.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/SideEffect.js"
+              },
+              {
+                "parsedSize": 19,
+                "gzipSize": 39,
+                "brotliSize": 23,
+                "label": "sidecar.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/sidecar.js"
+              },
+              {
+                "parsedSize": 116,
+                "gzipSize": 120,
+                "brotliSize": 84,
+                "label": "Combination.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/Combination.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015"
+          },
+          {
+            "parsedSize": 76,
+            "gzipSize": 80,
+            "brotliSize": 71,
+            "label": "get-nonce@1.0.1/node_modules/get-nonce/dist/es2015/index.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/get-nonce@1.0.1/node_modules/get-nonce/dist/es2015/index.js"
+          },
+          {
+            "parsedSize": 724,
+            "gzipSize": 513,
+            "brotliSize": 385,
+            "label": "react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015",
+            "groups": [
+              {
+                "parsedSize": 509,
+                "gzipSize": 310,
+                "brotliSize": 228,
+                "label": "singleton.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015/singleton.js"
+              },
+              {
+                "parsedSize": 119,
+                "gzipSize": 106,
+                "brotliSize": 76,
+                "label": "hook.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015/hook.js"
+              },
+              {
+                "parsedSize": 96,
+                "gzipSize": 97,
+                "brotliSize": 81,
+                "label": "component.js",
+                "filename": "Users/jaaymes/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015/component.js"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015"
+          },
+          {
+            "parsedSize": 1470,
+            "gzipSize": 733,
+            "brotliSize": 652,
+            "label": "aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js",
+            "filename": "Users/jaaymes/node_modules/.pnpm/aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js"
+          },
+          {
+            "parsedSize": 4991,
+            "gzipSize": 1863,
+            "brotliSize": 1602,
+            "label": "@radix-ui+react-dialog@1.1.14_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react_ebf14a846abc2fe74b19ca0ca406c133/node_modules/@radix-ui/react-dialog/dist/index.mjs",
+            "filename": "Users/jaaymes/node_modules/.pnpm/@radix-ui+react-dialog@1.1.14_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react_ebf14a846abc2fe74b19ca0ca406c133/node_modules/@radix-ui/react-dialog/dist/index.mjs"
+          }
+        ],
+        "filename": "Users/jaaymes/node_modules/.pnpm"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 87372,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 747,
+            "label": "@radix-ui+react-use-escape-keydown@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-escape-keydown/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-use-escape-keydown@1.1.1_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-use-escape-keydown/dist/index.mjs"
+          },
+          {
+            "statSize": 9040,
+            "label": "@radix-ui+react-dismissable-layer@1.1.10_@types+react-dom@19.1.6_@types+react@19.1.8__@_a1d343a3b3ef56a897be7e3ac188901b/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-dismissable-layer@1.1.10_@types+react-dom@19.1.6_@types+react@19.1.8__@_a1d343a3b3ef56a897be7e3ac188901b/node_modules/@radix-ui/react-dismissable-layer/dist/index.mjs"
+          },
+          {
+            "statSize": 8177,
+            "label": "@radix-ui+react-focus-scope@1.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+r_0bdc87f04c4d759e2025cd48d0340f12/node_modules/@radix-ui/react-focus-scope/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-focus-scope@1.1.7_@types+react-dom@19.1.6_@types+react@19.1.8__@types+r_0bdc87f04c4d759e2025cd48d0340f12/node_modules/@radix-ui/react-focus-scope/dist/index.mjs"
+          },
+          {
+            "statSize": 847,
+            "label": "@radix-ui+react-portal@1.1.9_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@_daa6284eb61b5d92679ce5e11f38cd01/node_modules/@radix-ui/react-portal/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-portal@1.1.9_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react@_daa6284eb61b5d92679ce5e11f38cd01/node_modules/@radix-ui/react-portal/dist/index.mjs"
+          },
+          {
+            "statSize": 1131,
+            "label": "@radix-ui+react-focus-guards@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-focus-guards/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-focus-guards@1.1.2_@types+react@19.1.8_react@19.1.0/node_modules/@radix-ui/react-focus-guards/dist/index.mjs"
+          },
+          {
+            "statSize": 17648,
+            "label": "tslib@2.8.1/node_modules/tslib/tslib.es6.mjs",
+            "filename": "node_modules/.pnpm/tslib@2.8.1/node_modules/tslib/tslib.es6.mjs"
+          },
+          {
+            "statSize": 4768,
+            "label": "react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015",
+            "groups": [
+              {
+                "statSize": 375,
+                "label": "constants.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015/constants.js"
+              },
+              {
+                "statSize": 998,
+                "label": "utils.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015/utils.js"
+              },
+              {
+                "statSize": 3395,
+                "label": "component.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015/component.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/react-remove-scroll-bar@2.3.8_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll-bar/dist/es2015"
+          },
+          {
+            "statSize": 3549,
+            "label": "use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015",
+            "groups": [
+              {
+                "statSize": 556,
+                "label": "assignRef.js",
+                "filename": "node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015/assignRef.js"
+              },
+              {
+                "statSize": 1211,
+                "label": "useRef.js",
+                "filename": "node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015/useRef.js"
+              },
+              {
+                "statSize": 1782,
+                "label": "useMergeRef.js",
+                "filename": "node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015/useMergeRef.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/use-callback-ref@1.3.3_@types+react@19.1.8_react@19.1.0/node_modules/use-callback-ref/dist/es2015"
+          },
+          {
+            "statSize": 3176,
+            "label": "use-sidecar@1.1.3_@types+react@19.1.8_react@19.1.0/node_modules/use-sidecar/dist/es2015",
+            "groups": [
+              {
+                "statSize": 2579,
+                "label": "medium.js",
+                "filename": "node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.1.8_react@19.1.0/node_modules/use-sidecar/dist/es2015/medium.js"
+              },
+              {
+                "statSize": 597,
+                "label": "exports.js",
+                "filename": "node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.1.8_react@19.1.0/node_modules/use-sidecar/dist/es2015/exports.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/use-sidecar@1.1.3_@types+react@19.1.8_react@19.1.0/node_modules/use-sidecar/dist/es2015"
+          },
+          {
+            "statSize": 15614,
+            "label": "react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015",
+            "groups": [
+              {
+                "statSize": 97,
+                "label": "medium.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/medium.js"
+              },
+              {
+                "statSize": 2240,
+                "label": "UI.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/UI.js"
+              },
+              {
+                "statSize": 568,
+                "label": "aggresiveCapture.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/aggresiveCapture.js"
+              },
+              {
+                "statSize": 4519,
+                "label": "handleScroll.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/handleScroll.js"
+              },
+              {
+                "statSize": 7601,
+                "label": "SideEffect.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/SideEffect.js"
+              },
+              {
+                "statSize": 197,
+                "label": "sidecar.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/sidecar.js"
+              },
+              {
+                "statSize": 392,
+                "label": "Combination.js",
+                "filename": "node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015/Combination.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/react-remove-scroll@2.7.1_@types+react@19.1.8_react@19.1.0/node_modules/react-remove-scroll/dist/es2015"
+          },
+          {
+            "statSize": 300,
+            "label": "get-nonce@1.0.1/node_modules/get-nonce/dist/es2015/index.js",
+            "filename": "node_modules/.pnpm/get-nonce@1.0.1/node_modules/get-nonce/dist/es2015/index.js"
+          },
+          {
+            "statSize": 2518,
+            "label": "react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015",
+            "groups": [
+              {
+                "statSize": 1286,
+                "label": "singleton.js",
+                "filename": "node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015/singleton.js"
+              },
+              {
+                "statSize": 630,
+                "label": "hook.js",
+                "filename": "node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015/hook.js"
+              },
+              {
+                "statSize": 602,
+                "label": "component.js",
+                "filename": "node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015/component.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/react-style-singleton@2.2.3_@types+react@19.1.8_react@19.1.0/node_modules/react-style-singleton/dist/es2015"
+          },
+          {
+            "statSize": 6871,
+            "label": "aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js",
+            "filename": "node_modules/.pnpm/aria-hidden@1.2.6/node_modules/aria-hidden/dist/es2015/index.js"
+          },
+          {
+            "statSize": 12986,
+            "label": "@radix-ui+react-dialog@1.1.14_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react_ebf14a846abc2fe74b19ca0ca406c133/node_modules/@radix-ui/react-dialog/dist/index.mjs",
+            "filename": "node_modules/.pnpm/@radix-ui+react-dialog@1.1.14_@types+react-dom@19.1.6_@types+react@19.1.8__@types+react_ebf14a846abc2fe74b19ca0ca406c133/node_modules/@radix-ui/react-dialog/dist/index.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js",
+      "assets/index-D-wrNsn_.js",
+      "assets/index-BBWlx4az.js",
+      "assets/index-D8jFTbpq.js",
+      "assets/index-CoUDwHEq.js",
+      "assets/jsx-runtime-D_zvdyIk.js",
+      "assets/index-D4VPCSyO.js"
+    ]
+  },
+  {
+    "filename": "assets/iframe-CRWpp2I1.js",
+    "label": "assets/iframe-CRWpp2I1.js",
+    "parsedSize": 1275854,
+    "mapSize": 3504115,
+    "statSize": 1858444,
+    "gzipSize": 358306,
+    "brotliSize": 277873,
+    "source": [
+      {
+        "parsedSize": 1275854,
+        "gzipSize": 358306,
+        "brotliSize": 277873,
+        "label": "Users/jaaymes",
+        "groups": [
+          {
+            "parsedSize": 1275211,
+            "gzipSize": 357885,
+            "brotliSize": 277509,
+            "label": "node_modules/.pnpm",
+            "groups": [
+              {
+                "parsedSize": 987148,
+                "gzipSize": 269282,
+                "brotliSize": 203158,
+                "label": "storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist",
+                "groups": [
+                  {
+                    "parsedSize": 927634,
+                    "gzipSize": 252317,
+                    "brotliSize": 187942,
+                    "label": "preview/runtime.js",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/preview/runtime.js"
+                  },
+                  {
+                    "parsedSize": 59514,
+                    "gzipSize": 16965,
+                    "brotliSize": 15216,
+                    "label": "docs-tools/index.js",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/docs-tools/index.js"
+                  }
+                ],
+                "filename": "Users/jaaymes/node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist"
+              },
+              {
+                "parsedSize": 7795,
+                "gzipSize": 3033,
+                "brotliSize": 2695,
+                "label": "react@19.1.0/node_modules/react",
+                "groups": [
+                  {
+                    "parsedSize": 97,
+                    "gzipSize": 109,
+                    "brotliSize": 99,
+                    "label": "index.js",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/react@19.1.0/node_modules/react/index.js"
+                  },
+                  {
+                    "parsedSize": 7698,
+                    "gzipSize": 2924,
+                    "brotliSize": 2596,
+                    "label": "cjs/react.production.js",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/react@19.1.0/node_modules/react/cjs/react.production.js"
+                  }
+                ],
+                "filename": "Users/jaaymes/node_modules/.pnpm/react@19.1.0/node_modules/react"
+              },
+              {
+                "parsedSize": 276665,
+                "gzipSize": 83550,
+                "brotliSize": 69885,
+                "label": "@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist",
+                "groups": [
+                  {
+                    "parsedSize": 104,
+                    "gzipSize": 124,
+                    "brotliSize": 101,
+                    "label": "chunk-XLZBPYSH.mjs",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-XLZBPYSH.mjs"
+                  },
+                  {
+                    "parsedSize": 698,
+                    "gzipSize": 401,
+                    "brotliSize": 365,
+                    "label": "chunk-XP5HYGXS.mjs",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-XP5HYGXS.mjs"
+                  },
+                  {
+                    "parsedSize": 29449,
+                    "gzipSize": 9401,
+                    "brotliSize": 8505,
+                    "label": "chunk-CQ7IB4U6.mjs",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-CQ7IB4U6.mjs"
+                  },
+                  {
+                    "parsedSize": 14192,
+                    "gzipSize": 5037,
+                    "brotliSize": 4580,
+                    "label": "chunk-CKO6TW2F.mjs",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-CKO6TW2F.mjs"
+                  },
+                  {
+                    "parsedSize": 229339,
+                    "gzipSize": 67125,
+                    "brotliSize": 55021,
+                    "label": "chunk-N3U7HZRZ.mjs",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-N3U7HZRZ.mjs"
+                  },
+                  {
+                    "parsedSize": 2883,
+                    "gzipSize": 1462,
+                    "brotliSize": 1313,
+                    "label": "chunk-AWLHXXSE.mjs",
+                    "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-AWLHXXSE.mjs"
+                  }
+                ],
+                "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist"
+              },
+              {
+                "parsedSize": 494,
+                "gzipSize": 375,
+                "brotliSize": 323,
+                "label": "@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/preview.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/preview.mjs"
+              },
+              {
+                "parsedSize": 3109,
+                "gzipSize": 1645,
+                "brotliSize": 1448,
+                "label": "@storybook+addon-a11y@9.0.13_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-a11y/dist/preview.mjs",
+                "filename": "Users/jaaymes/node_modules/.pnpm/@storybook+addon-a11y@9.0.13_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-a11y/dist/preview.mjs"
+              }
+            ],
+            "filename": "Users/jaaymes/node_modules/.pnpm"
+          },
+          {
+            "parsedSize": 643,
+            "gzipSize": 421,
+            "brotliSize": 364,
+            "label": ".storybook/preview.ts",
+            "filename": "Users/jaaymes/.storybook/preview.ts"
+          }
+        ],
+        "filename": "Users/jaaymes"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 3858,
+        "label": "vite",
+        "groups": [
+          {
+            "statSize": 1280,
+            "label": "modulepreload-polyfill.js",
+            "filename": "vite/modulepreload-polyfill.js"
+          },
+          {
+            "statSize": 2578,
+            "label": "preload-helper.js",
+            "filename": "vite/preload-helper.js"
+          }
+        ],
+        "filename": "vite"
+      },
+      {
+        "statSize": 1335,
+        "label": "commonjsHelpers.js",
+        "filename": "commonjsHelpers.js"
+      },
+      {
+        "statSize": 392,
+        "label": ".storybook",
+        "groups": [
+          {
+            "statSize": 392,
+            "label": "preview.ts",
+            "filename": ".storybook/preview.ts"
+          }
+        ],
+        "filename": ".storybook"
+      },
+      {
+        "statSize": 1843595,
+        "label": "node_modules/.pnpm",
+        "groups": [
+          {
+            "statSize": 1417522,
+            "label": "storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist",
+            "groups": [
+              {
+                "statSize": 1322476,
+                "label": "preview/runtime.js",
+                "filename": "node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/preview/runtime.js"
+              },
+              {
+                "statSize": 95046,
+                "label": "docs-tools/index.js",
+                "filename": "node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist/docs-tools/index.js"
+              }
+            ],
+            "filename": "node_modules/.pnpm/storybook@9.0.13_@testing-library+dom@10.4.0/node_modules/storybook/dist"
+          },
+          {
+            "statSize": 19665,
+            "label": "react@19.1.0/node_modules/react",
+            "groups": [
+              {
+                "statSize": 53,
+                "label": "index.js?commonjs-module",
+                "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/index.js?commonjs-module"
+              },
+              {
+                "statSize": 18506,
+                "label": "cjs",
+                "groups": [
+                  {
+                    "statSize": 65,
+                    "label": "react.production.js?commonjs-exports",
+                    "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/cjs/react.production.js?commonjs-exports"
+                  },
+                  {
+                    "statSize": 18441,
+                    "label": "react.production.js",
+                    "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/cjs/react.production.js"
+                  }
+                ],
+                "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/cjs"
+              },
+              {
+                "statSize": 758,
+                "label": "index.js",
+                "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/index.js"
+              },
+              {
+                "statSize": 348,
+                "label": "index.js?commonjs-es-import",
+                "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react/index.js?commonjs-es-import"
+              }
+            ],
+            "filename": "node_modules/.pnpm/react@19.1.0/node_modules/react"
+          },
+          {
+            "statSize": 400462,
+            "label": "@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist",
+            "groups": [
+              {
+                "statSize": 246,
+                "label": "chunk-XLZBPYSH.mjs",
+                "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-XLZBPYSH.mjs"
+              },
+              {
+                "statSize": 1194,
+                "label": "chunk-XP5HYGXS.mjs",
+                "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-XP5HYGXS.mjs"
+              },
+              {
+                "statSize": 53853,
+                "label": "chunk-CQ7IB4U6.mjs",
+                "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-CQ7IB4U6.mjs"
+              },
+              {
+                "statSize": 192,
+                "label": "entry-preview.mjs",
+                "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/entry-preview.mjs"
+              },
+              {
+                "statSize": 28036,
+                "label": "chunk-CKO6TW2F.mjs",
+                "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-CKO6TW2F.mjs"
+              },
+              {
+                "statSize": 311982,
+                "label": "chunk-N3U7HZRZ.mjs",
+                "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-N3U7HZRZ.mjs"
+              },
+              {
+                "statSize": 132,
+                "label": "entry-preview-argtypes.mjs",
+                "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/entry-preview-argtypes.mjs"
+              },
+              {
+                "statSize": 4654,
+                "label": "chunk-AWLHXXSE.mjs",
+                "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/chunk-AWLHXXSE.mjs"
+              },
+              {
+                "statSize": 173,
+                "label": "entry-preview-docs.mjs",
+                "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist/entry-preview-docs.mjs"
+              }
+            ],
+            "filename": "node_modules/.pnpm/@storybook+react@9.0.13_react-dom@19.1.0_react@19.1.0__react@19.1.0_storybook@9.0.13_@t_b932d574a680f2fde85c67a460f29f3d/node_modules/@storybook/react/dist"
+          },
+          {
+            "statSize": 566,
+            "label": "@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/preview.mjs",
+            "filename": "node_modules/.pnpm/@storybook+addon-docs@9.0.13_@types+react@19.1.8_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-docs/dist/preview.mjs"
+          },
+          {
+            "statSize": 5380,
+            "label": "@storybook+addon-a11y@9.0.13_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-a11y/dist/preview.mjs",
+            "filename": "node_modules/.pnpm/@storybook+addon-a11y@9.0.13_storybook@9.0.13_@testing-library+dom@10.4.0_/node_modules/@storybook/addon-a11y/dist/preview.mjs"
+          }
+        ],
+        "filename": "node_modules/.pnpm"
+      },
+      {
+        "statSize": 9264,
+        "label": "virtual:/@storybook",
+        "groups": [
+          {
+            "statSize": 9264,
+            "label": "builder-vite",
+            "groups": [
+              {
+                "statSize": 378,
+                "label": "setup-addons.js",
+                "filename": "virtual:/@storybook/builder-vite/setup-addons.js"
+              },
+              {
+                "statSize": 4800,
+                "label": "storybook-stories.js",
+                "filename": "virtual:/@storybook/builder-vite/storybook-stories.js"
+              },
+              {
+                "statSize": 4086,
+                "label": "vite-app.js",
+                "filename": "virtual:/@storybook/builder-vite/vite-app.js"
+              }
+            ],
+            "filename": "virtual:/@storybook/builder-vite"
+          }
+        ],
+        "filename": "virtual:/@storybook"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": true,
+    "imports": [
+      "assets/carousel-image.stories-D5G43_5A.js",
+      "assets/loading.stories-BtruDSWc.js",
+      "assets/accordion.stories-DOTAuVKk.js",
+      "assets/badge.stories-C1n4sMaU.js",
+      "assets/button.stories-D01scqPE.js",
+      "assets/card.stories-DZ4dY6SA.js",
+      "assets/carousel.stories-CEBVuakJ.js",
+      "assets/dialog.stories-PYwzNnW2.js",
+      "assets/drawer.stories-Bl5C9gvI.js",
+      "assets/footer.stories-Ed1uWDeu.js",
+      "assets/header.stories-l9zixSVO.js",
+      "assets/image.stories-Ds22KZwU.js",
+      "assets/input.stories-C2Cnz1_e.js",
+      "assets/label.stories-DN08-y1N.js",
+      "assets/skeleton.stories-B0Xqa5hG.js",
+      "assets/tabs.stories-DPFOmUSW.js",
+      "assets/toast.stories-BV7r03UI.js",
+      "assets/Button.stories-0qDBd8NY.js",
+      "assets/Doc-BQZvmVJk.js",
+      "assets/Header.stories-a-0XFUBz.js",
+      "assets/Page.stories-CDt9u7wj.js",
+      "assets/react-18-C1BziE7h.js",
+      "assets/DocsRenderer-PQXLIZUC-JBYuAe9b.js",
+      "assets/axe-DAiA6sW1.js",
+      "assets/matchers-7Z3WT2CE-CcSi9QFY.js"
+    ]
+  },
+  {
+    "filename": "assets/index-cpPu--kE.js",
+    "label": "assets/index-cpPu--kE.js",
+    "parsedSize": 382,
+    "mapSize": 3244,
+    "statSize": 2376,
+    "gzipSize": 241,
+    "brotliSize": 202,
+    "source": [
+      {
+        "parsedSize": 382,
+        "gzipSize": 241,
+        "brotliSize": 202,
+        "label": "Users/jaaymes/node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@19.1.8_react@19.1.0/node_modules/@mdx-js/react/lib/index.js",
+        "filename": "Users/jaaymes/node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@19.1.8_react@19.1.0/node_modules/@mdx-js/react/lib/index.js"
+      }
+    ],
+    "stats": [
+      {
+        "statSize": 2376,
+        "label": "node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@19.1.8_react@19.1.0/node_modules/@mdx-js/react",
+        "groups": [
+          {
+            "statSize": 61,
+            "label": "index.js",
+            "filename": "node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@19.1.8_react@19.1.0/node_modules/@mdx-js/react/index.js"
+          },
+          {
+            "statSize": 2315,
+            "label": "lib/index.js",
+            "filename": "node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@19.1.8_react@19.1.0/node_modules/@mdx-js/react/lib/index.js"
+          }
+        ],
+        "filename": "node_modules/.pnpm/@mdx-js+react@3.1.0_@types+react@19.1.8_react@19.1.0/node_modules/@mdx-js/react"
+      }
+    ],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": [
+      "assets/iframe-CRWpp2I1.js"
+    ]
+  },
+  {
+    "filename": "iframe.html",
+    "label": "iframe.html",
+    "parsedSize": 18163,
+    "mapSize": 0,
+    "statSize": 18163,
+    "gzipSize": 5093,
+    "brotliSize": 4127,
+    "source": [],
+    "stats": [],
+    "isAsset": true,
+    "isEntry": false,
+    "imports": []
+  }
+]

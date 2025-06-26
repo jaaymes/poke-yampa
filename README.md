@@ -9,6 +9,11 @@ Uma aplicação Pokédex moderna construída com React, TypeScript, Tailwind CSS
 - 🌓 Alternância entre tema claro e escuro
 - 📱 Design responsivo
 - 📊 Visualização detalhada de cada Pokémon
+- 🌐 Suporte para múltiplos idiomas (i18n)
+- 🎨 Componentes documentados com Storybook
+- ✅ Testes unitários e E2E com Cypress
+- 📈 Análise de bundle com Bundle Analyzer
+- ⚡️ Testes de performance com Lighthouse
 
 ## Tecnologias Utilizadas
 
@@ -17,19 +22,85 @@ Uma aplicação Pokédex moderna construída com React, TypeScript, Tailwind CSS
 - Tailwind CSS v4
 - shadcn/ui
 - Vite
+- Vitest (Testes Unitários)
+- Cypress (Testes E2E)
+- Storybook 9
+- i18next
+- React Query
+
+## Pré-requisitos
+
+- Node.js >= 18.0.0
+- pnpm >= 10.0.0
 
 ## Instalação
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/poke-yampa.git
+git clone https://github.com/jaaymes/poke-yampa.git
 cd poke-yampa
 
 # Instalar dependências
 pnpm install
+```
 
+## Desenvolvimento
+
+### Servidor de Desenvolvimento
+
+```bash
 # Iniciar servidor de desenvolvimento
 pnpm dev
+
+# O servidor iniciará em http://localhost:5173
+```
+
+### Storybook
+
+```bash
+# Iniciar Storybook em modo de desenvolvimento
+pnpm storybook
+
+# O Storybook iniciará em http://localhost:6006
+
+# Construir o Storybook e integrá-lo à aplicação
+pnpm build-storybook-docs
+```
+
+### Testes
+
+```bash
+# Executar testes unitários
+pnpm test           # Modo watch
+pnpm test:run       # Execução única
+pnpm test:coverage  # Relatório de cobertura
+pnpm test:ui        # Interface visual do Vitest
+
+# Executar testes E2E com Cypress
+pnpm cypress:open   # Interface visual do Cypress
+```
+
+### Build e Preview
+
+```bash
+# Construir para produção
+pnpm build
+
+# Visualizar build
+pnpm preview
+
+# Analisar bundle
+pnpm analyze
+
+# Executar testes de performance
+pnpm perf
+```
+
+### Limpeza
+
+```bash
+# Remover arquivos de build e dependências
+pnpm clean:full
 ```
 
 ## Estrutura do Projeto
@@ -40,48 +111,43 @@ src/
   ├── components/   # Componentes React
   │   └── ui/       # Componentes de UI reutilizáveis
   ├── data/         # Dados mockados
+  ├── hooks/        # Custom hooks
+  ├── i18n/         # Configurações de internacionalização
   ├── lib/          # Utilitários e funções auxiliares
   ├── pages/        # Páginas da aplicação
   ├── routes/       # Configuração de rotas
-  └── styles/       # Estilos globais
+  ├── services/     # Serviços e chamadas API
+  ├── styles/       # Estilos globais
+  ├── test/         # Configurações de teste
+  └── utils/        # Funções utilitárias
 ```
 
-## Desenvolvimento
+## Documentação de Componentes
 
-```bash
-# Iniciar servidor de desenvolvimento
-pnpm dev
+Este projeto utiliza o Storybook para documentação de componentes, que pode ser acessado de duas formas:
 
-# Iniciar Storybook
-pnpm storybook
+### Em Desenvolvimento
+- Storybook isolado: http://localhost:6006
+- Integrado à aplicação: http://localhost:5173/docs
 
-# Construir para produção
-pnpm build
-```
+### Em Produção
+- Integrado à aplicação: https://seu-site.com/docs
 
-## Storybook como Documentação (/docs)
+## Performance
 
-Este projeto inclui o Storybook integrado como uma rota `/docs` dentro da aplicação. Isso permite acessar a documentação dos componentes diretamente na aplicação em produção ou desenvolvimento.
+O projeto inclui ferramentas para análise de performance:
 
-### Como usar
+- Lighthouse para métricas de performance
+- Bundle analyzer para análise do tamanho do bundle
+- Testes de performance automatizados
 
-```bash
-# Construir o Storybook e copiá-lo para public/docs
-pnpm build-storybook-docs
+## Contribuição
 
-# Iniciar o servidor de desenvolvimento com o Storybook integrado
-pnpm dev-with-docs
-
-# Construir para produção incluindo o Storybook
-pnpm build-with-docs
-```
-
-### Acessando o Storybook
-
-- Em desenvolvimento: http://localhost:5173/docs
-- Em produção: https://seu-site.com/docs
-
-Isso permite que você compartilhe a documentação dos componentes junto com a aplicação em produção, facilitando o acesso para designers, desenvolvedores e stakeholders.
+1. Faça o fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
 
 ## Licença
 
