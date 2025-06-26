@@ -5,11 +5,10 @@ import { useScreenSize } from "@/hooks/use-screen-size";
 import { useSearchPokemon } from "@/hooks/use-search-pokemon";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { useEffect, useMemo, useRef } from "react";
-import { MdClear, MdSearch, MdSend } from "react-icons/md";
 import { PokemonCard } from "../../components/pokemon-card";
 import { Button } from "../../components/ui/button";
 import { Header } from "../../components/ui/header";
-import { Input } from "../../components/ui/input";
+import { SearchInput } from "../../components/ui/search-input";
 import { useListPokemons } from "../../hooks/use-list-pokemons";
 
 export const Home = () => {
@@ -163,43 +162,17 @@ export const Home = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <Header />
-      <main className="flex-1 ">
-        <section className="container mx-auto max-w-7xl py-2">
-          <div className="mb-5 flex justify-center items-center">
-            <div className="relative w-full max-w-sm">
-              <MdSearch className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-primary" />
-              <Input
-                placeholder={t("searchPlaceholder")}
-                className="bg-card pl-10 pr-20 h-11 placeholder:text-primary"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                onKeyDown={handleKeyPress}
-              />
-              {/* Botão de limpar busca */}
-              {(searchTerm || activeSearch) && (
-                <Button
-                  onClick={handleClearSearch}
-                  aria-label={t("clear")}
-                  variant="ghost"
-                  size="icon"
-                  className="absolute right-10 top-1/2 -translate-y-1/2 cursor-pointer hover:text-primary h-8 w-8"
-                >
-                  <MdClear className="size-4" />
-                </Button>
-              )}
-              {/* Botão de buscar */}
-              <Button
-                onClick={handleSearchSpecificPokemon}
-                aria-label={t("search")}
-                variant="ghost"
-                size="icon"
-                className="absolute right-1 top-1/2 -translate-y-1/2 cursor-pointer hover:text-primary h-8 w-8"
-                disabled={pokemonsQuery.isFetching || searchQuery.isFetching}
-              >
-                <MdSend className="size-4" />
-              </Button>
-            </div>
-          </div>
+      <main>
+        <section className="container mx-auto max-w-7xl">
+          <SearchInput
+            searchTerm={searchTerm}
+            activeSearch={activeSearch}
+            isLoading={pokemonsQuery.isFetching || searchQuery.isFetching}
+            onSearchTermChange={setSearchTerm}
+            onSearch={handleSearchSpecificPokemon}
+            onClearSearch={handleClearSearch}
+            onKeyPress={handleKeyPress}
+          />
 
           {filteredPokemon.length > 0 ? (
             <div ref={parentRef} className={`overflow-auto max-h-[88vh]`}>
