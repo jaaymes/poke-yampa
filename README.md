@@ -91,9 +91,6 @@ pnpm preview
 
 # Analisar bundle
 pnpm analyze
-
-# Executar testes de performance
-pnpm perf
 ```
 
 ### Limpeza
@@ -131,7 +128,7 @@ Este projeto utiliza o Storybook para documentação de componentes, que pode se
 - Integrado à aplicação: http://localhost:5173/docs
 
 ### Em Produção
-- Integrado à aplicação: https://seu-site.com/docs
+- Integrado à aplicação: https://poke-yampa-en8g.vercel.app/docs
 
 ## Performance
 
