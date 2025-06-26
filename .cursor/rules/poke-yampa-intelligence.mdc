@@ -1,0 +1,98 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# PokéYampa Project Intelligence
+
+## Critical Implementation Patterns
+
+### Performance-First Architecture
+- **Virtualization is Essential**: Always use @tanstack/react-virtual for lists >100 items
+- **Bundle Splitting Strategy**: Follow the established manual chunks pattern in vite.config.ts
+- **React Query Caching**: 5-minute stale time for Pokemon data, persist to localStorage
+- **Image Optimization**: All Pokemon images should be lazy-loaded and properly sized
+
+### Component Development Standards
+- **shadcn/ui Base**: All UI components should extend shadcn/ui primitives
+- **data-testid Required**: Every interactive element needs data-testid for testing
+- **Storybook First**: Develop components in isolation before integration
+- **Accessibility Mandatory**: WCAG 2.1 AA compliance is non-negotiable
+
+### Code Quality Gates
+- **TypeScript Strict Mode**: Zero any types, full type coverage required
+- **Test Coverage**: >90% coverage for all new features
+- **Lighthouse Scores**: Must maintain >90 across all categories
+- **ESLint Zero Tolerance**: No linting errors allowed in commits
+
+### React 19 Patterns
+- **Concurrent Features**: Leverage Suspense boundaries for loading states
+- **Custom Hooks**: Complex logic should be extracted to custom hooks
+- **State Colocation**: Keep state close to where it's used
+- **Error Boundaries**: Wrap risky operations in error boundaries
+
+### API Integration Patterns
+- **Zod Validation**: All API responses must be validated with Zod schemas
+- **Error Handling**: Use centralized error handling in axios interceptors
+- **Toast Notifications**: User-friendly error messages via sonner
+- **Offline Support**: React Query persistence for offline functionality
+
+### Testing Strategy
+- **Unit Tests**: Vitest + Testing Library for all components
+- **E2E Tests**: Cypress for critical user journeys
+- **Visual Regression**: Chromatic for Storybook components
+- **Accessibility Testing**: Automated a11y checks in CI
+
+### Internationalization Requirements
+- **Portuguese First**: pt-BR is the primary language
+- **i18next Patterns**: Use translation hooks, never hardcode text
+- **Language Detection**: Respect browser language preferences
+- **Fallback Strategy**: English as fallback for missing translations
+
+### Performance Optimization Checklist
+1. **Virtualize Large Lists**: Use react-virtual for >50 items
+2. **Code Split Routes**: Lazy load page components
+3. **Optimize Images**: Proper sizing and lazy loading
+4. **Bundle Analysis**: Regular monitoring with vite-bundle-analyzer
+5. **Lighthouse Monitoring**: Continuous performance tracking
+
+### Development Workflow
+- **Feature Branches**: Always create feature branches from main
+- **Storybook Development**: Build components in isolation first
+- **Test-Driven**: Write tests before or alongside implementation
+- **Performance Testing**: Run Lighthouse on new features
+- **Documentation**: Update Storybook stories for new components
+
+### Critical Dependencies
+- **React 19**: Latest features and concurrent mode
+- **Tailwind CSS v4**: Cutting-edge styling framework
+- **@tanstack/react-query**: Server state management
+- **@tanstack/react-virtual**: List virtualization
+- **Radix UI**: Accessible component primitives
+
+### User Experience Priorities
+1. **Mobile First**: Design for touch, enhance for desktop
+2. **Speed**: Sub-second interactions expected
+3. **Accessibility**: Keyboard and screen reader support
+4. **Internationalization**: Respect user language preferences
+5. **Error Recovery**: Graceful handling of failures
+
+### Deployment Considerations
+- **Static Site**: Optimized for CDN deployment
+- **Environment Variables**: Proper separation of dev/prod configs
+- **Security Headers**: CSP and security best practices
+- **Performance Monitoring**: Lighthouse CI integration
+
+## Common Pitfalls to Avoid
+- **Don't Skip Virtualization**: Large lists will kill performance
+- **Don't Ignore Accessibility**: Screen reader support is required
+- **Don't Hardcode Text**: Always use i18n translation keys
+- **Don't Skip Testing**: Every component needs comprehensive tests
+- **Don't Compromise Performance**: Lighthouse scores must stay >90
+
+## Project Context Reminders
+- **Modern Pokédex**: React 19 showcase with advanced optimization
+- **Production Ready**: Full CI/CD with comprehensive testing
+- **Developer Experience**: Storybook, TypeScript, comprehensive tooling
+- **Performance Excellence**: Virtualization, code splitting, optimization
+- **Quality Standards**: WCAG compliance, test coverage, type safety
