@@ -30,10 +30,9 @@ export const Home = () => {
     getEstimatedSize,
   } = useListPokemons();
 
-  // Add search pokemon functionality
   const {
     isDetailOpen,
-    searchQuery,
+    searchMutation,
     handleSearchPokemon,
     openDetailDrawer,
     closeDetailDrawer,
@@ -43,7 +42,6 @@ export const Home = () => {
   const { isMobile, isTablet, isDesktop } = useScreenSize();
   const parentRef = useRef<HTMLDivElement>(null);
 
-  // Calcular número de colunas baseado no tamanho da tela
   const columns = useMemo(() => {
     return getColumns(isMobile, isTablet);
   }, [getColumns, isMobile, isTablet]);
@@ -52,16 +50,14 @@ export const Home = () => {
     count: Math.ceil(filteredPokemon.length / columns),
     getScrollElement: () => parentRef.current,
     estimateSize: getEstimatedSize,
-    overscan: 5, // Aumentar overscan para melhor performance
+    overscan: 5,
     measureElement: (element) => element?.getBoundingClientRect().height,
   });
 
-  // Handler otimizado para mudança de altura
   const handleHeightChangeOptimized = (index: number, height: number) => {
     updateItemHeight(index, height, () => virtualizer.measure());
   };
 
-  // Handler para Enter no input
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       e.preventDefault();
@@ -69,30 +65,20 @@ export const Home = () => {
     }
   };
 
-  // Handler para buscar Pokémon específico
   const handleSearchSpecificPokemon = () => {
     if (searchTerm.trim()) {
       handleSearchPokemon(searchTerm);
-      handleSearch(); // Manter a funcionalidade original
+      searchMutation.mutate();
+      handleSearch();
     }
   };
 
-  // Efeito para abrir o drawer quando a busca for bem-sucedida
   useEffect(() => {
-    if (searchQuery.isSuccess) {
+    if (searchMutation.isSuccess) {
       openDetailDrawer();
     }
-  }, [searchQuery.isSuccess, openDetailDrawer]);
+  }, [searchMutation.isSuccess, openDetailDrawer]);
 
-  // Mostrar mensagem de erro quando a busca falhar
-  useEffect(() => {
-    if (searchQuery.isError) {
-      // Pode adicionar uma notificação de erro aqui se tiver um componente de toast
-      console.error("Erro ao buscar Pokémon:", searchQuery.error);
-    }
-  }, [searchQuery.isError, searchQuery.error]);
-
-  // Efeito para carregar mais dados quando necessário
   useEffect(() => {
     const [lastItem] = [...virtualizer.getVirtualItems()].reverse();
 
@@ -122,24 +108,10 @@ export const Home = () => {
     shouldFetchNextPage,
   ]);
 
-  // Efeito para remeasure quando alturas mudam
   useEffect(() => {
     virtualizer.measure();
   }, [itemHeights, virtualizer]);
 
-  // Show loading state
-  if (pokemonsQuery.isLoading) {
-    return (
-      <div className="flex min-h-screen flex-col p-4">
-        <Header />
-        <main className="flex-1 flex items-center justify-center">
-          <Loading />
-        </main>
-      </div>
-    );
-  }
-
-  // Show error state
   if (pokemonsQuery.isError) {
     return (
       <div className="flex min-h-screen flex-col p-4">
@@ -160,106 +132,85 @@ export const Home = () => {
   }
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col relative">
+      {pokemonsQuery.isLoading && (
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-50 backdrop-blur-sm">
+          <Loading />
+        </div>
+      )}
       <Header />
-      <main>
-        <section className="container mx-auto max-w-7xl">
+      <main className="container mx-auto max-w-7xl py-1">
+        <div
+          ref={parentRef}
+          className={`overflow-auto max-h-[88vh] flex flex-col gap-2`}
+        >
           <SearchInput
             searchTerm={searchTerm}
             activeSearch={activeSearch}
-            isLoading={pokemonsQuery.isFetching || searchQuery.isFetching}
+            isLoading={pokemonsQuery.isFetching || searchMutation.isPending}
             onSearchTermChange={setSearchTerm}
             onSearch={handleSearchSpecificPokemon}
             onClearSearch={handleClearSearch}
             onKeyPress={handleKeyPress}
           />
+          <div
+            style={{
+              height: `${virtualizer.getTotalSize()}px`,
+              width: "100%",
+              position: "relative",
+            }}
+          >
+            {virtualizer.getVirtualItems().map((virtualItem) => {
+              const startIndex = virtualItem.index * columns;
+              const endIndex = Math.min(
+                startIndex + columns,
+                filteredPokemon.length
+              );
+              const rowPokemons = filteredPokemon.slice(startIndex, endIndex);
 
-          {filteredPokemon.length > 0 ? (
-            <div ref={parentRef} className={`overflow-auto max-h-[88vh]`}>
-              <div
-                style={{
-                  height: `${virtualizer.getTotalSize()}px`,
-                  width: "100%",
-                  position: "relative",
-                }}
-              >
-                {virtualizer.getVirtualItems().map((virtualItem) => {
-                  const startIndex = virtualItem.index * columns;
-                  const endIndex = Math.min(
-                    startIndex + columns,
-                    filteredPokemon.length
-                  );
-                  const rowPokemons = filteredPokemon.slice(
-                    startIndex,
-                    endIndex
-                  );
-
-                  return (
-                    <div
-                      key={virtualItem.key}
-                      className={`absolute top-0 left-0 z-0 w-full ${
-                        isMobile ? "flex flex-col px-2" : "grid px-4"
-                      } ${
-                        isTablet
-                          ? "grid-cols-2"
-                          : isDesktop
-                          ? "grid-cols-3"
-                          : ""
-                      }`}
-                      style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        width: "100%",
-                        height: `${virtualItem.size}px`,
-                        transform: `translateY(${virtualItem.start}px)`,
-                      }}
-                    >
-                      {rowPokemons.map((pokemon) => (
-                        <div key={pokemon.url} className="p-2">
-                          <PokemonCard
-                            pokemon={pokemon}
-                            onHeightChange={(height) =>
-                              handleHeightChangeOptimized(
-                                virtualItem.index,
-                                height
-                              )
-                            }
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ) : (
-            <div className="flex flex-col items-center justify-center py-4">
-              <p className="mb-4 text-lg">{t("pokemonNotFound")}</p>
-              {activeSearch && (
-                <Button
-                  onClick={handleClearSearch}
-                  variant="outline"
-                  aria-label={t("clear")}
+              return (
+                <div
+                  key={virtualItem.key}
+                  className={`absolute top-0 left-0 z-0 w-full ${
+                    isMobile ? "flex flex-col px-2" : "grid px-4"
+                  } ${
+                    isTablet ? "grid-cols-2" : isDesktop ? "grid-cols-3" : ""
+                  }`}
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: `${virtualItem.size}px`,
+                    transform: `translateY(${virtualItem.start}px)`,
+                  }}
                 >
-                  {t("clear")} {t("search")}
-                </Button>
-              )}
-            </div>
-          )}
-        </section>
+                  {rowPokemons.map((pokemon) => (
+                    <div key={pokemon.url} className="p-2">
+                      <PokemonCard
+                        pokemon={pokemon}
+                        onHeightChange={(height) =>
+                          handleHeightChangeOptimized(virtualItem.index, height)
+                        }
+                      />
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </main>
 
-      {/* Pokemon Detail Drawer */}
-      {isDetailOpen && searchQuery.data && (
+      {isDetailOpen && searchMutation.data && (
         <PokemonDetailDrawer
           isOpen={isDetailOpen}
-          abilities={searchQuery.data.abilities}
+          abilities={searchMutation.data.abilities}
           onClose={closeDetailDrawer}
-          name={searchQuery.data.name}
-          types={searchQuery.data.types}
-          stats={searchQuery.data.stats}
-          avatar={searchQuery.data.sprites}
+          name={searchMutation.data.name}
+          types={searchMutation.data.types}
+          stats={searchMutation.data.stats}
+          avatar={searchMutation.data.sprites}
         />
       )}
     </div>

@@ -13,6 +13,7 @@ export const ptBR = {
   of: "de",
   pokemons: "Pokémons",
   searching: "Buscando",
+  emptySearchField: "O campo de busca não pode estar vazio",
 
   // Pokemon details
   height: "Altura",
@@ -66,6 +67,30 @@ export const ptBR = {
   tryAgain: "Tentar novamente",
   error: "Erro",
   imageLoadError: "Erro ao carregar imagem",
+
+  // Server Error (500)
+  serverError: {
+    title: "Erro interno do servidor",
+    description:
+      "Ocorreu um erro interno. Nossa equipe foi notificada e está trabalhando para resolver o problema.",
+    tryAgain: "Tentar novamente",
+    backHome: "Voltar ao início",
+  },
+
+  // Maintenance
+  maintenance: {
+    title: "Em manutenção",
+    description: "Estamos fazendo algumas melhorias. Voltaremos em breve!",
+    returnLater: "Tente novamente mais tarde",
+    backHome: "Voltar ao início",
+  },
+
+  // Toast messages
+  toast: {
+    serverError: "Erro no servidor. Tente novamente mais tarde.",
+    networkError: "Erro de conexão. Verifique sua internet.",
+    unknownError: "Algo deu errado. Tente novamente.",
+  },
 
   // Footer
   allRightsReserved: "Todos os direitos reservados",

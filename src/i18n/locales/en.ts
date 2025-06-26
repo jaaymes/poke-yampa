@@ -12,6 +12,8 @@ export const en = {
   showing: "Showing",
   of: "of",
   pokemons: "Pokémons",
+  searching: "Searching",
+  emptySearchField: "Search field cannot be empty",
 
   // Pokemon details
   height: "Height",
@@ -66,6 +68,30 @@ export const en = {
   error: "Error",
   imageLoadError: "Error loading image",
 
+  // Server Error (500)
+  serverError: {
+    title: "Internal server error",
+    description:
+      "An internal error occurred. Our team has been notified and is working to resolve the issue.",
+    tryAgain: "Try again",
+    backHome: "Back to home",
+  },
+
+  // Maintenance
+  maintenance: {
+    title: "Under maintenance",
+    description: "We're making some improvements. We'll be back soon!",
+    returnLater: "Try again later",
+    backHome: "Back to home",
+  },
+
+  // Toast messages
+  toast: {
+    serverError: "Server error. Please try again later.",
+    networkError: "Connection error. Check your internet.",
+    unknownError: "Something went wrong. Please try again.",
+  },
+
   // Footer
   allRightsReserved: "All rights reserved",
 
@@ -77,7 +103,6 @@ export const en = {
   close: "Close",
   search: "Search",
   clear: "Clear",
-  searching: "Searching",
   swipeToNavigate: "Swipe to navigate between tabs",
 
   // Pokemon abilities

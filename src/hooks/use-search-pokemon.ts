@@ -1,19 +1,19 @@
 import type { PokemonDetail } from "@/interface/pokemon-detail";
 import { getPokemon } from "@/services/pokemon";
-import { CACHE_TIME } from "@/utils/enums";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation } from "@tanstack/react-query";
 import { useCallback, useState } from "react";
 
 export const useSearchPokemon = () => {
   const [searchedPokemon, setSearchedPokemon] = useState<string>("");
   const [isDetailOpen, setIsDetailOpen] = useState(false);
 
-  const searchQuery = useQuery<PokemonDetail>({
-    queryKey: ["pokemon-search", searchedPokemon],
-    queryFn: () => getPokemon(searchedPokemon.toLowerCase()),
-    enabled: !!searchedPokemon,
+  const searchMutation = useMutation<PokemonDetail>({
+    mutationFn: () => getPokemon(searchedPokemon.toLowerCase()),
+    onError: () => {
+      setSearchedPokemon("");
+      setIsDetailOpen(false);
+    },
     retry: false,
-    staleTime: CACHE_TIME.FIVE_MINUTES,
   });
 
   const handleSearchPokemon = async (name: string) => {
@@ -44,7 +44,7 @@ export const useSearchPokemon = () => {
   return {
     searchedPokemon,
     isDetailOpen,
-    searchQuery,
+    searchMutation,
     handleSearchPokemon,
     openDetailDrawer,
     closeDetailDrawer,

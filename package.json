@@ -19,7 +19,8 @@
     "build-storybook": "storybook build",
     "build-storybook-docs": "./scripts/build-storybook-docs.sh",
     "chromatic": "npx chromatic --project-token=chpt_5188b4c3cbde472",
-    "clean:full": "rm -rf node_modules && rm -rf dist && rm -rf pnpm-lock.yaml && rm -rf storybook-static && rm -rf public/docs"
+    "clean:full": "rm -rf node_modules && rm -rf dist && rm -rf pnpm-lock.yaml && rm -rf storybook-static && rm -rf public/docs",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
@@ -71,6 +72,7 @@
     "@vitest/coverage-v8": "^3.2.4",
     "@vitest/ui": "^3.2.4",
     "chromatic": "^13.0.1",
+    "cypress": "^14.5.0",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",

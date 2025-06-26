@@ -1,4 +1,5 @@
 import { useLanguage } from "@/hooks/use-language";
+import { Loader2 } from "lucide-react";
 import { MdClear, MdSearch, MdSend } from "react-icons/md";
 import { Button } from "../button";
 import { Input } from "../input";
@@ -26,7 +27,7 @@ export const SearchInput = ({
 
   return (
     <div
-      className="relative w-full max-w-sm mx-auto"
+      className="relative w-full max-w-sm mx-auto py-1"
       data-testid="search-input"
     >
       <MdSearch className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-primary" />
@@ -53,7 +54,11 @@ export const SearchInput = ({
       )}
       {/* Botão de buscar */}
       <Button
-        onClick={onSearch}
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          onSearch();
+        }}
         aria-label={t("search")}
         variant="ghost"
         size="icon"
@@ -61,7 +66,11 @@ export const SearchInput = ({
         disabled={isLoading}
         data-testid="search-button"
       >
-        <MdSend className="size-4" />
+        {isLoading ? (
+          <Loader2 className="size-4 animate-spin" />
+        ) : (
+          <MdSend className="size-4" />
+        )}
       </Button>
     </div>
   );

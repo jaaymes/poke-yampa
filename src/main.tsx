@@ -4,6 +4,7 @@ import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router";
 import { Loading } from "./components/loading/loading";
+import { Toaster } from "./components/ui/toast";
 import "./i18n";
 import { queryClient } from "./lib/client";
 import { router } from "./routes";
@@ -18,6 +19,7 @@ createRoot(rootElement).render(
     <Suspense fallback={<Loading />}>
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
+        <Toaster richColors />
       </QueryClientProvider>
     </Suspense>
   </StrictMode>

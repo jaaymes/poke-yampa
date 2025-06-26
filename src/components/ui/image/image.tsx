@@ -1,5 +1,6 @@
 import { useLanguage } from "@/hooks/use-language";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Skeleton } from "../skeleton";
 
 interface ImageProps {
   src: string;
@@ -17,7 +18,7 @@ interface ImageProps {
 
 // Optimized placeholder with better visual feedback
 const DEFAULT_BLUR_DATA_URL =
-  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InNoaW1tZXIiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjFmMWYxIiBzdG9wLW9wYWNpdHk9IjAuMyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZTVlNWU1IiBzdG9wLW9wYWNpdHk9IjAuNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YxZjFmMSIgc3RvcC1vcGFjaXR5PSIwLjMiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3NoaW1tZXIpIi8+PC9zdmc+";
+  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InNoaW1tZXIiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjhmOGY4IiBzdG9wLW9wYWNpdHk9IjAuMiIvPjxzdG9wIG9mZnNldD0iMjUlIiBzdG9wLWNvbG9yPSIjZjFmMWYxIiBzdG9wLW9wYWNpdHk9IjAuNCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZWFlYWVhIiBzdG9wLW9wYWNpdHk9IjAuNSIvPjxzdG9wIG9mZnNldD0iNzUlIiBzdG9wLWNvbG9yPSIjZjFmMWYxIiBzdG9wLW9wYWNpdHk9IjAuNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIgc3RvcC1vcGFjaXR5PSIwLjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3NoaW1tZXIpIi8+PC9zdmc+";
 
 // Image cache to avoid reloading
 const imageCache = new Set<string>();
@@ -187,27 +188,7 @@ export function Image({
     >
       {/* Loading indicator overlay */}
       {showLoadingIndicator && (isLoading || (!isLoaded && !hasError)) && (
-        <div className="absolute inset-0 flex items-center justify-center bg-muted/10 backdrop-blur-[1px] z-10">
-          <div className="flex flex-col items-center gap-2">
-            {/* Spinner */}
-            <div className="w-5 h-5 border-2 border-muted-foreground/20 border-t-muted-foreground/60 rounded-full animate-spin" />
-            {/* Progress dots */}
-            <div className="flex gap-1">
-              <div
-                className="w-1 h-1 bg-muted-foreground/40 rounded-full animate-pulse"
-                style={{ animationDelay: "0ms" }}
-              />
-              <div
-                className="w-1 h-1 bg-muted-foreground/40 rounded-full animate-pulse"
-                style={{ animationDelay: "200ms" }}
-              />
-              <div
-                className="w-1 h-1 bg-muted-foreground/40 rounded-full animate-pulse"
-                style={{ animationDelay: "400ms" }}
-              />
-            </div>
-          </div>
-        </div>
+        <Skeleton className="absolute inset-0" />
       )}
 
       {/* Main image */}
