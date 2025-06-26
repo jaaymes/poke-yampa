@@ -5,8 +5,6 @@ import { useCallback, useMemo, useState } from "react";
 const POKEMON_PER_PAGE = 20;
 
 export const useListPokemons = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [activeSearch, setActiveSearch] = useState("");
   const [itemHeights, setItemHeights] = useState<Record<number, number> | null>(
     null
   );
@@ -29,20 +27,27 @@ export const useListPokemons = () => {
     return pokemonsQuery.data?.pages.flatMap((page) => page.results) ?? [];
   }, [pokemonsQuery.data]);
 
-  const filteredPokemon = useMemo(() => {
-    return allPokemon;
-  }, [allPokemon]);
+  // const filteredPokemon = useMemo(() => {
+  //   if (!searchTerm.trim()) {
+  //     return allPokemon;
+  //   }
 
-  const handleSearch = useCallback(() => {
-    const trimmedSearch = searchTerm.trim();
-    setActiveSearch(trimmedSearch);
-  }, [searchTerm]);
+  //   const searchLower = searchTerm.toLowerCase().trim();
+  //   return allPokemon.filter((pokemon) =>
+  //     pokemon.name.toLowerCase().includes(searchLower)
+  //   );
+  // }, [allPokemon, searchTerm]);
 
-  const handleClearSearch = useCallback(() => {
-    setSearchTerm("");
-    setActiveSearch("");
-    setItemHeights(null);
-  }, []);
+  // const handleSearch = useCallback(() => {
+  //   const trimmedSearch = searchTerm.trim();
+  //   setActiveSearch(trimmedSearch);
+  // }, [searchTerm]);
+
+  // const handleClearSearch = useCallback(() => {
+  //   setSearchTerm("");
+  //   setActiveSearch("");
+  //   setItemHeights(null);
+  // }, []);
 
   const handleHeightChange = useCallback((index: number, height: number) => {
     setItemHeights((prev) => {
@@ -82,15 +87,9 @@ export const useListPokemons = () => {
       lastIndex: number,
       totalRows: number,
       hasNextPage: boolean,
-      isFetchingNextPage: boolean,
-      currentActiveSearch: string
+      isFetchingNextPage: boolean
     ) => {
-      return (
-        lastIndex >= totalRows - 1 &&
-        hasNextPage &&
-        !isFetchingNextPage &&
-        !currentActiveSearch.trim()
-      );
+      return lastIndex >= totalRows - 1 && hasNextPage && !isFetchingNextPage;
     },
     []
   );
@@ -103,17 +102,11 @@ export const useListPokemons = () => {
   );
 
   return {
-    searchTerm,
-    setSearchTerm,
-    activeSearch,
     itemHeights,
 
     pokemonsQuery,
     allPokemon,
-    filteredPokemon,
 
-    handleSearch,
-    handleClearSearch,
     handleHeightChange,
     updateItemHeight,
     setItemHeights,

@@ -14,6 +14,7 @@ interface ImageProps {
   onError?: () => void;
   style?: React.CSSProperties;
   showLoadingIndicator?: boolean;
+  "data-testid"?: string;
 }
 
 // Optimized placeholder with better visual feedback
@@ -63,6 +64,7 @@ export function Image({
   onError,
   style,
   showLoadingIndicator = true,
+  "data-testid": dataTestId,
 }: ImageProps) {
   const [isLoaded, setIsLoaded] = useState(() => imageCache.has(src));
   const [isLoading, setIsLoading] = useState(false);
@@ -188,7 +190,7 @@ export function Image({
     >
       {/* Loading indicator overlay */}
       {showLoadingIndicator && (isLoading || (!isLoaded && !hasError)) && (
-        <Skeleton className="absolute inset-0" />
+        <Skeleton data-testid="skeleton-image" className="absolute inset-0" />
       )}
 
       {/* Main image */}
@@ -207,6 +209,7 @@ export function Image({
         decoding="async"
         onLoad={currentSrc === src ? handleLoad : undefined}
         onError={currentSrc === src ? handleError : undefined}
+        data-testid={dataTestId}
       />
     </div>
   );

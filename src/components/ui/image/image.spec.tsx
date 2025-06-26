@@ -86,7 +86,7 @@ describe("Image", () => {
     expect(container).toHaveStyle({ width: "200px", height: "150px" });
   });
 
-  it("deve mostrar indicador de carregamento por padrão", () => {
+  it("deve mostrar skeleton de carregamento por padrão", () => {
     render(
       <Image
         src="https://example.com/image.jpg"
@@ -95,9 +95,9 @@ describe("Image", () => {
       />
     );
 
-    // Verifica se o spinner está presente
-    const spinner = document.querySelector(".animate-spin");
-    expect(spinner).toBeInTheDocument();
+    // Verifica se o skeleton está presente
+    const skeleton = screen.getByTestId("skeleton-image");
+    expect(skeleton).toBeInTheDocument();
   });
 
   it("deve ocultar indicador de carregamento quando desabilitado", () => {
@@ -110,8 +110,8 @@ describe("Image", () => {
     );
 
     // Verifica se o spinner não está presente
-    const spinner = document.querySelector(".animate-spin");
-    expect(spinner).not.toBeInTheDocument();
+    const skeleton = screen.queryByTestId("skeleton-image");
+    expect(skeleton).not.toBeInTheDocument();
   });
 
   it("deve renderizar estado de erro quando a imagem falha", async () => {

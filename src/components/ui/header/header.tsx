@@ -18,6 +18,7 @@ export function Header() {
             size="sm"
             onClick={() => changeLanguage("pt-BR")}
             variant={currentLanguage === "pt-BR" ? "default" : "ghost"}
+            data-testid="language-pt-button"
           >
             PT
           </Button>
@@ -25,6 +26,7 @@ export function Header() {
             size="sm"
             onClick={() => changeLanguage("en")}
             variant={currentLanguage === "en" ? "default" : "ghost"}
+            data-testid="language-en-button"
           >
             EN
           </Button>

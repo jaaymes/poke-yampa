@@ -1,4 +1,3 @@
-// Service Worker para PWA
 const CACHE_NAME = 'poke-yampa-v1';
 const STATIC_CACHE_URLS = [
   '/',

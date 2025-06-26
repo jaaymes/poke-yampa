@@ -4,12 +4,14 @@ interface LoadingProps {
   size?: "sm" | "md" | "lg";
   className?: string;
   text?: string;
+  "data-testid"?: string;
 }
 
 export function Loading({
   size = "md",
   className,
   text = "Carregando...",
+  "data-testid": dataTestId = "loading",
 }: LoadingProps) {
   const sizeClasses = {
     sm: "w-4 h-4",
@@ -23,7 +25,7 @@ export function Loading({
         "flex flex-col items-center justify-center gap-3",
         className
       )}
-      data-testid="loading"
+      data-testid={dataTestId}
     >
       <div className="relative">
         {/* Pokéball loading animation */}

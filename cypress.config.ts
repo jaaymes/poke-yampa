@@ -2,11 +2,13 @@ import { defineConfig } from "cypress";
 
 const config = defineConfig({
   e2e: {
-    setupNodeEvents(on, config) {
-      return config;
-    },
-    baseUrl: "https://poke-yampa.vercel.app/",
+    supportFile: false,
+    specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    baseUrl: "http://localhost:5174",
+    video: false,
+    screenshotOnRunFailure: true,
   },
+
   component: {
     devServer: {
       framework: "react",
@@ -14,4 +16,5 @@ const config = defineConfig({
     },
   },
 });
+
 export default config;

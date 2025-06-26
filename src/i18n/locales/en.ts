@@ -104,6 +104,7 @@ export const en = {
   search: "Search",
   clear: "Clear",
   swipeToNavigate: "Swipe to navigate between tabs",
+  clickToCopy: "Click to copy",
 
   // Pokemon abilities
   stench: "Stench",

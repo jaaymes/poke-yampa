@@ -203,7 +203,7 @@ function PokemonCardComponent({ pokemon, onHeightChange }: PokemonCardProps) {
                 } ${name} ${t("stats")}`}
                 data-testid="expand-button"
               >
-                {t("expand")}
+                {isExpanded ? t("collapse") : t("expand")}
                 <MdExpandMore
                   className={`size-5 transition-transform duration-300 ${
                     isExpanded ? "rotate-180" : "rotate-0"

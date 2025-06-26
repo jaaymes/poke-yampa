@@ -55,7 +55,7 @@ export function PokemonDetailDrawer({
       {/* HP */}
       <div className="flex justify-between items-center  border-b border-border">
         <span className="text-sm font-normal ">{t("hp")}</span>
-        <span className="text-sm font-normal ">
+        <span className="text-sm font-normal" data-testid="hp-stat">
           {stats?.find((stat) => stat.stat.name === "hp")?.base_stat || 0}
         </span>
       </div>
@@ -63,7 +63,7 @@ export function PokemonDetailDrawer({
       {/* Attack */}
       <div className="flex justify-between items-center  border-b border-border">
         <span className="text-sm font-normal ">{t("attack")}</span>
-        <span className="text-sm font-normal ">
+        <span className="text-sm font-normal" data-testid="attack-stat">
           {stats?.find((stat) => stat.stat.name === "attack")?.base_stat || 0}
         </span>
       </div>
@@ -71,7 +71,7 @@ export function PokemonDetailDrawer({
       {/* Defense */}
       <div className="flex justify-between items-center  border-b border-border">
         <span className="text-sm font-normal ">{t("defense")}</span>
-        <span className="text-sm font-normal ">
+        <span className="text-sm font-normal" data-testid="defense-stat">
           {stats?.find((stat) => stat.stat.name === "defense")?.base_stat || 0}
         </span>
       </div>
@@ -79,7 +79,7 @@ export function PokemonDetailDrawer({
       {/* Special Attack */}
       <div className="flex justify-between items-center  border-b border-border">
         <span className="text-sm font-normal ">{t("specialAttackShort")}</span>
-        <span className="text-sm font-normal ">
+        <span className="text-sm font-normal" data-testid="special-attack-stat">
           {stats?.find((stat) => stat.stat.name === "special-attack")
             ?.base_stat || 0}
         </span>
@@ -88,7 +88,10 @@ export function PokemonDetailDrawer({
       {/* Special Defense */}
       <div className="flex justify-between items-center  border-b border-border">
         <span className="text-sm font-normal ">{t("specialDefenseShort")}</span>
-        <span className="text-sm font-normal ">
+        <span
+          className="text-sm font-normal"
+          data-testid="special-defense-stat"
+        >
           {stats?.find((stat) => stat.stat.name === "special-defense")
             ?.base_stat || 0}
         </span>
@@ -97,7 +100,7 @@ export function PokemonDetailDrawer({
       {/* Speed */}
       <div className="flex justify-between items-center  border-b border-border">
         <span className="text-sm font-normal ">{t("speed")}</span>
-        <span className="text-sm font-normal ">
+        <span className="text-sm font-normal" data-testid="speed-stat">
           {stats?.find((stat) => stat.stat.name === "speed")?.base_stat || 0}
         </span>
       </div>
@@ -105,7 +108,7 @@ export function PokemonDetailDrawer({
       {/* Total */}
       <div className="flex justify-between items-center ">
         <Label className="text-sm font-medium">{t("total")}</Label>
-        <Label className="text-sm font-medium">
+        <Label className="text-sm font-medium" data-testid="total-stat">
           {stats?.reduce((total, stat) => total + stat.base_stat, 0) || 0}
         </Label>
       </div>
@@ -116,10 +119,13 @@ export function PokemonDetailDrawer({
     <div className="space-y-4">
       {/* Abilities Section */}
       <div className="flex items-stretch gap-2">
-        <span className="text-sm font-bold text-[#2A2D46]">
+        <span
+          className="text-sm font-bold text-[#2A2D46]"
+          data-testid="abilities-label"
+        >
           {t("abilities")}
         </span>
-        <span className="text-sm text-[#5D5F7C]">
+        <span className="text-sm text-[#5D5F7C]" data-testid="abilities-stat">
           {abilities.map((ability) => t(ability.ability.name)).join(", ")}
         </span>
       </div>
@@ -130,13 +136,17 @@ export function PokemonDetailDrawer({
           <span className="text-sm font-bold text-[#2A2D46]">
             {t("height")}
           </span>
-          <span className="text-sm text-[#5D5F7C]">7</span>
+          <span className="text-sm text-[#5D5F7C]" data-testid="height-stat">
+            7
+          </span>
         </div>
         <div className="flex gap-2 flex-1">
           <span className="text-sm font-bold text-[#2A2D46]">
             {t("weight")}
           </span>
-          <span className="text-sm text-[#5D5F7C]">69</span>
+          <span className="text-sm text-[#5D5F7C]" data-testid="weight-stat">
+            69
+          </span>
         </div>
       </div>
     </div>
@@ -147,7 +157,12 @@ export function PokemonDetailDrawer({
       {/* Header with Pokemon name and types */}
       <div className="text-center space-y-4">
         <div className="flex items-center  gap-2">
-          <h2 className="text-2xl font-bold  capitalize">{name}</h2>
+          <h2
+            className="text-2xl font-bold  capitalize"
+            data-testid="pokemon-name"
+          >
+            {name}
+          </h2>
         </div>
 
         {types && types.length > 0 && (
@@ -164,6 +179,7 @@ export function PokemonDetailDrawer({
                   className={`border-none ${
                     typeColors[typeName.toLowerCase()] || "bg-muted"
                   }`}
+                  data-testid={`pokemon-type-${typeName}`}
                 >
                   {getTypeTranslation(typeName)}
                 </Badge>
@@ -192,12 +208,22 @@ export function PokemonDetailDrawer({
       </div>
       <Tabs defaultValue="status">
         <TabsList className="grid w-full grid-cols-2 bg-transparent space-x-2">
-          <TabsTrigger asChild value="status" className="shadow-none">
+          <TabsTrigger
+            asChild
+            value="status"
+            className="shadow-none"
+            data-testid="status-tab"
+          >
             <Button size="sm" className="rounded-2xl" aria-label={t("status")}>
               {t("status")}
             </Button>
           </TabsTrigger>
-          <TabsTrigger asChild value="details" className="shadow-none">
+          <TabsTrigger
+            asChild
+            value="details"
+            className="shadow-none"
+            data-testid="details-tab"
+          >
             <Button size="sm" className="rounded-2xl" aria-label={t("details")}>
               {t("details")}
             </Button>
@@ -222,7 +248,7 @@ export function PokemonDetailDrawer({
         <DrawerContent data-testid="pokemon-detail-drawer">
           <DrawerHeader className="relative pb-0">
             <DrawerTitle className="sr-only">{name}</DrawerTitle>
-            <DrawerClose asChild>
+            <DrawerClose asChild data-testid="close-drawer-button">
               <Button
                 variant="ghost"
                 size="icon"
@@ -241,7 +267,7 @@ export function PokemonDetailDrawer({
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent>
+      <DialogContent data-testid="pokemon-detail-dialog">
         <DialogTitle className="sr-only">{name}</DialogTitle>
         <DialogDescription id={pokemonDescriptionId} className="sr-only">
           {t("pokemonDetails")} {name}

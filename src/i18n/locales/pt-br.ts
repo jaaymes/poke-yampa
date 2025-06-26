@@ -104,6 +104,7 @@ export const ptBR = {
   search: "Buscar",
   clear: "Limpar",
   swipeToNavigate: "Deslize para navegar entre as abas",
+  clickToCopy: "Clique para copiar",
 
   // Pokemon abilities
   stench: "Mau Cheiro",

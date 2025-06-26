@@ -39,6 +39,14 @@ describe("Loading Component", () => {
       expect(container).toHaveClass(customClass);
     });
 
+    it("deve aceitar data-testid personalizado", () => {
+      const customTestId = "loading-list";
+      render(<Loading data-testid={customTestId} />);
+
+      expect(screen.getByTestId(customTestId)).toBeInTheDocument();
+      expect(screen.queryByTestId("loading")).not.toBeInTheDocument();
+    });
+
     it("deve renderizar com tamanho pequeno", () => {
       render(<Loading size="sm" />);
 

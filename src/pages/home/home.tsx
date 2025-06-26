@@ -1,10 +1,10 @@
-import { Loading } from "@/components/loading/loading";
+import { Loading } from "@/components/loading";
 import { PokemonDetailDrawer } from "@/components/pokemon-detail-drawer";
 import { useLanguage } from "@/hooks/use-language";
 import { useScreenSize } from "@/hooks/use-screen-size";
 import { useSearchPokemon } from "@/hooks/use-search-pokemon";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { PokemonCard } from "../../components/pokemon-card";
 import { Button } from "../../components/ui/button";
 import { Header } from "../../components/ui/header";
@@ -13,31 +13,26 @@ import { useListPokemons } from "../../hooks/use-list-pokemons";
 
 export const Home = () => {
   const {
-    searchTerm,
-    activeSearch,
     itemHeights,
-    setSearchTerm,
-
     pokemonsQuery,
-    filteredPokemon,
-
-    handleSearch,
-    handleClearSearch,
     updateItemHeight,
-
+    allPokemon,
     getColumns,
     shouldFetchNextPage,
     getEstimatedSize,
   } = useListPokemons();
 
   const {
+    searchedPokemon,
     isDetailOpen,
     searchMutation,
     handleSearchPokemon,
     openDetailDrawer,
     closeDetailDrawer,
+    resetSearch,
   } = useSearchPokemon();
 
+  const [searchTerm, setSearchTerm] = useState("");
   const { t } = useLanguage();
   const { isMobile, isTablet, isDesktop } = useScreenSize();
   const parentRef = useRef<HTMLDivElement>(null);
@@ -46,8 +41,12 @@ export const Home = () => {
     return getColumns(isMobile, isTablet);
   }, [getColumns, isMobile, isTablet]);
 
+  const filteredPokemon = useMemo(() => {
+    return allPokemon;
+  }, [allPokemon]);
+
   const virtualizer = useVirtualizer({
-    count: Math.ceil(filteredPokemon.length / columns),
+    count: Math.ceil(allPokemon.length / columns),
     getScrollElement: () => parentRef.current,
     estimateSize: getEstimatedSize,
     overscan: 5,
@@ -61,16 +60,18 @@ export const Home = () => {
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       e.preventDefault();
-      handleSearch();
+      handleSearchSpecificPokemon();
     }
   };
 
   const handleSearchSpecificPokemon = () => {
-    if (searchTerm.trim()) {
-      handleSearchPokemon(searchTerm);
-      searchMutation.mutate();
-      handleSearch();
-    }
+    handleSearchPokemon(searchTerm);
+    searchMutation.mutate();
+  };
+
+  const handleClearSearch = () => {
+    setSearchTerm("");
+    resetSearch();
   };
 
   useEffect(() => {
@@ -86,24 +87,22 @@ export const Home = () => {
       return;
     }
 
-    const totalRows = Math.ceil(filteredPokemon.length / columns);
+    const totalRows = Math.ceil(allPokemon.length / columns);
 
     if (
       shouldFetchNextPage(
         lastItem.index,
         totalRows,
         pokemonsQuery.hasNextPage,
-        pokemonsQuery.isFetchingNextPage,
-        activeSearch
+        pokemonsQuery.isFetchingNextPage
       )
     ) {
       pokemonsQuery.fetchNextPage();
     }
   }, [
     virtualizer,
-    filteredPokemon.length,
+    allPokemon.length,
     columns,
-    activeSearch,
     pokemonsQuery,
     shouldFetchNextPage,
   ]);
@@ -146,7 +145,7 @@ export const Home = () => {
         >
           <SearchInput
             searchTerm={searchTerm}
-            activeSearch={activeSearch}
+            activeSearch={searchedPokemon}
             isLoading={pokemonsQuery.isFetching || searchMutation.isPending}
             onSearchTermChange={setSearchTerm}
             onSearch={handleSearchSpecificPokemon}
