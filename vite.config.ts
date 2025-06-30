@@ -10,15 +10,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
     analyzer({
-      openAnalyzer: false,
       analyzerMode: "json",
-      reportFilename: "bundle-report.json",
       defaultSizes: "gzip",
-      generateStatsFile: true,
-      statsFilename: "stats.json",
-      statsOptions: {
-        source: true,
-      },
+      fileName: "stats.json",
     }),
     {
       name: "storybook-docs-handler",
