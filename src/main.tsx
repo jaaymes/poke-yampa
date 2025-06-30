@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { QueryClientProvider } from "@tanstack/react-query";
+import { Analytics } from "@vercel/analytics/react";
 import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router";
@@ -20,6 +21,7 @@ createRoot(rootElement).render(
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
         <Toaster richColors />
+        <Analytics />
       </QueryClientProvider>
     </Suspense>
   </StrictMode>
