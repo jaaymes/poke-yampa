@@ -232,7 +232,7 @@
 - **CSS Grid & Flexbox**: Modern layout techniques
 - **CSS Custom Properties**: Dynamic theming
 - **Intersection Observer**: Infinite scroll implementation
-- **Service Workers**: Offline functionality
+
 
 ## Deployment Configuration
 

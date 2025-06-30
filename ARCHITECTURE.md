@@ -30,7 +30,6 @@ PokéYampa é uma Single Page Application (SPA) construída com uma arquitetura 
 graph TB
     subgraph "Cliente"
         Browser[Navegador]
-        SW[Service Worker]
     end
     
     subgraph "Frontend SPA"
@@ -45,14 +44,12 @@ graph TB
         CDN[CDN Assets]
     end
     
-    Browser --> SW
     Browser --> Router
     Router --> App
     App --> Query
     App --> Store
     Query --> PokeAPI
     App --> CDN
-    SW --> Query
 ```
 
 ### Componentes Principais

@@ -3,12 +3,23 @@ import react from "@vitejs/plugin-react-swc";
 import fs from "fs";
 import path from "path";
 import { defineConfig } from "vite";
-
+import { analyzer } from "vite-bundle-analyzer";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    analyzer({
+      openAnalyzer: false,
+      analyzerMode: "json",
+      reportFilename: "bundle-report.json",
+      defaultSizes: "gzip",
+      generateStatsFile: true,
+      statsFilename: "stats.json",
+      statsOptions: {
+        source: true,
+      },
+    }),
     {
       name: "storybook-docs-handler",
       configureServer(server) {

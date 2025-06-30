@@ -16,7 +16,7 @@ PokéYampa is a modern, high-performance Pokédex application built with React 1
 ### Performance Requirements
 - **Fast Loading**: Optimized bundle splitting and lazy loading
 - **Smooth Scrolling**: Virtualized lists for handling large datasets
-- **Offline Support**: Service worker integration for offline functionality
+
 - **Lighthouse Score**: Target 90+ on all Core Web Vitals
 
 ### Quality Requirements

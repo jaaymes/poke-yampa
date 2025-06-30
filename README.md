@@ -55,7 +55,7 @@ PokéYampa é uma aplicação Pokédex moderna que demonstra as melhores prátic
 - **Otimização de Imagens**: Carregamento otimizado de sprites Pokémon
 - **Estados de Loading**: Feedback visual durante carregamento
 - **Tratamento de Erros**: Páginas de erro graciosamente tratadas
-- **Offline**: Funcionalidade básica offline com Service Worker
+
 
 ## 🛠️ Tecnologias Utilizadas
 
